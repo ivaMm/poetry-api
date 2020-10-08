@@ -1194,4 +1194,17 @@ And feel — they know not what but care;
 And wish to lead others, when they should be led.
 ")
 
+poem_e_46 = Poem.create(author_id: blake.id, book_id: experience.id, title: "A DIVINE IMEAGE", content: "
+Cruelty has a Human Heart
+And Jealousy a Human Face
+Terror the Human Form Divine
+And Secrecy, the Human Dress
+
+The Human Dress, is forged Iron
+The Human Form, a fiery Forge.
+The Human Face, a Furnace seal'd
+The Human Heart, its hungry Gorge.
+")
+
 p "songs of experience done :)"
+
