@@ -12,7 +12,7 @@ blake = Author.create(name: "William Blake")
 
 innocence = Book.create(author_id: blake.id, title: "Songs of Innocence and Experience / Songs of Innocence", year: "1789-94")
 experience = Book.create(author_id: blake.id, title: "Songs of Innocence and Experience / Songs of Experience", year: "1789-94")
-
+rosseti = Book.create(author_id: blake.id, title: "Poems from the Rosseti Manuscript / Part I.", year: "Written circa 1793")
 
 poem_i_1 = Poem.create(author_id: blake.id, book_id: innocence.id, title: "INTRODUCTION", content: "
 Piping down the valleys wild,
@@ -1208,3 +1208,426 @@ The Human Heart, its hungry Gorge.
 
 p "songs of experience done :)"
 
+poem_r_47 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "NEVER SEEK TO TELL THY LOVE", content: "
+Never seek to tell thy love,
+Love that never told can be;
+For the gentle wind does move
+Silently, invisibly.
+
+I told my love, I told my love,
+I told her all my heart;
+Trembling, cold, in ghastly fears,
+Ah! she doth depart.
+
+Soon as she was gone from me,
+A traveller came by,
+Silently, invisibly:
+He took her with a sigh.
+")
+
+poem_r_48 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "I LAID ME DOWN UPON A BANK", content: "
+I laid me down upon a bank,
+Where Love lay sleeping;
+I heard among the rushes dank
+Weeping, weeping.
+
+Then I went to the heath and the wild,
+To the thistles and thorns of the waste;
+And they told me how they were beguil'd,
+Driven out, and compell'd to be chaste.
+")
+
+poem_r_49 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "I SAW A CHAPPEL ALL OF GOLD", content: "
+I saw a Chapel all of gold
+That none did dare to enter in,
+And many weeping stood without,
+Weeping, mourning, worshipping.
+
+I saw a Serpent rise between
+The white pillars of the door,
+And he forc'd and forc'd and forc'd;
+Down the golden hinges tore,
+
+And along the pavement sweet,
+Set with pearls and rubies bright,
+All his shining length he drew,
+Till upon the altar white
+
+Vomiting his poison out
+On the Bread and on the Wine.
+So I turn'd into a sty,
+And laid me down among the swine.
+")
+
+poem_r_50 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "I ASKED A THIEF", content: "
+I askèd a thief to steal me a peach:
+He turnèd up his eyes.
+I ask'd a lithe lady to lie her down:
+Holy and meek, she cries.
+
+As soon as I went
+An Angel came:
+He wink'd at the thief,
+And smil'd at the dame;
+
+And without one word said
+Had a peach from the tree,
+And still as a maid
+Enjoy'd the lady.
+")
+
+poem_r_51 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "I HEARD AN ANGEL SINGING", content: "
+I heard an Angel singing
+When the day was springing:
+`Mercy, Pity, Peace
+Is the world's release.'
+
+Thus he sang all day
+Over the new−mown hay,
+Till the sun went down,
+And haycocks lookèd brown.
+
+I heard a Devil curse
+Over the heath and the furze:
+`Mercy could be no more
+If there was nobody poor,
+
+`And Pity no more could be,
+If all were as happy as we.'
+At his curse the sun went down,
+And the heavens gave a frown.
+
+Down pour'd the heavy rain
+Over the new reap'd grain;
+And Misery's increase
+Is Mercy, Pity, Peace.
+")
+
+poem_r_52 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "A CRADLE SONG", content: "
+Sleep! sleep! beauty bright,
+Dreaming o'er the joys of night;
+Sleep! sleep! in thy sleep
+Little sorrows sit and weep.
+
+Sweet Babe, in thy face
+Soft desires I can trace,
+Secret joys and secret smiles,
+Little pretty infant wiles.
+
+As thy softest limbs I feel,
+Smiles as of the morning steal
+O'er thy cheek, and o'er thy breast
+Where thy little heart does rest.
+
+O! the cunning wiles that creep
+In thy little heart asleep.
+When thy little heart does wake
+Then the dreadful lightnings break,
+
+From thy cheek and from thy eye,
+O'er the youthful harvests nigh.
+Infant wiles and infant smiles
+Heaven and Earth of peace beguiles.
+")
+
+poem_r_53 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "SILENT, SILENT NIGHT", content: "
+Silent, silent Night,
+Quench the holy light
+Of thy torches bright;
+
+For possess'd of Day,
+Thousand spirits stray
+That sweet joys betray.
+
+Why should joys be sweet
+Usèd with deceit,
+Nor with sorrows meet?
+
+But an honest joy
+Does itself destroy
+For a harlot coy.
+")
+
+poem_r_54 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "I FEAR'D THE FURY OF MY WIND", content: "
+I fear'd the fury of my wind
+Would blight all blossoms fair and true;
+And my sun it shin'd and shin'd,
+And my wind it never blew.
+
+But a blossom fair or true
+Was not found on any tree;
+For all blossoms grew and grew
+Fruitless, false, tho' fair to see.
+")
+
+poem_r_55 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "INFANT SORROW", content: "
+i
+
+My mother groan'd, my father wept;
+Into the dangerous world I leapt,
+Helpless, naked, piping loud,
+Like a fiend hid in a cloud.
+
+ii
+
+Struggling in my father's hands,
+Striving against my swaddling−bands,
+Bound and weary, I thought best
+To sulk upon my mother's breast.
+
+iii
+
+When I saw that rage was vain,
+And to sulk would nothing gain,
+Turning many a trick and wile
+I began to soothe and smile.
+
+iv
+
+And I sooth'd day after day,
+Till upon the ground I stray;
+And I smil'd night after night,
+Seeking only for delight.
+
+v
+
+And I saw before me shine
+Clusters of the wand'ring vine;
+And, beyond, a Myrtle−tree
+Stretch'd its blossoms out to me.
+
+vi
+
+But a Priest with holy look,
+In his hands a holy book,
+Pronouncèd curses on his head
+Who the fruits or blossoms shed.
+
+vii
+
+I beheld the Priest by night;
+He embrac'd my Myrtle bright:
+I beheld the Priest by day,
+Where beneath my vines he lay.
+
+viii
+
+Like a serpent in the day
+Underneath my vines he lay:
+Like a serpent in the night
+He embrac'd my Myrtle bright.
+
+ix
+
+So I smote him, and his gore
+Stain'd the roots my Myrtle bore;
+But the time of youth is fled,
+And grey hairs are on my head
+")
+
+poem_r_56 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "WHY SHOULD I CARE FOR THE MEN OF THAMES", content: "
+Why should I care for the men of Thames,
+Or the cheating waves of charter'd streams;
+Or shrink at the little blasts of fear
+That the hireling blows into my ear?
+
+Tho' born on the cheating banks of Thames,
+Tho' his waters bathèd my infant limbs,
+The Ohio shall wash his stains from me:
+I was born a slave, but I go to be free!
+")
+
+poem_r_57 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "THOU HAST A LAP FULL OF SEED", content: "
+Thou hast a lap full of seed,
+And this is a fine country.
+Why dost thou not cast thy seed,
+And live in it merrily.
+
+Shall I cast it on the sand
+And turn it into fruitful land?
+For on no other ground
+Can I sow my seed,
+Without tearing up
+Some stinking weed.
+")
+
+poem_r_58 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "IN A MYRTLE SHADE", content: "
+Why should I be bound to thee,
+O my lovely Myrtle−tree?
+Love, free Love, cannot be bound
+To any tree that grows on ground.
+
+O! how sick and weary I
+Underneath my Myrtle lie;
+Like to dung upon the ground,
+Underneath my Myrtle bound.
+
+Oft my Myrtle sigh'd in vain
+To behold my heavy chain:
+Oft my Father saw us sigh,
+And laugh'd at our simplicity.
+
+So I smote him, and his gore
+Stain'd the roots my Myrtle bore.
+But the time of youth is fled,
+And grey hairs are on my head.
+")
+
+poem_r_59 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "TO MY MYRTLE", content: "
+To a lovely Myrtle bound,
+Blossoms show'ring all around,
+O how sick and weary I
+Underneath my Myrtle lie!
+Why should I be bound to thee,
+O my lovely Myrtle−tree?
+")
+
+poem_r_60 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "TO NOBODADDY", content: "
+Why art thou silent and invisible,
+Father of Jealousy?
+Why dost thou hide thyself in clouds
+From every searching eye?
+
+Why darkness and obscurity
+In all thy words and laws,
+That none dare eat the fruit but from
+The wily Serpent's jaws?
+Or is it because secrecy gains females' loud applause?
+")
+
+poem_r_61 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "ARE NOT THE JOYS OF THE MORNING SWEETER", content: "
+Are not the joys of morning sweeter
+Than the joys of night?
+And are the vigorous joys of youth
+Ashamèd of the light?
+
+Let age and sickness silent rob
+The vineyards in the night;
+But those who burn with vigorous youth
+Pluck fruits before the light.
+")
+
+poem_r_62 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "THE WILD FLOWER'S SONG", content: "
+As I wander'd the forest,
+The green leaves among,
+I heard a Wild Flower
+Singing a song.
+
+`I slept in the earth
+In the silent night,
+I murmur'd my fears
+And I felt delight.
+
+`In the morning I went,
+As rosy as morn,
+To seek for new joy;
+But I met with scorn.'
+")
+
+poem_r_63 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "DAY", content: "
+The sun arises in the East,
+Cloth'd in robes of blood and gold;
+Swords and spears and wrath increas'd
+All around his bosom roll'd,
+Crown'd with warlike fires and raging desires.
+")
+
+poem_r_64 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "THE FAIRY", content: "
+`Come hither, my Sparrows,
+My little arrows.
+If a tear or a smile
+Will a man beguile,
+If an amorous delay
+Clouds a sunshiny day,
+If the step of a foot
+Smites the heart to its root,
+'Tis the marriage−ring
+Makes each fairy a king.'
+
+So a Fairy sung.
+From the leaves I sprung;
+He leap'd from the spray
+To flee away;
+But in my hat caught,
+He soon shall be taught.
+Let him laugh, let him cry,
+He's my Butterfly;
+For I've pull'd out the sting
+Of the marriage−ring.
+")
+
+poem_r_65 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "MOTTO TO THE SONGS OF INNOCENCE AND OF EXPERIENCE", content: "
+The Good are attracted by men's perceptions,
+And think not for themselves;
+Till Experience teaches them to catch
+And to cage the fairies and elves.
+
+And then the Knave begins to snarl,
+And the Hypocrite to howl;
+And all his good friends show their private ends,
+And the eagle is known from the owl.
+")
+
+poem_r_66 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "LAFAYETTE", content: "
+i
+
+`Let the brothels of Paris be openèd
+With many an alluring dance,
+To awake the physicians thro' the city!'
+Said the beautiful Queen of France.
+
+ii
+
+The King awoke on his couch of gold,
+As soon as he heard these tidings told:
+`Arise and come, both fife and drum,
+And the famine shall eat both crust and crumb.'
+
+iii
+
+The Queen of France just touch'd this globe,
+And the pestilence darted from her robe;
+But our good Queen quite grows to the ground,
+And a great many suckers grow all around.
+
+iv
+
+Fayette beside King Lewis stood;
+He saw him sign his hand;
+And soon he saw the famine rage
+About the fruitful land.
+Fayette beheld the Queen to smile
+And wink her lovely eye;
+And soon he saw the pestilence
+From street to street to fly.
+
+vi
+
+Fayette beheld the King and Queen
+In curses and iron bound;
+But mute Fayette wept tear for tear,
+And guarded them around.
+
+vii
+
+Fayette, Fayette, thou'rt bought and sold
+And sold is thy happy morrow;
+Thou gavest the tears of pity away
+In exchange for the tears of sorrow.
+
+viii
+
+Who will exchange his own fireside
+For the stone of another's door?
+Who will exchange his wheaten loaf
+For the links of a dungeon−floor?
+
+ix
+
+O who would smile on the wintry seas
+And pity the stormy roar?
+Or who will exchange his new−born child
+For the dog at the wintry door?
+")
+
+p "poems from the rosseti part 1 done :)"
