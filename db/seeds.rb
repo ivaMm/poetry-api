@@ -3541,3 +3541,247 @@ To the waters and the wild
 With a faery, hand in hand,
 For the world's more full of weeping than he can understand.
 ")
+
+poem_p_122 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "Aedh Tells of the Perfect Beauty", content: "
+O cloud-pale eyelids, dream-dimmed eyes,
+The poets labouring all their days
+To build a perfect beauty in rhyme
+Are overthrown by a woman’s gaze
+And by the unlabouring brood of the skies:
+And therefore my heart will bow, when dew
+Is dropping sleep, until God burn time,
+Before the unlabouring stars and you.
+")
+
+poem_p_123 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Cold Heaven", content: "
+Suddenly I saw the cold and rook-delighting heaven
+That seemed as though ice burned and was but the more ice,
+And thereupon imagination and heart were driven
+So wild that every casual thought of that and this
+Vanished, and left but memories, that should be out of season
+With the hot blood of youth, of love crossed long ago;
+And I took all the blame out of all sense and reason,
+Until I cried and trembled and rocked to and fro,
+Riddled with light. Ah! when the ghost begins to quicken,
+Confusion of the death-bed over, is it sent
+Out naked on the roads, as the books say, and stricken
+By the injustice of the skies for punishment?
+")
+
+poem_p_124 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "Galway Races", content: "
+There where the racecourse is
+Delight makes all of the one mind
+The riders upon the swift horses
+The field that closes in behind.
+We too had good attendance once,
+Hearers, hearteners of the work,
+Aye, horsemen for companions
+Before the merchant and the clerk
+Breathed on the world with timid breath;
+But some day and at some new moon
+We’ll learn that sleeping is not death
+Hearing the whole earth change its tune,
+Flesh being wild again, and it again
+Crying aloud as the racecourse is;
+And find hearteners among men
+That ride upon horses.
+")
+
+poem_p_125 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "A Deep-Sworn Vow", content: "
+Others because you did not keep
+That deep-sworn vow have been friends of mine;
+Yet always when I look death in the face,
+When I clamber to the heights of sleep,
+Or when I grow excited with wine,
+Suddenly I meet your face.
+")
+
+poem_p_126 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Everlasting Voices", content: "
+O sweet everlasting Voices be still;
+Go to the guards of the heavenly fold
+And bid them wander obeying your will
+Flame under flame, till Time be no more;
+Have you not heard that our hearts are old,
+That you call in birds, in wind on the hill,
+In shaken boughs, in tide on the shore?
+O sweet everlasting Voices be still.
+")
+
+poem_p_127 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Heart of the Woman", content: "
+O what to me the little room
+That was brimmed up with prayer and rest;
+He bade me out into the gloom,
+And my breast lies upon his breast.
+
+O what to me my mother's care,
+The house where I was safe and warm;
+The shadowy blossom of my hair
+Will hide us from the bitter storm.
+
+O hiding hair and dewy eyes,
+I am no more with life and death,
+My heart upon his warm heart lies,
+My breath is mixed into his breath.
+")
+
+poem_p_128 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Falling of the Leaves", content: "
+Autumn is over the long leaves that love us,
+And over the mice in the barley sheaves;
+Yellow the leaves of the rowan above us,
+And yellow the wet wild-strawberry leaves.
+
+The hour of the waning of love has beset us,
+And weary and worn are our sad souls now;
+Let us part, ere the season of passion forget us,
+With a kiss and a tear on thy drooping brow.
+")
+
+poem_p_129 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Song of Wandering Aengus", content: "
+I went out to the hazel wood,
+Because a fire was in my head,
+And cut and peeled a hazel wand,
+And hooked a berry to a thread;
+And when white moths were on the wing,
+And moth-like stars were flickering out,
+I dropped the berry in a stream
+And caught a little silver trout.
+
+When I had laid it on the floor
+I went to blow the fire a-flame,
+But something rustled on the floor,
+And someone called me by my name:
+It had become a glimmering girl
+With apple blossom in her hair
+Who called me by my name and ran
+And faded through the brightening air.
+
+Though I am old with wandering
+Through hollow lands and hilly lands,
+I will find out where she has gone,
+And kiss her lips and take her hands;
+And walk among long dappled grass,
+And pluck till time and times are done,
+The silver apples of the moon,
+The golden apples of the sun.
+")
+
+poem_p_130 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "Youth and Age", content: "
+Much did I rage when young,
+Being by the World oppressed,
+But now with flattering tongue
+It speeds the parting guest.
+")
+
+poem_p_131 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Road at My Door", content: "
+An affable Irregular,
+A heavily-built Falstaffan man,
+Comes cracking jokes of civil war
+As though to die by gunshot were
+The finest play under the sun.
+
+A brown Lieutenant and his men,
+Half dressed in national uniform,
+Stand at my door, and I complain
+Of the foul weather, hail and rain,
+A pear tree broken by the storm.
+
+I count those feathered balls of soot
+The moor-hen guides upon the stream,
+To silence the envy in my thought;
+And turn towards my chamber, caught
+In the cold snows of a dream.
+")
+
+poem_p_132 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "VI—The Stare’s Nest By My Window", content: "
+The bees build in the crevices
+Of loosening masonry, and there
+The mother birds bring grubs and flies.
+My wall is loosening, honey bees
+Come build in the empty house of the stare.
+
+We are closed in, and the key is turned
+On our uncertainty; somewhere
+A man is killed, or a house burned,
+Yet no clear fact to be discerned:
+Come build in the empty house of the stare
+
+A barricade of stone or of wood;
+Some fourteen days of civil war;
+Last night they trundled down the road
+That dead young soldier in his blood:
+Come build in the empty house of the stare.
+
+We had fed the heart on fantasies,
+The heart’s grown brutal from the fare,
+More substance in our enmities
+Than in our love; oh, honey-bees
+Come build in the empty house of the stare.
+")
+
+poem_p_133 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "My Table", content: "
+Two heavy tressels, and a board
+Where Sato’s gift, a changeless sword,
+By pen and paper lies,
+That it may moralise
+My days out of their aimlessness.
+A bit of an embroidered dress
+Covers its wooden sheath.
+Chaucer had not drawn breath
+When it was forged. In Sato’s house,
+Curved like new moon, moon luminous
+It lay five hundred years;
+Yet if no change appears
+No moon: only an aching heart
+Conceives a changeless work of art.
+Our learned men have urged
+That when and where ’twas forged
+A marvellous accomplishment,
+In painting or in pottery, went
+From father unto son
+And through the centuries ran
+And seemed unchanging like the sword.
+Soul’s beauty being most adored,
+Men and their business took
+The soul’s unchanging look;
+For the most rich inheritor,
+Knowing that none can pass heaven’s door
+That loved inferior art,
+Had such an aching heart
+That he, although a country’s talk
+For silken clothes and stately walk,
+Had waking wits; it seemed
+Juno’s peacock screamed.
+")
+
+poem_p_134 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "My Descendants", content: "
+Having inherited a vigorous mind
+From my old fathers I must nourish dreams
+And leave a woman and a man behind
+As vigorous of mind, and yet it seems
+Life scarce can cast a fragrance on the wind,
+Scarce spread a glory to the morning beams,
+But the torn petals strew the garden plot;
+And there’s but common greenness after that.
+
+And what if my descendants lose the flower
+Through natural declension of the soul,
+Through too much business with the passing hour,
+Through too much play, or marriage with a fool?
+May this laborious stair and this stark tower
+Become a roofless ruin that the owl
+May build in the cracked masonry and cry
+Her desolation to the desolate sky.
+
+The Primum Mobile that fashioned us
+Has made the very owls in circles move;
+And I, that count myself most prosperous
+Seeing that love and friendship are enough,
+For an old neighbour’s friendship chose the house
+And decked and altered it for a girl’s love,
+And know whatever flourish and decline
+These stones remain their monument and mine.
+")
+
+p "yeats done"
+
+
