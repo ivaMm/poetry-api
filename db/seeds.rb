@@ -12,7 +12,13 @@ blake = Author.create(name: "William Blake")
 
 innocence = Book.create(author_id: blake.id, title: "Songs of Innocence and Experience / Songs of Innocence", year: "1789-94")
 experience = Book.create(author_id: blake.id, title: "Songs of Innocence and Experience / Songs of Experience", year: "1789-94")
-rosseti = Book.create(author_id: blake.id, title: "Poems from the Rosseti Manuscript / Part I.", year: "Written circa 1793")
+rosseti = Book.create(author_id: blake.id, title: "Poems from the Rossetti Manuscript / Part I.", year: "Written circa 1793")
+rossetti_2 = Book.create(author_id: blake.id, title: "Poems from the Rossetti Manuscript / Part II.", year: "Written circa 1800-1810")
+pickering = Book.create(author_id: blake.id, title: "The Pickering Manuscript", year: "c.1801-3")
+
+yeats = Author.create(name: "William Butler Yeats")
+
+poems = Book.create(author_id: yeats.id, title: "The Poems", year: "1865-1939")
 
 poem_i_1 = Poem.create(author_id: blake.id, book_id: innocence.id, title: "INTRODUCTION", content: "
 Piping down the valleys wild,
@@ -1630,4 +1636,1908 @@ Or who will exchange his new−born child
 For the dog at the wintry door?
 ")
 
-p "poems from the rosseti part 1 done :)"
+poem_r_a = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "APPENDIX TO THE EARLIER POEMS IN THE ROSSETTI MANUSCRIPT", content: "
+A Fairy leapt upon my knee
+Singing and dancing merrily;
+I said, `Thou thing of patches, rings,
+Pins, necklaces, and such−like things,
+Disgracer of the female form,
+Thou paltry, gilded, poisonous worm!'
+Weeping, he fell upon my thigh,
+And thus in tears did soft reply:
+`Knowest thou not, O Fairies' lord!
+How much by us contemn'd, abhorr'd,
+Whatever hides the female form
+That cannot bear the mortal storm?
+Therefore in pity still we give
+Our lives to make the female live;
+And what would turn into disease
+We turn to what will joy and please.'
+")
+
+p "Poems from the Rossetti part 1 done :)"
+
+poem_r_67 = Poem.create(author_id: blake.id, book_id: rossetti_2.id, title: "MY SPECTRE AROUND ME NIGHT AND DAY", content: "
+i
+
+My spectre around me night and day
+Like a wild beast guards my way;
+My Emanation far within
+Weeps incessantly for my sin.
+
+ii
+
+`A fathomless and boundless deep,
+There we wander, there we weep;
+On the hungry craving wind
+My Spectre follows thee behind.
+
+iii
+
+`He scents thy footsteps in the snow,
+Wheresoever thou dost go,
+Thro' the wintry hail and rain.
+When wilt thou return again?
+
+iv
+
+`Dost thou not in pride and scorn
+Fill with tempests all my morn,
+And with jealousies and fears
+Fill my pleasant nights with tears?
+
+v
+
+`Seven of my sweet loves thy knife
+Has bereavèd of their life.
+Their marble tombs I built with tears,
+And with cold and shuddering fears.
+
+vi
+
+`Seven more loves weep night and day
+Round the tombs where my loves lay,
+And seven more loves attend each night
+Around my couch with torches bright.
+
+vii
+
+`And seven more loves in my bed
+Crown with wine my mournful head,
+Pitying and forgiving all
+Thy transgressions great and small.
+
+viii
+
+`When wilt thou return and view
+My loves, and them to life renew?
+When wilt thou return and live?
+When wilt thou pity as I forgive?'
+
+a
+
+`O'er my sins thou sit and moan:
+Hast thou no sins of thy own?
+O'er my sins thou sit and weep,
+And lull thy own sins fast asleep.
+
+b
+
+`What transgressions I commit
+Are for thy transgressions fit.
+They thy harlots, thou their slave;
+And my bed becomes their grave.
+
+ix
+
+`Never, never, I return:
+Still for victory I burn.
+Living, thee alone I'll have;
+And when dead I'll be thy grave.
+
+x
+
+`Thro' the Heaven and Earth and Hell
+Thou shalt never, never quell:
+I will fly and thou pursue:
+Night and morn the flight renew.'
+
+c
+
+`Poor, pale, pitiable form
+That I follow in a storm;
+Iron tears and groans of lead
+Bind around my aching head.
+
+xi
+
+`Till I turn from Female love
+And root up the Infernal Grove,
+I shall never worthy be
+To step into Eternity.
+
+xii
+
+`And, to end thy cruel mocks,
+Annihilate thee on the rocks,
+And another form create
+To be subservient to my fate.
+
+xiii
+
+`Let us agree to give up love,
+And root up the Infernal Grove;
+Then shall we return and see
+The worlds of happy Eternity.
+
+xiv
+
+`And throughout all Eternity
+I forgive you, you forgive me.
+As our dear Redeemer said:
+``This the Wine, and this the Bread.``'
+")
+
+poem_r_68 = Poem.create(author_id: blake.id, book_id: rossetti_2.id, title: "WHEN KLOPSTOCK ENGLAND DEFIED", content: "
+When Klopstock England defied,
+Uprose William Blake in his pride;
+For old Nobodaddy aloft
+. . . and belch'd and cough'd;
+Then swore a great oath that made Heaven quake,
+And call'd aloud to English Blake.
+Blake was giving his body ease,
+At Lambeth beneath the poplar trees.
+From his seat then started he
+And turn'd him round three times three.
+When Klopstock England defied
+The moon at that sight blush'd scarlet red,
+The stars threw down their cups and fled,
+And all the devils that were in hell,
+Answerèd with a ninefold yell.
+Klopstock felt the intripled turn,
+And all his bowels began to churn,
+And his bowels turn'd round three times three,
+And lock'd in his soul with a ninefold key; . . .
+Then again old Nobodaddy swore
+He ne'er had seen such a thing before,
+Since Noah was shut in the ark,
+Since Eve first chose her hellfire spark,
+Since 'twas the fashion to go naked,
+Since the old Anything was created . . .
+")
+
+poem_r_69 = Poem.create(author_id: blake.id, book_id: rossetti_2.id, title: "MOCK ON, MOCK ON, VOLTAIRE, ROUSSEAU", content: "
+Mock on, mock on, Voltaire, Rousseau;
+Mock on, mock on; 'tis all in vain!
+You throw the sand against the wind,
+And the wind blows it back again.
+And every sand becomes a gem
+Reflected in the beams divine;
+Blown back they blind the mocking eye,
+But still in Israel's paths they shine.
+The Atoms of Democritus
+And Newton's Particles of Light
+Are sands upon the Red Sea shore,
+Where Israel's tents do shine so bright.
+")
+
+poem_r_70 = Poem.create(author_id: blake.id, book_id: rossetti_2.id, title: "I SAW A MONK OF CHARLEMAINE", content: "
+i
+
+I saw a Monk of Charlemaine
+Arise before my sight:
+I talk'd to the Grey Monk where he stood
+In beams of infernal light.
+
+ii
+
+Gibbon arose with a lash of steel,
+And Voltaire with a wracking wheel:
+The Schools, in clouds of learning roll'd,
+Arose with War in iron and gold.
+Mock on, mock on, Voltaire, Rousseau
+
+iii
+
+`Thou lazy Monk,' they said afar,
+`In vain condemning glorious War,
+And in thy cell thou shall ever dwell.
+Rise, War, and bind him in his cell!'
+
+iv
+
+The blood red ran from the Grey Monk's side,
+His hands and feet were wounded wide,
+His body bent, his arms and knees
+Like to the roots of ancient trees.
+
+v
+
+`I see, I see,' the Mother said,
+`My children will die for lack of bread.
+What more has the merciless tyrant said?'
+The Monk sat down on her stony bed.
+
+vi
+
+His eye was dry, no tear could flow;
+A hollow groan first spoke his woe.
+He trembled and shudder'd upon the bed;
+At length with a feeble cry he said:
+
+vii
+
+`When God commanded this hand to write
+In the studious hours of deep midnight,
+He told me that all I wrote should prove
+The bane of all that on Earth I love.
+
+viii
+
+`My brother starv'd between two walls;
+Thy children's cry my soul appals:
+I mock'd at the wrack and griding chain;
+My bent body mocks at their torturing pain.
+
+ix
+
+Mock on, mock on, Voltaire, Rousseau
+`Thy father drew his sword in the North;
+With his thousands strong he is marchèd forth;
+Thy brother has armèd himself in steel
+To revenge the wrongs thy children feel.
+
+x
+
+`But vain the sword and vain the bow,
+They never can work War's overthrow;
+The hermit's prayer and the widow's tear
+Alone can free the world from fear.
+
+xi
+
+`The hand of Vengeance sought the bed
+To which the purple tyrant fled;
+The iron hand crush'd the tyrant's head,
+And became a tyrant in his stead.
+
+xii
+
+`Until the tyrant himself relent,
+The tyrant who first the black bow bent,
+Slaughter shall heap the bloody plain:
+Resistance and War is the tyrant's gain.
+
+xiii
+
+`But the tear of love and forgiveness sweet,
+And submission to death beneath his feet
+The tear shall melt the sword of steel,
+And every wound it has made shall heal.
+
+xiv
+
+`For the tear is an intellectual thing,
+And a sigh is the sword of an Angel King,
+And the bitter groan of the martyr's woe
+Is an arrow from the Almighty's bow.'
+")
+
+poem_r_71 = Poem.create(author_id: blake.id, book_id: rossetti_2.id, title: "MORNING", content: "
+To find the Western path,
+Right thro' the Gates of Wrath
+Morning
+I urge my way;
+Sweet Mercy leads me on
+With soft repentant moan:
+I see the break of day.
+
+The war of swords and spears,
+Melted by dewy tears,
+Exhales on high;
+The Sun is freed from fears,
+And with soft grateful tears
+Ascends the sky.
+")
+
+poem_r_72 = Poem.create(author_id: blake.id, book_id: rossetti_2.id, title: "THE BIRDS", content: "
+/He./ Where thou dwellest, in what grove,
+Tell me Fair One, tell me Love;
+Where thou thy charming nest dost build,
+O thou pride of every field!
+
+/She./ Yonder stands a lonely tree,
+There I live and mourn for thee;
+Morning drinks my silent tear,
+And evening winds my sorrow bear.
+
+/He./ O thou summer's harmony,
+I have liv'd and mourn'd for thee;
+Each day I mourn along the wood,
+And night hath heard my sorrows loud.
+
+/She./ Dost thou truly long for me?
+And am I thus sweet to thee?
+Sorrow now is at an end,
+O my Lover and my Friend!
+
+/He./ Come, on wings of joy we'll fly
+To where my bower hangs on high;
+Come, and make thy calm retreat
+Among green leaves and blossoms sweet.
+")
+
+poem_r_73 = Poem.create(author_id: blake.id, book_id: rossetti_2.id, title: "YOU DON'T BELIEVE", content: "
+You don't believe I won't attempt to make ye:
+You are asleep I won't attempt to wake ye.
+Sleep on! sleep on! while in your pleasant dreams
+Of Reason you may drink of Life's clear streams.
+Reason and Newton, they are quite two things;
+For so the swallow and the sparrow sings.
+
+Reason says `Miracle': Newton says `Doubt.'
+Aye! that's the way to make all Nature out.
+`Doubt, doubt, and don't believe without experiment':
+That is the very thing that Jesus meant,
+When He said `Only believe! believe and try!
+Try, try, and never mind the reason why!'
+")
+
+poem_r_74 = Poem.create(author_id: blake.id, book_id: rossetti_2.id, title: "IF IT IS TRUE WHAT THE PROPHETS WRITE", content: "
+If it is true, what the Prophets write,
+That the heathen gods are all stocks and stones,
+Shall we, for the sake of being polite,
+Feed them with the juice of our marrow−bones?
+And if Bezaleel and Aholiab drew
+What the finger of God pointed to their view,
+Shall we suffer the Roman and Grecian rods
+To compel us to worship them as gods?
+They stole them from the temple of the Lord
+And worshipp'd them that they might make inspirèd art abhorr'd;
+The wood and stone were call'd the holy things,
+And their sublime intent given to their kings.
+All the atonements of Jehovah spurn'd,
+And criminals to sacrifices turn'd.
+")
+
+poem_r_75 = Poem.create(author_id: blake.id, book_id: rossetti_2.id, title: "I WILL TELL YOU WHAT JOSEPH OF ARIMATHEA", content: "
+I will tell you what Joseph of Arimathea
+Said to my Fairy: was not it very queer?
+`Pliny and Trajan! What! are you here?
+Come before Joseph of Arimathea.
+Listen patient, and when Joseph has done
+`Twill make a fool laugh, and a fairy fun.'
+")
+
+poem_r_76 = Poem.create(author_id: blake.id, book_id: rossetti_2.id, title: "WHY WAS CUPID A BOY", content: "
+Why was Cupid a boy,
+And why a boy was he?
+He should have been a girl,
+For aught that I can see.
+
+For he shoots with his bow,
+And the girl shoots with her eye,
+And they both are merry and glad,
+And laugh when we do cry.
+
+And to make Cupid a boy
+Was the Cupid girl's mocking plan;
+For a boy can't interpret the thing
+Till he is become a man.
+
+And then he's so pierc'd with cares,
+And wounded with arrowy smarts,
+That the whole business of his life
+Is to pick out the heads of the darts.
+
+'Twas the Greeks' love of war
+Turn'd Love into a boy,
+And woman into a statue of stone
+And away fled every joy.
+")
+
+poem_r_77 = Poem.create(author_id: blake.id, book_id: rossetti_2.id, title: "NOW ART HAS LOST ITS MENTAL CHARMS", content: "
+`Now Art has lost its mental charms
+France shall subdue the world in arms.'
+So spoke an Angel at my birth;
+Then said `Descend thou upon earth,
+Renew the Arts on Britain's shore,
+And France shall fall down and adore.
+With works of art their armies meet
+And War shall sink beneath thy feet.
+But if thy nation Arts refuse,
+And if they scorn the immortal Muse,
+France shall the arts of peace restore
+And save thee from the ungrateful shore.'
+
+Spirit who lov'st Britannia's Isle
+Round which the fiends of commerce smile
+")
+
+poem_r_78 = Poem.create(author_id: blake.id, book_id: rossetti_2.id, title: "I ROSE UP AT THE DAWN OF DAY", content: "
+I rose up at the dawn of day
+`Get thee away! get thee away!
+Pray'st thou for riches? Away! away!
+This is the Throne of Mammon grey.'
+
+Said I: This, sure, is very odd;
+I took it to be the Throne of God.
+For everything besides I have:
+It is only for riches that I can crave.
+
+I have mental joy, and mental health,
+And mental friends, and mental wealth;
+I've a wife I love, and that loves me;
+I've all but riches bodily.
+
+I am in God's presence night and day,
+And He never turns His face away;
+The accuser of sins by my side doth stand,
+And he holds my money−bag in his hand.
+
+For my worldly things God makes him pay,
+And he'd pay for more if to him I would pray;
+And so you may do the worst you can do;
+Be assur'd, Mr. Devil, I won't pray to you.
+
+Then if for riches I must not pray,
+God knows, I little of prayers need say;
+So, as a church is known by its steeple,
+If I pray it must be for other people.
+
+He says, if I do not worship him for a God,
+I shall eat coarser food, and go worse shod;
+So, as I don't value such things as these,
+You must do, Mr. Devil, just as God please.
+")
+
+poem_r_80 = Poem.create(author_id: blake.id, book_id: rossetti_2.id, title: "THE CAVERNS OF THE GRAVE I'VE SEEN", content: "
+The Caverns of the Grave I've seen,
+And these I show'd to England's Queen.
+But now the Caves of Hell I view,
+Who shall I dare to show them to?
+What mighty soul in Beauty's form
+Shall dauntless view the infernal storm?
+Egremont's Countess can control
+The flames of Hell that round me roll;
+If she refuse, I still go on
+Till the Heavens and Earth are gone,
+Still admir'd by noble minds,
+Follow'd by Envy on the winds,
+Re−engrav'd time after time,
+Ever in their youthful prime,
+My designs unchang'd remain.
+Time may rage, but rage in vain.
+For above Time's troubled fountains,
+On the great Atlantic Mountains,
+In my Golden House on high,
+There they shine eternally.
+")
+
+poem_r_82 = Poem.create(author_id: blake.id, book_id: rossetti_2.id, title: "Addendum to the Later Poems in the Rossetti Manuscript: TO tHE QUEEN", content: "
+The Door of Death is made of gold,
+That mortal eyes cannot behold;
+But when the mortal eyes are clos’d,
+And cold and pale the limbs repos’d,
+The soul awakes; and, wond’ring, sees
+In her mild hand the golden Keys:
+The Grave is Heaven’s Golden Gate,
+And rich and poor around it wait;
+O Shepherdess of England’s fold,
+Behold this Gate of Pearl and Gold!
+
+To dedicate to England’s Queen
+The visions that my soul has seen,
+And, by her kind permission, bring
+What I have borne on solemn wing,
+From the vast regions of the Grave,
+Before her throne my wings I wave;
+Bowing before my Sov’reign’s feet,
+‘The Grave produc’d these blossoms sweet
+In mild repose from earthly strife;
+The blossoms of Eternal Life!’
+")
+
+p "Rossetti part 2 done :)"
+
+poem_p_83 = Poem.create(author_id: blake.id, book_id: pickering.id, title: "THE SMILE", content: "
+There is a Smile of Love
+And there is a Smile of Deceit
+And there is a Smile of Smiles
+In which these two Smiles meet
+And there is a Frown of Hate
+And there is a Frown of disdain
+And there is a Frown of Frowns
+Which you strive to forget in vain
+
+For it sticks in the Hearts deep Core
+And it sticks in the deep Back bone
+And no Smile that ever was smild
+But only one Smile alone
+
+That betwixt the Cradle & Grave
+It only once Smild can be
+But when it once is Smild
+Theres an end to all Misery
+")
+
+poem_p_84 = Poem.create(author_id: blake.id, book_id: pickering.id, title: "THE GOLDEN NET", content: "
+Three Virgins at the break of day
+Whither young Man whither away
+Alas for woe! alas for woe!
+They cry & tears for ever flow
+The one was Clothd in flames of fire
+The other Clothd in iron wire
+The other Clothd in tears & sighs
+Dazling bright before my Eyes
+They bore a Net of Golden twine
+To hang upon the Branches fine
+Pitying I wept to see the woe
+That Love & Beauty undergo
+To be consumd in burning Fires
+And in ungratified Desires
+And in tears clothd Night & day
+Melted all my Soul away
+When they saw my Tears a Smile
+That did Heaven itself beguile
+Bore the Golden Net aloft
+As on downy Pinions soft
+Over the Morning of my Day
+Underneath the Net I stray
+Now intreating Burning Fire
+Now intreating Iron Wire
+Now intreating Tears & Sighs
+O when will the morning rise
+")
+
+poem_p_85 = Poem.create(author_id: blake.id, book_id: pickering.id, title: "THE MENTAL TRAVELLER", content: "
+I traveld thro' a Land of Men
+A Land of Men & Women too
+And heard & saw such dreadful things
+As cold Earth wanderers never knew
+
+For there the Babe is born in joy
+That was begotten in dire woe
+Just as we Reap in joy the fruit
+Which we in bitter tears did sow
+
+And if the Babe is born a Boy
+He's given to a Woman Old
+Who nails him down upon a rock,
+Catches his Shrieks in Cups of gold.
+
+She binds iron thorns around his head,
+She pierces both his hands & feet,
+She cuts his heart out at his side
+To make it feel both cold & heat.
+
+Her fingers number every Nerve
+Just as a Miser counts his gold;
+She lives upon his shrieks & cries
+And She grows young as he grows old
+
+Till he becomes a bleeding youth
+And she becomes a Virgin bright;
+Then he rends up his Manacles
+And binds her down for his delight.
+
+He plants himself in all her Nerves
+Just as a Husbandman his mould
+And She becomes his dwelling place
+And Garden fruitful Seventy fold.
+
+An aged Shadow soon he fades
+Wandring round an Earthly Cot
+Full filled all with gems & gold
+Which he by industry had got
+
+And these are the gems of the Human Soul,
+The rubies & pearls of a lovesick eye
+The countless gold of the akeing heart,
+The martyrs groan & the lovers sigh.
+
+They are his meat, they are his drink;
+He feeds the Beggar & the Poor
+And the way faring Traveller,
+For ever open is his door.
+
+His grief is their eternal joy;
+They make the roofs & walls to ring
+Till from the fire on the hearth
+A little Female Babe does spring
+
+And she is all of solid fire
+And gems & gold that none his hand
+Dares stretch to touch her Baby form
+Or wrap her in his swaddling-band
+
+But She comes to the Man she loves
+If young or old or rich or poor;
+They soon drive out the aged Host
+A Begger at anothers door.
+
+He wanders weeping far away
+Untill some other take him in
+Oft blind & age-bent sore distrest
+Untill he can a Maiden win
+
+And to allay his freezing Age
+The Poor Man takes her in his arms;
+The Cottage fades before his Sight,
+The Garden & its lovely Charms.
+
+The Guests are scatterd thro' the land
+For the Eye altering alters all;
+The Senses roll themselves in fear
+And the flat Earth becomes a Ball;
+
+The Stars, Sun, Moon all shrink away
+A desart vast without a bound
+And nothing left to eat or drink
+And a dark desart all around.
+
+The honey of her Infant lips,
+The bread & wine of her sweet smile,
+The wild game of her roving Eye
+Does him to Infancy beguile
+
+For as he eats & drinks he grows
+Younger & younger every day
+And on the desart wild they both
+Wander in terror & dismay.
+
+Like the wild Stag she flees away,
+Her fear plants many a thicket wild
+While he pursues her night & day
+By various arts of Love beguild,
+
+By various arts of Love & Hate
+Till the wide desart planted oer
+With Labyrinths of wayward Love
+Where roams the Lion, Wolf & Boar
+
+Till he becomes a wayward Babe
+And she a weeping Woman Old.
+Then many a Lover wanders here;
+The Sun & Stars are nearer rolld.
+
+The trees bring forth sweet Extacy
+To all who in the desart roam
+Till many a City there is Built
+And many a pleasant Shepherds home
+
+But when they find the frowning Babe
+Terror strikes thro the region wide,
+They cry ‘the Babe the Babe is Born’
+And flee away on Every side
+
+For who dare touch the frowning form
+His arm is witherd to its root;
+Lions Boars Wolves all howling flee
+And every Tree does shed its fruit
+
+And none can touch that frowning form
+Except it be a Woman Old;
+She nails him down upon the Rock
+And all is done as I have told.
+")
+
+poem_p_86 = Poem.create(author_id: blake.id, book_id: pickering.id, title: "THE LAND OF DREAMS", content: "
+Awake, awake my little Boy!
+Thou wast thy Mother's only joy:
+Why dost thou weep in thy gentle sleep?
+Awake! thy Father does thee keep.
+
+'O, what land is the Land of Dreams?
+What are its mountains, and what are its streams?
+O Father, I saw my Mother there,
+Among the lillies by waters fair.
+
+Among the lambs clothed in white
+She walked with her Thomas in sweet delight.
+I wept for joy, like a dove I mourn
+O when shall I return again?'
+
+Dear child, I also by pleasant streams
+Have wandered all night in the Land of Dreams;
+But though calm and warm the waters wide,
+I could not get to the other side.
+
+'Father, O Father, what do we here,
+In this land of unbelief and fear?
+The Land of Dreams is better far
+Above the light of the Morning Star.
+")
+
+poem_p_87 = Poem.create(author_id: blake.id, book_id: pickering.id, title: "MARY", content: "
+Sweet Mary the first time she ever was there
+Came into the Ball room among the Fair
+The young Men & Maidens around her throng
+And these are the words upon every tongue
+
+An Angel is here from the heavenly Climes
+Or again does return the Golden times
+Her eyes outshine every brilliant ray
+She opens her lips tis the Month of May
+
+Mary moves in soft beauty & conscious delight
+To augment with sweet smiles all the joys of the Night
+Nor once blushes to own to the rest of the Fair
+That sweet Love & Beauty are worthy our care
+
+In the Morning the Villagers rose with delight
+And repeated with pleasure the joys of the night
+And Mary arose among Friends to be free
+But no Friend from henceforward thou Mary shalt see
+
+Some said she was proud some calld her a whore
+And some when she passed by shut to the door
+A damp cold came oer her her blushes all fled
+Her lillies & roses are blighted & shed
+
+O why was I born with a different Face
+Why was I not born like this Envious Racet
+Why did Heaven adorn me with bountiful hand
+And then set me down in an envious Land
+
+To be weak as a Lamb & smooth as a Dove
+And not to raise Envy is calld Christian Love
+But if you raise Envy your Merits to blame
+For planting such spite in the weak & the tame
+
+I will humble my Beauty I will not dress fine
+I will keep from the Ball & my Eyes shall not shine
+And if any Girls Lover forsakes her for me
+I'll refuse him my hand & from Envy be free
+
+She went out in Morning attird plain & neat
+Proud Marys gone Mad said the Child in the Street
+She went out in Morning in plain neat attire
+And came home in Evening bespatterd with mire
+
+She trembled & wept sitting on the Bed side
+She forgot it was Night & she trembled & cried
+She forgot it was Night she forgot it was Morn
+Her soft Memory imprinted with Faces of Scorn
+
+With Faces of Scorn & with Eyes of disdain
+Like foul Fiends inhabiting Marys mild Brain
+She remembers no Face like the Human Divine
+All Faces have Envy sweet Mary but thine
+
+And thine is a Face of sweet Love in Despair
+And thine is a Face of mild sorrow & care
+And thine is a Face of wild terror & fear
+That shall never be quiet till laid on its bier
+")
+
+poem_p_88 = Poem.create(author_id: blake.id, book_id: pickering.id, title: "THE CRYSTAL CABINET", content: "
+The Maiden caught me in the Wild,
+Where I was dancing merrily;
+She put me into her Cabinet,
+And Lockd me up with a golden key.
+
+This cabinet is formd of gold
+And pearl & crystal shining bright
+And within it opens into a world
+And a little lovely moony night.
+
+Another England there I saw,
+Another London with its Tower,
+Another Thames & other Hills,
+And another pleasant Surrey Bower.
+
+Another Maiden like herself
+Translucent lovely shining clear
+Threefold each in the other closd;
+O what a pleasant trembling fear!
+
+O what a smile, a threefold smile
+Filld me that like a flame I burnd;
+I bent to Kiss the lovely Maid,
+And found a Threefold Kiss returnd.
+
+I strove to seize the inmost Form
+With ardor fierce & hands of flame
+But burst the Crystal Cabinet
+And like a weeping Babe became;
+
+A weeping Babe upon the wild
+And Weeping Woman pale reclind
+And in the outward air again
+I filld with woes the passing wind.
+")
+
+poem_p_89 = Poem.create(author_id: blake.id, book_id: pickering.id, title: "THE GREY MONK", content: "
+I die I die the Mother said
+My Children die for lack of Bread
+What more has the merciless Tyrant said
+The Monk sat down on the Stony Bed
+
+The blood red ran from the Grey Monks side
+His hands & feet were wounded wide
+His Body bent his arms & knees
+Like to the roots of ancient trees
+
+His eye was dry no tear could flow
+A hollow groan first spoke his woe
+He trembled & shudderd upon the Bed
+At length with a feeble cry he said
+
+When God commanded this hand to write
+In the studious hours of deep midnight
+He told me the writing I wrote should prove
+The Bane of all that on Earth I lovd
+
+My Brother starvd between two Walls
+His Childrens Cry my Soul appalls
+I mockd at the wrack & griding chain
+My bent body mocks their torturing pain
+
+Thy Father drew his sword in the North
+With his thousands strong he marched forth
+Thy Brother has armd himself in Steel
+To avenge the wrongs thy Children feel
+
+But vain the Sword & vain the Bow
+They never can work Wars overthrow
+The Hermits Prayer & the Widows tear
+Alone can free the World from fear
+
+For a Tear is an Intellectual Thing
+And a Sigh is the Sword of an Angel King
+And the bitter groan of the Martyrs woe
+Is an Arrow from the Almighties Bow
+
+The hand of Vengeance found the Bed
+To which the Purple Tyrant fled
+The iron hand crushd the Tyrants head
+And became a Tyrant in his stead
+")
+
+poem_p_90 = Poem.create(author_id: blake.id, book_id: pickering.id, title: "AUGURIES OF INNOCENCE", content: "
+To see a world in a grain of sand
+And a heaven in a wild flower,
+Hold infinity in the palm of your hand,
+And eternity in an hour.
+A robin redbreast in a cage
+Puts all heaven in a rage.
+A dove-house fill'd with doves and pigeons
+Shudders hell thro' all its regions.
+A dog starv'd at his master's gate
+Predicts the ruin of the state.
+A horse misused upon the road
+Calls to heaven for human blood.
+Each outcry of the hunted hare
+A fibre from the brain does tear.
+A skylark wounded in the wing,
+A cherubim does cease to sing.
+The game-cock clipt and arm'd for fight
+Does the rising sun affright.
+Every wolf's and lion's howl
+Raises from hell a human soul.
+The wild deer, wand'ring here and there,
+Keeps the human soul from care.
+The lamb misus'd breeds public strife,
+And yet forgives the butcher's knife.
+The bat that flits at close of eve
+Has left the brain that won't believe.
+The owl that calls upon the night
+Speaks the unbeliever's fright.
+He who shall hurt the little wren
+Shall never be belov'd by men.
+He who the ox to wrath has mov'd
+Shall never be by woman lov'd.
+The wanton boy that kills the fly
+Shall feel the spider's enmity.
+He who torments the chafer's sprite
+Weaves a bower in endless night.
+The caterpillar on the leaf
+Repeats to thee thy mother's grief.
+Kill not the moth nor butterfly,
+For the last judgement draweth nigh.
+He who shall train the horse to war
+Shall never pass the polar bar.
+The beggar's dog and widow's cat,
+Feed them and thou wilt grow fat.
+The gnat that sings his summer's song
+Poison gets from slander's tongue.
+The poison of the snake and newt
+Is the sweat of envy's foot.
+The poison of the honey bee
+Is the artist's jealousy.
+The prince's robes and beggar's rags
+Are toadstools on the miser's bags.
+A truth that's told with bad intent
+Beats all the lies you can invent.
+It is right it should be so;
+Man was made for joy and woe;
+And when this we rightly know,
+Thro' the world we safely go.
+Joy and woe are woven fine,
+A clothing for the soul divine.
+Under every grief and pine
+Runs a joy with silken twine.
+The babe is more than swaddling bands;
+Throughout all these human lands;
+Tools were made and born were hands,
+Every farmer understands.
+Every tear from every eye
+Becomes a babe in eternity;
+This is caught by females bright,
+And return'd to its own delight.
+The bleat, the bark, bellow, and roar,
+Are waves that beat on heaven's shore.
+The babe that weeps the rod beneath
+Writes revenge in realms of death.
+The beggar's rags, fluttering in air,
+Does to rags the heavens tear.
+The soldier, arm'd with sword and gun,
+Palsied strikes the summer's sun.
+The poor man's farthing is worth more
+Than all the gold on Afric's shore.
+One mite wrung from the lab'rer's hands
+Shall buy and sell the miser's lands;
+Or, if protected from on high,
+Does that whole nation sell and buy.
+He who mocks the infant's faith
+Shall be mock'd in age and death.
+He who shall teach the child to doubt
+The rotting grave shall ne'er get out.
+He who respects the infant's faith
+Triumphs over hell and death.
+The child's toys and the old man's reasons
+Are the fruits of the two seasons.
+The questioner, who sits so sly,
+Shall never know how to reply.
+He who replies to words of doubt
+Doth put the light of knowledge out.
+The strongest poison ever known
+Came from Caesar's laurel crown.
+Nought can deform the human race
+Like to the armour's iron brace.
+When gold and gems adorn the plow,
+To peaceful arts shall envy bow.
+A riddle, or the cricket's cry,
+Is to doubt a fit reply.
+The emmet's inch and eagle's mile
+Make lame philosophy to smile.
+He who doubts from what he sees
+Will ne'er believe, do what you please.
+If the sun and moon should doubt,
+They'd immediately go out.
+To be in a passion you good may do,
+But no good if a passion is in you.
+The whore and gambler, by the state
+Licensed, build that nation's fate.
+The harlot's cry from street to street
+Shall weave old England's winding-sheet.
+The winner's shout, the loser's curse,
+Dance before dead England's hearse.
+Every night and every morn
+Some to misery are born,
+Every morn and every night
+Some are born to sweet delight.
+Some are born to sweet delight,
+Some are born to endless night.
+We are led to believe a lie
+When we see not thro' the eye,
+Which was born in a night to perish in a night,
+When the soul slept in beams of light.
+God appears, and God is light,
+To those poor souls who dwell in night;
+But does a human form display
+To those who dwell in realms of day.
+")
+
+poem_p_91 = Poem.create(author_id: blake.id, book_id: pickering.id, title: "LONG JOHN BROWN & LITTLE MARY BELL", content: "
+Pretty Little Mary Bell had a Fairy in a Nut
+Young Long John Brown had the Devil in his Gut
+Young Long John Brown lovd Pretty Little Mary Bell
+And the Fairy drew the Devil into the Nut-shell
+
+Her Fairy skipd out & her Fairy skipd in
+He laughd at the Devil saying Love is a Sin
+The devil he raged & the Devil he was wroth
+And the devil enterd into the Young Mans broth
+
+He was soon in the Gut of the loving Young Swain
+For John eat & drank to drive away Loves pain
+But all he could do he grew thinner & thinner
+Tho he eat & drank as much as ten Men for his dinner
+
+Some said he had a Wolf in his stomach day & night
+Some said he had the Devil & they guessd right
+The fairy skipd about in his glory Joy & Pride
+And he laughd at the Devil till poor John Brown died
+
+Then the Fairy skipd out of the old Nut shell
+And woe & alack for Pretty Mary Bell
+For the Devil crept in when The Fairy skipd out
+And there goes Miss Bell with her fusty old Nut
+")
+
+poem_p_92 = Poem.create(author_id: blake.id, book_id: pickering.id, title: "WILLIAM BOND", content: "
+I wonder whether the Girls are mad
+And I wonder whether they mean to kill
+And I wonder if William Bond will die
+For assuredly he is very ill
+
+He went to Church in a May morning
+Attended by Fairies one two & three
+But the Angels Of Providence drove them away
+And he returnd home in Misery
+
+He went not out to the Field nor Fold
+He went not out to the Village nor Town
+But he came home in a black black cloud
+And took to his Bed & there lay down
+
+And an Angel of Providence at his Feet
+And an Angel of Providence at his Head
+And in the midst a Black Black Cloud
+And in the midst the Sick Man on his Bed
+
+And on his Right hand was Mary Green
+And on his Left hand was his Sister Jane
+And their tears fell thro the black black Cloud
+To drive away the sick mans pain
+
+O ⁠William if thou dost another Love
+Dost another Love better than poor Mary
+Go & take that other to be thy Wife
+And Mary Green shall her Servant be
+
+Yes Mary I do another Love
+Another I Love far better than thee
+And Another I will have for my Wife
+Then what have I to do with thee
+
+For thou art Melancholy Pale
+And on thy Head is the cold Moons shine
+But she is ruddy & bright as day
+And the sun beams dazzle from her eyne
+
+Mary trembled & Mary chilld
+And Mary fell down on the right hand floor
+That William Bond & his Sister Jane
+Scarce could recover Mary more
+
+When Mary woke & found her Laid
+On the Right hand of her William dear
+On the Right hand of his loved Bed
+And saw her William Bond so near
+
+The Fairies that fled from William Bond
+Danced around her Shining Head They danced over the Pillow white
+And the Angels of Providence left the Bed
+
+I thought Love livd in the hot sun Shine
+But O he lives in the Moony light
+I thought to find Love in the heat of day
+But sweet Love is the Comforter of Night
+
+Seek Love in the Pity of others Woe
+In the gentle relief of anothers care
+In the darkness of night & the winters snow
+In the naked & outcast Seek Love there
+")
+
+p "Pickering Manuscript done; Blake done, starting Yeats"
+
+poem_p_93 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Young Man's Song", content: "
+I whispered, 'I am too young,'
+And then, 'I am old enough';
+Wherefore I threw a penny
+To find out if I might love.
+'Go and love, go and love, young man,
+If the lady be young and fair,'
+Ah, penny, brown penny, brown penny,
+I am looped in the loops of her hair.
+
+Oh, love is the crooked thing,
+There is nobody wise enough
+To find out all that is in it,
+For he would be thinking of love
+Till the stars had run away,
+And the shadows eaten the moon.
+Ah, penny, brown penny, brown penny,
+One cannot begin it too soon.
+")
+
+poem_p_94 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Sorrow of Love", content: "
+The quarrel of the sparrows in the eaves,
+The full round moon and the star-laden sky,
+And the loud song of the ever-singing leaves,
+Had hid away earth's old and weary cry.
+
+And then you came with those red mournful lips,
+And with you came the whole of the world's tears,
+And all the sorrows of her labouring ships,
+And all the burden of her myriad years.
+
+And now the sparrows warring in the eaves,
+The curd-pale moon, the white stars in the sky,
+And the loud chaunting of the unquiet leaves
+Are shaken with earth's old and weary cry.
+")
+
+poem_p_95 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "An Irish Airman Foresees His Death", content: "
+I know that I shall meet my fate
+Somewhere among the clouds above;
+Those that I fight I do not hate
+Those that I guard I do not love;
+My country is Kiltartan Cross,
+My countrymen Kiltartan’s poor,
+No likely end could bring them loss
+Or leave them happier than before.
+Nor law, nor duty bade me fight,
+Nor public man, nor cheering crowds,
+A lonely impulse of delight
+Drove to this tumult in the clouds;
+I balanced all, brought all to mind,
+The years to come seemed waste of breath,
+A waste of breath the years behind
+In balance with this life, this death.
+")
+
+poem_p_96 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "When You Are Old", content: "
+When you are old and grey and full of sleep,
+And nodding by the fire, take down this book,
+And slowly read, and dream of the soft look
+Your eyes had once, and of their shadows deep;
+
+How many loved your moments of glad grace,
+And loved your beauty with love false or true,
+But one man loved the pilgrim soul in you,
+And loved the sorrows of your changing face;
+
+And bending down beside the glowing bars,
+Murmur, a little sadly, how Love fled
+And paced upon the mountains overhead
+And hid his face amid a crowd of stars.
+")
+
+poem_p_97 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Lake Isle of Innisfree", content: "
+I will arise and go now, and go to Innisfree,
+And a small cabin build there, of clay and wattles made:
+Nine bean-rows will I have there, a hive for the honey-bee;
+And live alone in the bee-loud glade.
+
+And I shall have some peace there, for peace comes dropping slow,
+Dropping from the veils of the morning to where the cricket sings;
+There midnight's all a glimmer, and noon a purple glow,
+And evening full of the linnet's wings.
+
+I will arise and go now, for always night and day
+I hear lake water lapping with low sounds by the shore;
+While I stand on the roadway, or on the pavements grey,
+I hear it in the deep heart's core.
+")
+
+poem_p_98 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "Leda and the Swan", content: "
+A sudden blow: the great wings beating still
+Above the staggering girl, her thighs caressed
+By the dark webs, her nape caught in his bill,
+He holds her helpless breast upon his breast.
+
+How can those terrified vague fingers push
+The feathered glory from her loosening thighs?
+And how can body, laid in that white rush,
+But feel the strange heart beating where it lies?
+
+A shudder in the loins engenders there
+The broken wall, the burning roof and tower
+And Agamemnon dead.
+                    Being so caught up,
+So mastered by the brute blood of the air,
+Did she put on his knowledge with his power
+Before the indifferent beak could let her drop?
+")
+
+poem_p_99 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Wild Swans at Coole", content: "
+The trees are in their autumn beauty,
+The woodland paths are dry,
+Under the October twilight the water
+Mirrors a still sky;
+Upon the brimming water among the stones
+Are nine and fifty swans.
+
+The nineteenth Autumn has come upon me
+Since I first made my count;
+I saw, before I had well finished,
+All suddenly mount
+And scatter wheeling in great broken rings
+Upon their clamorous wings.
+
+I have looked upon those brilliant creatures,
+And now my heart is sore.
+All's changed since I, hearing at twilight,
+The first time on this shore,
+The bell-beat of their wings above my head,
+Trod with a lighter tread.
+
+Unwearied still, lover by lover,
+They paddle in the cold,
+Companionable streams or climb the air;
+Their hearts have not grown old;
+Passion or conquest, wander where they will,
+Attend upon them still.
+
+But now they drift on the still water
+Mysterious, beautiful;
+Among what rushes will they build,
+By what lake's edge or pool
+Delight men's eyes, when I awake some day
+To find they have flown away?
+")
+
+poem_p_100 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Player Queen (Song from an Unfinished Play)", content: "
+My mother dandled me and sang,
+'How young it is, how young!'
+And made a golden cradle
+That on a willow swung.
+
+'He went away,' my mother sang,
+'When I was brought to bed,'
+And all the while her needle pulled
+The gold and silver thread.
+
+She pulled the thread and bit the thread
+And made a golden gown,
+And wept because she had dreamt that I
+Was born to wear a crown.
+
+'When she was got,' my mother sang,
+'I heard a sea-mew cry,
+And saw a flake of the yellow foam
+That dropped upon my thigh.'
+
+How therefore could she help but braid
+The gold into my hair,
+And dream that I should carry
+The golden top of care?
+")
+
+p "100 poems"
+
+poem_p_101 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "Adam's Curse", content: "
+We sat together at one summer's end,
+That beautiful mild woman, your close friend,
+And you and I, and talked of poetry.
+I said, 'A line will take us hours maybe;
+Yet if it does not seem a moment's thought,
+Our stitching and unstitching has been naught.
+Better go down upon your marrow-bones
+And scrub a kitchen pavement, or break stones
+Like an old pauper, in all kinds of weather;
+For to articulate sweet sounds together
+Is to work harder than all these, and yet
+Be thought an idler by the noisy set
+Of bankers, schoolmasters, and clergymen
+The martyrs call the world.'
+                            And thereupon
+That beautiful mild woman for whose sake
+There's many a one shall find out all heartache
+On finding that her voice is sweet and low
+Replied, 'To be born woman is to know—
+Although they do not talk of it at school—
+That we must labour to be beautiful.'
+I said, 'It's certain there is no fine thing
+Since Adam's fall but needs much labouring.
+There have been lovers who thought love should be
+So much compounded of high courtesy
+That they would sigh and quote with learned looks
+precedents out of beautiful old books;
+Yet now it seems an idle trade enough.'
+
+We sat grown quiet at the name of love;
+We saw the last embers of daylight die,
+And in the trembling blue-green of the sky
+A moon, worn as if it had been a shell
+Washed by time's waters as they rose and fell
+About the stars and broke in days and years.
+I had a thought for no one's but your ears:
+That you were beautiful, and that I strove
+To love you in the old high way of love;
+That it had all seemed happy, and yet we'd grown
+As weary-hearted as that hollow moon.
+")
+
+poem_p_102 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "A Drinking Song", content: "
+Wine comes in at the mouth
+And love comes in at the eye;
+That’s all we shall know for truth
+Before we grow old and die.
+I lift the glass to my mouth,
+I look at you, and I sigh.
+")
+
+poem_p_103 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Fisherman", content: "
+Although I can see him still,
+The freckled man who goes
+To a grey place on a hill
+In grey Connemara clothes
+At dawn to cast his flies,
+It's long since I began
+To call up to the eyes
+This wise and simple man.
+All day I'd looked in the face
+What I had hoped 'twould be
+To write for my own race
+And the reality;
+The living men that I hate,
+The dead man that I loved,
+The craven man in his seat,
+The insolent unreproved,
+And no knave brought to book
+Who has won a drunken cheer,
+The witty man and his joke
+Aimed at the commonest ear,
+The clever man who cries
+The catch-cries of the clown,
+The beating down of the wise
+And great Art beaten down.
+
+Maybe a twelvemonth since
+Suddenly I began,
+In scorn of this audience,
+Imagining a man,
+And his sun-freckled face,
+And grey Connemara cloth,
+Climbing up to a place
+Where stone is dark under froth,
+And the down-turn of his wrist
+When the flies drop in the stream;
+A man who does not exist,
+A man who is but a dream;
+And cried, 'Before I am old
+I shall have written him one
+Poem maybe as cold
+And passionate as the dawn.'
+")
+
+poem_p_104 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "Who goes with Fergus?", content: "
+Who will go drive with Fergus now,
+And pierce the deep wood's woven shade,
+And dance upon the level shore?
+Young man, lift up your russet brow,
+And lift your tender eyelids, maid,
+And brood on hopes and fear no more.
+
+And no more turn aside and brood
+Upon love's bitter mystery;
+For Fergus rules the brazen cars,
+And rules the shadows of the wood,
+And the white breast of the dim sea
+And all dishevelled wandering stars.
+")
+
+poem_p_105 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Magi", content: "
+Now as at all times I can see in the mind's eye,
+In their stiff, painted clothes, the pale unsatisfied ones
+Appear and disappear in the blue depth of the sky
+With all their ancient faces like rain-beaten stones,
+And all their helms of silver hovering side by side,
+And all their eyes still fixed, hoping to find once more,
+Being by Calvary's turbulence unsatisfied,
+The uncontrollable mystery on the bestial floor.
+")
+
+poem_p_106 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Balloon of the Mind", content: "
+Hands, do what you're bid:
+Bring the balloon of the mind
+That bellies and drags in the wind
+Into its narrow shed.
+")
+
+poem_p_107 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Moods", content: "
+Time drops in decay,
+Like a candle burnt out,
+And the mountains and the woods
+Have their day, have their day;
+What one in the rout
+Of the fire-born moods
+Has fallen away?
+")
+
+poem_p_108 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Living Beauty", content: "
+I'll say and maybe dream I have drawn content—
+Seeing that time has frozen up the blood,
+The wick of youth being burned and the oil spent—
+From beauty that is cast out of a mould
+In bronze, or that in dazzling marble appears,
+Appears, but when we have gone is gone again,
+Being more indifferent to our solitude
+Than 'twere an apparition. O heart, we are old,
+The living beauty is for younger men,
+We cannot pay its tribute of wild tears.
+")
+
+poem_p_109 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "THE LAMENTATION OF THE OLD PENSIONER", content: "
+Although I shelter from the rain
+Under a broken tree
+My chair was nearest to the fire
+In every company
+That talked of love or politics,
+Ere Time transfigured me.
+
+Though lads are making pikes again
+For some conspiracy,
+And crazy rascals rage their fill
+At human tyranny,
+My contemplations are of Time
+That has transfigured me.
+
+There's not a woman turns her face
+Upon a broken tree,
+And yet the beauties that I loved
+Are in my memory;
+I spit into the face of Time
+That has transfigured me.
+")
+
+poem_p_110 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "NO SECOND TROY", content: "
+Why should I blame her that she filled my days
+With misery, or that she would of late
+Have taught to ignorant men most violent ways,
+Or hurled the little streets upon the great,
+Had they but courage equal to desire?
+What could have made her peaceful with a mind
+That nobleness made simple as a fire,
+With beauty like a tightened bow, a kind
+That is not natural in an age like this,
+Being high and solitary and most stern?
+Why, what could she have done, being what she is?
+Was there another Troy for her to burn?
+")
+
+poem_p_111 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "THE SECOND COMING", content: "
+Turning and turning in the widening gyre
+The falcon cannot hear the falconer;
+Things fall apart; the centre cannot hold;
+Mere anarchy is loosed upon the world,
+The blood-dimmed tide is loosed, and everywhere
+The ceremony of innocence is drowned;
+The best lack all conviction, while the worst
+Are full of passionate intensity.
+
+Surely some revelation is at hand;
+Surely the Second Coming is at hand.
+The Second Coming! Hardly are those words out
+When a vast image out of Spiritus Mundi
+Troubles my sight: somewhere in the sands of the desert
+A shape with lion body and the head of a man,
+A gaze blank and pitiless as the sun,
+Is moving its slow thighs, while all about it
+Reel shadows of the indignant desert birds.
+The darkness drops again; but now I know
+That twenty centuries of stony sleep
+Were vexed to nightmare by a rocking cradle,
+And what rough beast, its hour come round at last,
+Slouches towards Bethlehem to be born?
+")
+
+poem_p_112 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "John Kinsella's Lament for Mrs. Mary Moore", content: "
+A bloody and a sudden end,
+     Gunshot or a noose,
+For Death who takes what man would keep,
+     Leaves what man would lose.
+He might have had my sister,
+     My cousins by the score,
+But nothing satisfied the fool
+     But my dear Mary Moore,
+None other knows what pleasures man
+     At table or in bed.
+/What shall I do for pretty girls
+Now my old bawd is dead?/
+
+Though stiff to strike a bargain
+     Like an old Jew man,
+Her bargain stuck we laughed and talked
+     And emptied many a can;
+And O! but she had stories,
+     Though not for the priest's ear,
+To keep the soul of man alive,
+     Banish age and care,
+And being old she put a skin
+     On everything she said.
+/What shall I do for pretty girls
+Now my old bawd is dead?/
+
+The priests have got a book that says
+     But for Adam's sin
+Eden's Garden would be there
+     And I there within.
+No expectation fails there,
+     No pleasing habit ends,
+No man grows old, no girl grows cold,
+     But friends walk by friends.
+Who quarrels over halfpennies
+     That plucks the trees for bread?
+/What shall I do for pretty girls
+Now my old bawd is dead?/
+")
+
+poem_p_113 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "Politics", content: "
+'In our time the destiny of man presents its meanings in political terms.'
+                                                                 THOMAS MANN.
+
+How can I, that girl standing there,
+My attention fix
+On Roman or on Russian
+Or on Spanish politics,
+Yet here's a travelled man that knows
+What he talks about,
+And there's a politician
+That has both read and thought,
+And maybe what they say is true
+Of war and war's alarms,
+But O that I were young again
+And held her in my arms.
+")
+
+poem_p_114 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "Crazy Jane Talks with the Bishop", content: "
+I met the Bishop on the road
+And much said he and I.
+`Those breasts are flat and fallen now
+Those veins must soon be dry;
+Live in a heavenly mansion,
+Not in some foul sty.'
+
+`Fair and foul are near of kin,
+And fair needs foul,' I cried.
+'My friends are gone, but that's a truth
+Nor grave nor bed denied,
+Learned in bodily lowliness
+And in the heart's pride.
+
+`A woman can be proud and stiff
+When on love intent;
+But Love has pitched his mansion in
+The place of excrement;
+For nothing can be sole or whole
+That has not been rent.'
+")
+
+poem_p_115 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Rose of Battle", content: "
+Rose of all Roses, Rose of all the World!
+The tall thought-woven sails, that flap unfurled
+Above the tide of hours, trouble the air,
+And God's bell buoyed to be the water's care;
+While hushed from fear, or loud with hope, a band
+With blown, spray-dabbled hair gather at hand,
+Turn if you may from battles never done,
+I call, as they go by me one by one,
+Danger no refuge holds, and war no peace,
+For him who hears love sing and never cease,
+Beside her clean-swept hearth, her quiet shade:
+But gather all for whom no love hath made
+A woven silence, or but came to cast
+A song into the air, and singing passed
+To smile on the pale dawn; and gather you
+Who have sought more than is in rain or dew,
+Or in the sun and moon, or on the earth,
+Or sighs amid the wandering, starry mirth,
+Or comes in laughter from the sea's sad lips,
+And wage God's battles in the long grey ships.
+The sad, the lonely, the insatiable,
+To these Old Night shall all her mystery tell;
+God's bell has claimed them by the little cry
+Of their sad hearts, that may not live nor die.
+Rose of all Roses, Rose of all the World!
+You, too, have come where the dim tides are hurled
+Upon the wharves of sorrow, and heard ring
+The bell that calls us on; the sweet far thing.
+Beauty grown sad with its eternity
+Made you of us, and of the dim grey sea.
+Our long ships loose thought-woven sails and wait,
+For God has bid them share an equal fate;
+And when at last, defeated in His wars,
+They have gone down under the same white stars,
+We shall no longer hear the little cry
+Of our sad hearts, that may not live nor die.
+")
+
+poem_p_116 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "Sailing to Byzantium", content: "
+That is no country for old men. The young
+In one another's arms, birds in the trees
+—Those dying generations—at their song,
+The salmon-falls, the mackerel-crowded seas,
+Fish, flesh, or fowl, commend all summer long
+Whatever is begotten, born, and dies.
+Caught in that sensual music all neglect
+Monuments of unageing intellect.
+
+An aged man is but a paltry thing,
+A tattered coat upon a stick, unless
+Soul clap its hands and sing, and louder sing
+For every tatter in its mortal dress,
+Nor is there singing school but studying
+Monuments of its own magnificence;
+And therefore I have sailed the seas and come
+To the holy city of Byzantium.
+
+O sages standing in God's holy fire
+As in the gold mosaic of a wall,
+Come from the holy fire, perne in a gyre,
+And be the singing-masters of my soul.
+Consume my heart away; sick with desire
+And fastened to a dying animal
+It knows not what it is; and gather me
+Into the artifice of eternity.
+
+Once out of nature I shall never take
+My bodily form from any natural thing,
+But such a form as Grecian goldsmiths make
+Of hammered gold and gold enamelling
+To keep a drowsy Emperor awake;
+Or set upon a golden bough to sing
+To lords and ladies of Byzantium
+Of what is past, or passing, or to come.
+")
+
+poem_p_117 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "A Prayer for my Daughter", content: "
+Once more the storm is howling, and half hid
+Under this cradle-hood and coverlid
+My child sleeps on. There is no obstacle
+But Gregory's wood and one bare hill
+Whereby the haystack- and roof-levelling wind,
+Bred on the Atlantic, can be stayed;
+And for an hour I have walked and prayed
+Because of the great gloom that is in my mind.
+
+I have walked and prayed for this young child an hour
+And heard the sea-wind scream upon the tower,
+And under the arches of the bridge, and scream
+In the elms above the flooded stream;
+Imagining in excited reverie
+That the future years had come,
+Dancing to a frenzied drum,
+Out of the murderous innocence of the sea.
+
+May she be granted beauty and yet not
+Beauty to make a stranger's eye distraught,
+Or hers before a looking-glass, for such,
+Being made beautiful overmuch,
+Consider beauty a sufficient end,
+Lose natural kindness and maybe
+The heart-revealing intimacy
+That chooses right, and never find a friend.
+
+Helen being chosen found life flat and dull
+And later had much trouble from a fool,
+While that great Queen, that rose out of the spray,
+Being fatherless could have her way
+Yet chose a bandy-leggèd smith for man.
+It's certain that fine women eat
+A crazy salad with their meat
+Whereby the Horn of Plenty is undone.
+
+In courtesy I'd have her chiefly learned;
+Hearts are not had as a gift but hearts are earned
+By those that are not entirely beautiful;
+Yet many, that have played the fool
+For beauty's very self, has charm made wise,
+And many a poor man that has roved,
+Loved and thought himself beloved,
+From a glad kindness cannot take his eyes.
+
+May she become a flourishing hidden tree
+That all her thoughts may like the linnet be,
+And have no business but dispensing round
+Their magnanimities of sound,
+Nor but in merriment begin a chase,
+Nor but in merriment a quarrel.
+O may she live like some green laurel
+Rooted in one dear perpetual place.
+
+My mind, because the minds that I have loved,
+The sort of beauty that I have approved,
+Prosper but little, has dried up of late,
+Yet knows that to be choked with hate
+May well be of all evil chances chief.
+If there's no hatred in a mind
+Assault and battery of the wind
+Can never tear the linnet from the leaf.
+
+An intellectual hatred is the worst,
+So let her think opinions are accursed.
+Have I not seen the loveliest woman born
+Out of the mouth of Plenty's horn,
+Because of her opinionated mind
+Barter that horn and every good
+By quiet natures understood
+For an old bellows full of angry wind?
+
+Considering that, all hatred driven hence,
+The soul recovers radical innocence
+And learns at last that it is self-delighting,
+Self-appeasing, self-affrighting,
+And that its own sweet will is Heaven's will;
+She can, though every face should scowl
+And every windy quarter howl
+Or every bellows burst, be happy still.
+
+And may her bridegroom bring her to a house
+Where all's accustomed, ceremonious;
+For arrogance and hatred are the wares
+Peddled in the thoroughfares.
+How but in custom and in ceremony
+Are innocence and beauty born?
+Ceremony's a name for the rich horn,
+And custom for the spreading laurel tree.
+")
+
+poem_p_118 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "Never give all the heart", content: "
+Never give all the heart, for love
+Will hardly seem worth thinking of
+To passionate women if it seem
+Certain, and they never dream
+That it fades out from kiss to kiss;
+For everything that's lovely is
+But a brief, dreamy, kind delight.
+O never give the heart outright,
+For they, for all smooth lips can say,
+Have given their hearts up to the play.
+And who could play it well enough
+If deaf and dumb and blind with love?
+He that made this knows all the cost,
+For he gave all his heart and lost.
+")
+
+poem_p_119 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "Easter, 1916", content: "
+I have met them at close of day
+Coming with vivid faces
+From counter or desk among grey
+Eighteenth-century houses.
+I have passed with a nod of the head
+Or polite meaningless words,
+Or have lingered awhile and said
+Polite meaningless words,
+And thought before I had done
+Of a mocking tale or a gibe
+To please a companion
+Around the fire at the club,
+Being certain that they and I
+But lived where motley is worn:
+All changed, changed utterly:
+A terrible beauty is born.
+
+That woman's days were spent
+In ignorant good-will,
+Her nights in argument
+Until her voice grew shrill.
+What voice more sweet than hers
+When, young and beautiful,
+She rode to harriers?
+This man had kept a school
+And rode our wingèd horse;
+This other his helper and friend
+Was coming into his force;
+He might have won fame in the end,
+So sensitive his nature seemed,
+So daring and sweet his thought.
+This other man I had dreamed
+A drunken, vainglorious lout.
+He had done most bitter wrong
+To some who are near my heart,
+Yet I number him in the song;
+He, too, has resigned his part
+In the casual comedy;
+He, too, has been changed in his turn,
+Transformed utterly:
+A terrible beauty is born.
+
+Hearts with one purpose alone
+Through summer and winter seem
+Enchanted to a stone
+To trouble the living stream.
+The horse that comes from the road,
+The rider, the birds that range
+From cloud to tumbling cloud,
+Minute by minute they change;
+A shadow of cloud on the stream
+Changes minute by minute;
+A horse-hoof slides on the brim,
+And a horse plashes within it;
+The long-legged moor-hens dive,
+And hens to moor-cocks call;
+Minute to minute they live;
+The stone's in the midst of all.
+
+Too long a sacrifice
+Can make a stone of the heart.
+O when may it suffice?
+That is Heaven's part, our part
+To murmur name upon name,
+As a mother names her child
+When sleep at last has come
+On limbs that had run wild.
+What is it but nightfall?
+No, no, not night but death;
+Was it needless death after all?
+For England may keep faith
+For all that is done and said.
+We know their dream; enough
+To know they dreamed and are dead;
+And what if excess of love
+Bewildered them till they died?
+I write it out in a verse—
+MacDonagh and MacBride
+And Connolly and Pearse
+Now and in time to be,
+Wherever green is worn,
+Are changed, changed utterly:
+A terrible beauty is born.
+")
+
+poem_p_120 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "EAedh Wishes for the Cloths of Heaven", content: "
+Had I the heavens' embroidered cloths,
+Enwrought with golden and silver light,
+The blue and the dim and the dark cloths
+Of night and light and the half light,
+I would spread the cloths under your feet:
+But I, being poor, have only my dreams;
+I have spread my dreams under your feet;
+Tread softly because you tread on my dreams.
+")
+
+poem_p_121 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Stolen Child", content: "
+Where dips the rocky highland
+Of Sleuth Wood in the lake,
+There lies a leafy island
+Where flapping herons wake
+The drowsy water rats;
+There we've hid our faery vats,
+Full of berrys
+And of reddest stolen cherries.
+Come away, O human child!
+To the waters and the wild
+With a faery, hand in hand,
+For the world's more full of weeping than you can understand.
+
+Where the wave of moonlight glosses
+The dim gray sands with light,
+Far off by furthest Rosses
+We foot it all the night,
+Weaving olden dances
+Mingling hands and mingling glances
+Till the moon has taken flight;
+To and fro we leap
+And chase the frothy bubbles,
+While the world is full of troubles
+And anxious in its sleep.
+Come away, O human child!
+To the waters and the wild
+With a faery, hand in hand,
+For the world's more full of weeping than you can understand.
+
+Where the wandering water gushes
+From the hills above Glen-Car,
+In pools among the rushes
+That scarce could bathe a star,
+We seek for slumbering trout
+And whispering in their ears
+Give them unquiet dreams;
+Leaning softly out
+From ferns that drop their tears
+Over the young streams.
+Come away, O human child!
+To the waters and the wild
+With a faery, hand in hand,
+For the world's more full of weeping than you can understand.
+
+Away with us he's going,
+The solemn-eyed:
+He'll hear no more the lowing
+Of the calves on the warm hillside
+Or the kettle on the hob
+Sing peace into his breast,
+Or see the brown mice bob
+Round and round the oatmeal chest.
+For he comes, the human child,
+To the waters and the wild
+With a faery, hand in hand,
+For the world's more full of weeping than he can understand.
+")
