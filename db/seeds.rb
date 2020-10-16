@@ -17,8 +17,10 @@ rossetti_2 = Book.create(author_id: blake.id, title: "Poems from the Rossetti Ma
 pickering = Book.create(author_id: blake.id, title: "The Pickering Manuscript", year: "c.1801-3")
 
 yeats = Author.create(name: "William Butler Yeats")
-
 poems = Book.create(author_id: yeats.id, title: "The Poems", year: "1865-1939")
+
+bukowski = Author.create(name: "Charles Bukowski")
+poems_b = Book.create(author_id: bukowski.id, title: "The Poems", year: "1920-1994")
 
 poem_i_1 = Poem.create(author_id: blake.id, book_id: innocence.id, title: "INTRODUCTION", content: "
 Piping down the valleys wild,
@@ -3784,4 +3786,681 @@ These stones remain their monument and mine.
 
 p "yeats done"
 
+poem_135 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "8 Count", content: "
+from my bed
+I watch
+3 birds
+on a telephone
+wire.
+one flies
+off.
+then
+another.
+one is left,
+then
+it too
+is gone.
+my typewriter is
+tombstone
+still.
+and I am
+reduced to bird
+watching.
+just thought I'd
+let you
+know,
+fucker.
+")
+
+poem_136 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "A Challenge To The Dark", content: "
+shot
+shot
+shot
+shot
+in the eye
+in the brain
+in the ass
+like a flower in the dance
+")
+
+poem_137 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "A Radio With Guts", content: "
+it was on the 2nd floor on Coronado Street
+I used to get drunk
+and throw the radio through the window
+while it was playing, and, of course,
+it would break the glass in the window
+and the radio would sit there on the roof
+still playing
+and I'd tell my woman,
+&quot;Ah, what a marvelous radio!&quot;
+the next morning I'd take the window
+off the hinges
+and carry it down the street
+to the glass man
+who would put in another pane.
+I kept throwing that radio through the window
+each time I got drunk
+and it would sit there on the roof
+still playing-
+a magic radio
+a radio with guts,
+and each morning I'd take the window
+back to the glass man.
+I don't remember how it ended exactly
+though I do remember
+we finally moved out.
+there was a woman downstairs who worked in
+the garden in her bathing suit,
+she really dug with that trowel
+and she put her behind up in the air
+and I used to sit in the window
+and watch the sun shine all over that thing
+while the music played.
+")
+
+poem_138 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "a smile to remember", content: "
+we had goldfish and they circled around and around
+in the bowl on the table near the heavy drapes
+covering the picture window and
+my mother, always smiling, wanting us all
+to be happy, told me, 'be happy Henry!''
+and she was right: it's better to be happy if you
+can
+but my father continued to beat her and me several times a week while
+raging inside his 6-foot-two frame because he couldn't
+understand what was attacking him from within.
+my mother, poor fish,
+wanting to be happy, beaten two or three times a
+week, telling me to be happy: 'Henry, smile!
+why don't you ever smile?''
+and then she would smile, to show me how, and it was the
+saddest smile I ever saw
+one day the goldfish died, all five of them,
+they floated on the water, on their sides, their
+eyes still open,
+and when my father got home he threw them to the cat
+there on the kitchen floor and we watched as my mother
+smiled
+")
+
+poem_139 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Alone With Everybody", content: "
+the flesh covers the bone
+and they put a mind
+in there and
+sometimes a soul,
+and the women break
+vases against the walls
+and the men drink too
+much
+and nobody finds the
+one
+but keep
+looking
+crawling in and out
+of beds.
+flesh covers
+the bone and the
+flesh searches
+for more than
+flesh.
+there's no chance
+at all:
+we are all trapped
+by a singular
+fate.
+nobody ever finds
+the one.
+the
+the
+the
+the
+the
+city dumps fill
+junkyards fill
+madhouses fill
+hospitals fill
+graveyards fill
+nothing else
+fills.
+Anonymous submission.
+")
+
+poem_140 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "An Almost Made Up Poem", content: "
+I see you drinking at a fountain with tiny
+blue hands, no, your hands are not tiny
+they are small, and the fountain is in France
+where you wrote me that last letter and
+I answered and never heard from you again.
+you used to write insane poems about
+ANGELS AND GOD, all in upper case, and you
+knew famous artists and most of them
+were your lovers, and I wrote back, it&#146; all right,
+go ahead, enter their lives, I&#146; not jealous
+because we&#146; never met. we got close once in
+New Orleans, one half block, but never met, never
+touched. so you went with the famous and wrote
+about the famous, and, of course, what you found out
+is that the famous are worried about
+their fame &#150;&#150; not the beautiful young girl in bed
+with them, who gives them that, and then awakens
+in the morning to write upper case poems about
+ANGELS AND GOD. we know God is dead, they&#146; told
+us, but listening to you I wasn&#146; sure. maybe
+it was the upper case. you were one of the
+best female poets and I told the publishers,
+editors, &#147; her, print her, she&#146; mad but she&#146;
+magic. there&#146; no lie in her fire.&#148; I loved you
+like a man loves a woman he never touches, only
+writes to, keeps little photographs of. I would have
+loved you more if I had sat in a small room rolling a
+cigarette and listened to you piss in the bathroom,
+but that didn&#146; happen. your letters got sadder.
+your lovers betrayed you. kid, I wrote back, all
+lovers betray. it didn&#146; help. you said
+you had a crying bench and it was by a bridge and
+the bridge was over a river and you sat on the crying
+bench every night and wept for the lovers who had
+hurt and forgotten you. I wrote back but never
+heard again. a friend wrote me of your suicide
+3 or 4 months after it happened. if I had met you
+I would probably have been unfair to you or you
+to me. it was best like this.
+")
+
+poem_141 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "And The Moon And The Stars And The World", content: "
+Long walks at night--
+that's what good for the soul:
+peeking into windows
+watching tired housewives
+trying to fight off
+their beer-maddened husbands.
+")
+
+poem_142 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Another Day", content: "
+having the low down blues and going
+into a restraunt to eat.
+you sit at a table.
+the waitress smiles at you.
+she's dumpy. her ass is too big.
+she radiates kindess and symphaty.
+live with her 3 months and a man would no real agony.
+o.k., you'll tip her 15 percent.
+you order a turkey sandwich and a
+beer.
+the man at the table across from you
+has watery blue eyes and
+a head like an elephant.
+at a table further down are 3 men
+with very tiny heads
+and long necks
+like ostiches.
+they talk loudly of land development.
+why, you think, did I ever come
+in here when I have the low-down
+blues?
+then the the waitress comes back eith the sandwich
+and she asks you if there will be anything
+else?
+snd you tell her, no no, this will be
+fine.
+then somebody behind you laughs.
+it's a cork laugh filled with sand and
+broken glass.
+you begin eating the sandwhich.
+it's something.
+it's a minor, difficult,
+sensible action
+like composing a popular song
+to make a 14-year old
+weep.
+you order another beer.
+jesus,look at that guy
+his hands hang down almost to his knees and he's
+whistling.
+well, time to get out.
+pivk up the bill.
+tip.
+go to the register.
+pay.
+pick up a toothpick.
+go out the door.
+your car is still there.
+and there are 3 men with heads
+and necks
+")
+
+poem_143 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Are You Drinking?", content: "
+washed-up, on shore, the old yellow notebook
+out again
+I write from the bed
+as I did last
+year.
+will see the doctor,
+Monday.
+&quot;yes, doctor, weak legs, vertigo, head-
+aches and my back
+hurts.&quot;
+&quot;are you drinking?&quot; he will ask.
+&quot;are you getting your
+exercise, your
+vitamins?&quot;
+I think that I am just ill
+with life, the same stale yet
+fluctuating
+factors.
+even at the track
+I watch the horses run by
+and it seems
+meaningless.
+I leave early after buying tickets on the
+remaining races.
+&quot;taking off?&quot; asks the motel
+clerk.
+&quot;yes, it's boring,&quot;
+I tell him.
+&quot;If you think it's boring
+out there,&quot; he tells me, &quot;you oughta be
+back here.&quot;
+so here I am
+propped up against my pillows
+again
+just an old guy
+just an old writer
+with a yellow
+notebook.
+something is
+walking across the
+floor
+toward
+me.
+oh, it's just
+my cat
+this
+time.
+")
+
+poem_144 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "As The Poems Go", content: "
+as the poems go into the thousands you
+realize that you've created very
+little.
+")
+
+poem_145 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "As The Sparrow", content: "
+To give life you must take life,
+and as our grief falls flat and hollow
+upon the billion-blooded sea
+I pass upon serious inward-breaking shoals rimmed
+with white-legged, white-bellied rotting creatures
+lengthily dead and rioting against surrounding scenes.
+Dear child, I only did to you what the sparrow
+did to you; I am old when it is fashionable to be
+young; I cry when it is fashionable to laugh.
+I hated you when it would have taken less courage
+to love.
+")
+
+poem_146 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "back to the machine gun", content: "
+I awaken about noon and go out to get the mail
+in my old torn bathrobe.
+I'm hung over
+hair down in my eyes
+barefoot
+gingerly walking on the small sharp rocks
+in my path
+still afraid of pain behind my four-day beard.
+
+the young housewife next door shakes a rug
+out of her window and sees me:
+'hello, Hank!'
+
+god damn! it's almost like being shot in the ass
+with a .22
+
+'hello,' I say
+gathering up my Visa card bill, my Pennysaver coupons,
+a Dept. of Water and Power past-due notice,
+a letter from the mortgage people
+plus a demand from the Weed Abatement Department
+giving me 30 days to clean up my act.
+
+I mince back again over the small sharp rocks
+thinking, maybe I'd better write something tonight,
+they all seem
+to be closing in.
+
+there's only one way to handle those motherfuckers.
+
+the night harness races will have to wait.
+")
+
+poem_147 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Be Kind", content: "
+to understand the other person's
+viewpoint
+no matter how
+out-dated
+foolish or
+obnoxious.
+")
+
+poem_148 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Big Night On The Town", content: "
+drunk on the dark streets of some city,
+it's night, you're lost, where's your
+room?
+you enter a bar to find yourself,
+order scotch and water.
+damned bar's sloppy wet, it soaks
+part of one of your shirt
+sleeves.
+It's a clip joint-the scotch is weak.
+you order a bottle of beer.
+Madame Death walks up to you
+wearing a dress.
+she sits down, you buy her a
+beer, she stinks of swamps, presses
+a leg against you.
+the bar tender sneers.
+you've got him worried, he doesn't
+know if you're a cop, a killer, a
+madman or an
+Idiot.
+you ask for a vodka.
+you pour the vodka into the top of
+the beer bottle.
+It's one a.m. In a dead cow world.
+you ask her how much for head,
+drink everything down, it tastes
+like machine oil.
+
+you leave Madame Death there,
+you leave the sneering bartender
+there.
+
+you have remembered where
+your room is.
+the room with the full bottle of
+wine on the dresser.
+the room with the dance of the
+roaches.
+Perfection in the Star Turd
+where love died
+laughing.
+")
+
+poem_149 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Bluebird", content: "
+here's a bluebird in my heart that
+wants to get out
+but I'm too tough for him,
+I say, stay in there, I'm not going
+to let anybody see
+you.
+")
+
+poem_150 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Carson McCullers", content: "
+she died of alcoholism
+wrapped in a blanket
+on a deck chair
+on an ocean
+steamer.
+
+all her books of
+terrified loneliness
+
+all her books about
+the cruelty
+of loveless love
+
+were all that was left
+of her
+
+as the strolling vacationer
+discovered her body
+
+notified the captain
+
+and she was quickly dispatched
+to somewhere else
+on the ship
+
+as everything
+continued just
+as
+she had written it
+")
+
+poem_151 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Cause And Effect", content: "
+the best often die by their own hand
+just to get away,
+and those left behind
+can never quite understand
+why anybody
+would ever want to
+get away
+from
+them
+")
+
+poem_152 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "close to greatness", content: "
+at one stage in my life
+I met a man who claimed to have
+visited Pound at St. Elizabeths.
+
+then I met a woman who not only
+claimed to have visited
+E.P.
+but also to have made love
+to him—she even showed
+me
+certain sections in the
+Cantos
+where Ezra was supposed to have
+mentioned
+her.
+
+so there was this man and
+this woman
+and the woman told me
+that Pound had never
+mentioned a visit from this
+man
+and the man claimed that the
+lady had had nothing to do
+with the
+master
+that she was a
+charlatan
+
+and since I wasn't a
+Poundian scholar
+I didn't know who to
+believe
+but one thing I do
+know: when a man is
+living
+many claim relationships
+that are hardly
+so
+and after he dies, well,
+then it's everybody's
+party.
+
+my guess is that Pound
+knew neither the lady or the
+gentleman
+
+or if he knew
+one
+or if he knew
+both
+")
+
+poem_153 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Confession", content: "
+waiting for death
+like a cat
+that will jump on the
+bed
+
+I am so very sorry for
+my wife
+
+she will see this
+stiff
+white
+body
+shake it once, then
+maybe
+again
+
+'Hank!'
+
+Hank won't
+answer.
+
+it's not my death that
+worries me, it's my wife
+left with this
+pile of
+nothing.
+
+I want to
+let her know
+though
+that all the nights
+sleeping
+beside her
+
+even the useless
+arguments
+were things
+ever splendid
+
+and the hard
+words
+I ever feared to
+say
+can now be
+said:
+
+I love
+you.
+")
+
+poem_154 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Consummation Of Grief", content: "
+I even hear the mountains
+the way they laugh
+up and down their blue sides
+and down in the water
+the fish cry
+and the water
+is their tears.
+I listen to the water
+on nights I drink away
+and the sadness becomes so great
+I hear it in my clock
+it becomes knobs upon my dresser
+it becomes paper on the floor
+it becomes a shoehorn
+a laundry ticket
+it becomes
+cigarette smoke
+climbing a chapel of dark vines. . .
+it matters little
+very little love is not so bad
+or very little life
+what counts
+is waiting on walls
+I was born for this
+I was born to hustle roses down the avenues of the dead.
+")
+
+poem_155 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Cows In Art Class", content: "
+ood weather
+is like
+good women-
+it doesn't always happen
+and when it does
+it doesn't
+always last.
+man is
+more stable:
+if he's bad
+there's more chance
+he'll stay that way,
+or if he's good
+he might hang
+on,
+but a woman
+is changed
+by
+children
+age
+diet
+conversation
+sex
+the moon
+the absence or
+presence of sun
+or good times.
+a woman must be nursed
+into subsistence
+by love
+where a man can become
+stronger
+by being hated.
+")
+
+poem_156 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Curtain", content: "
+the final curtain on one of the longest running
+musicals ever, some people claim to have
+seen it over one hundred times.
+I saw it on the tv news, that final curtain:
+flowers, cheers, tears, a thunderous
+accolade.
+I have not seen this particular musical
+but I know if I had that I wouldn't have
+been able to bear it, it would have
+sickened me.
+trust me on this, the world and its
+peoples and its artful entertainment has
+done very little for me, only to me.
+still, let them enjoy one another, it will
+keep them from my door
+and for this, my own thunderous
+accolade.
+")
+
+poem_157 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Cut While Shaving", content: "
+It's never quite right, he said, the way people look,
+the way the music sounds, the way the words are
+written.
+It's never quite right, he said, all the things we are
+taught, all the loves we chase, all the deaths we
+die, all the lives we live,
+they are never quite right,
+they are hardly close to right,
+these lives we live
+one after the other,
+piled there as history,
+the waste of the species,
+the crushing of the light and the way,
+it's not quite right,
+it's hardly right at all
+he said.
+
+don't I know it? I
+answered.
+
+I walked away from the mirror.
+it was morning, it was afternoon, it was
+night
+
+nothing changed
+it was locked in place.
+something flashed, something broke, something
+remained.
+
+I walked down the stairway and
+into it.
+
+Submitted by Tom
+")
 
