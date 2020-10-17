@@ -4460,7 +4460,803 @@ remained.
 
 I walked down the stairway and
 into it.
+")
 
-Submitted by Tom
+poem_158 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Decline", content: "
+naked along the side of the house,
+8 a.m., spreading sesame seed oil
+over my body, Jesus, have I come
+to this?
+I once battled in dark alleys for a
+laugh.
+now I'm not laughing.
+I splash myself with oil and wonder,
+how many years do you want?
+how many days?
+my blood is soiled and a dark
+angel sits in my brain.
+things are made of something and
+go to nothing.
+I understand the fall of cities, of
+nations.
+a small plane passes overhead.
+I look upward as if it made sense to
+look upward.
+it's true, the sky has rotted:
+it won't be long for any of
+us.
+")
+
+poem_159 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Eat Your Heart Out", content: "
+I've come by, she says, to tell you
+that this is it. I'm not kidding, it's
+over. this is it.
+I sit on the couch watching her arrange
+her long red hair before my bedroom
+mirror.
+she pulls her hair up and
+piles it on top of her head-
+she lets her eyes look at
+my eyes-
+then she drops her hair and
+lets it fall down in front of her face.
+we go to bed and I hold her
+speechlessly from the back
+my arm around her neck
+I touch her wrists and hands
+feel up to
+her elbows
+no further.
+she gets up.
+this is it, she says,
+this will do. well,
+I'm going.
+I get up and walk her
+to the door
+just as she leaves
+she says,
+I want you to buy me
+some high-heeled shoes
+with tall thin spikes,
+black high-heeled shoes.
+no, I want them
+red.
+I watch her walk down the cement walk
+under the trees
+she walks all right and
+as the pointsettas drip in the sun
+I close the door.
+")
+
+poem_160 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Eulogy To A Hell Of A Dame", content: "
+some dogs who sleep At night
+must dream of bones
+and I remember your bones
+in flesh
+and best
+in that dark green dress
+and those high-heeled bright
+black shoes,
+you always cursed when you drank,
+your hair coming down you
+wanted to explode out of
+what was holding you:
+rotten memories of a
+rotten
+past, and
+you finally got
+out
+by dying,
+leaving me with the
+rotten
+present;
+you've been dead
+28 years
+yet I remember you
+better than any of
+the rest;
+you were the only one
+who understood
+the futility of the
+arrangement of
+life;
+all the others were only
+displeased with
+trivial segments,
+carped
+nonsensically about
+nonsense;
+Jane, you were
+killed by
+knowing too much.
+here's a drink
+to your bones
+that
+this dog
+still
+dreams about.
+")
+
+poem_161 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Finish", content: "
+We are like roses that have never bothered to
+bloom when we should have bloomed and
+it is as if
+the sun has become disgusted with
+waiting
+")
+
+poem_162 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "finished?", content: "
+drinking champagne and
+driving a BMW
+and also married to a
+socialite from
+Philadelphia's Main Line
+which of course is going to prevent me
+from writing my earthy
+and grubby stuff.
+and they might be
+right,
+I could be getting to be
+more like them,
+and that's as close to
+death as you can
+get.
+
+we'll see.
+but don't bury me yet.
+don't worry if I drink with
+Sean Penn.
+just measure the poems
+as they come off the
+keyboard.
+listen only to them.
+after this long fight
+I have no intention of
+quitting short.
+or late.
+or satisfied.
+")
+
+poem_163 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Flophouse", content: "
+you haven't lived
+until you've been in a
+flophouse
+with nothing but one
+light bulb
+and 56 men
+squeezed together
+on cots
+with everybody
+snoring
+at once
+and some of those
+snores
+so
+deep and
+gross and
+unbelievable-
+dark
+snotty
+gross
+subhuman
+wheezings
+from hell
+itself.
+your mind
+almost breaks
+under those
+death-like
+sounds
+and the
+intermingling
+odors:
+hard
+unwashed socks
+pissed and
+shitted
+underwear
+and over it all
+slowly circulating
+air
+much like that
+emanating from
+uncovered
+garbage
+cans.
+and those
+bodies
+in the dark
+fat and
+thin
+and
+bent
+38some
+legless
+armless
+some
+mindless
+and worst of
+all:
+the total
+absence of
+hope
+it shrouds
+them
+covers them
+totally.
+it's not
+bearable.
+you get
+up
+go out
+walk the
+streets
+up and
+down
+sidewalks
+past buildings
+around the
+corner
+and back
+up
+the samestreet
+thinking
+those men
+were all
+children
+once
+what has happened
+to
+them?
+and what has
+happened
+to
+me?
+it's dark
+and cold
+out
+here.
+")
+
+poem_164 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "For Jane", content: "
+225 days under grass
+and you know more than I.
+they have long taken your blood,
+you are a dry stick in a basket.
+is this how it works?
+in this room
+the hours of love
+still make shadows.
+
+when you left
+you took almost
+everything.
+I kneel in the nights
+before tigers
+that will not let me be.
+
+what you were
+will not happen again.
+the tigers have found me
+and I do not care.
+")
+
+poem_165 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "For Jane: With All The Love I Had, Which Was Not Enough", content: "
+I pick up the skirt,
+I pick up the sparkling beads
+in black,
+this thing that moved once
+around flesh,
+and I call God a liar,
+I say anything that moved
+like that
+or knew
+my name
+could never die
+in the common verity of dying,
+and I pick
+up her lovely
+dress,
+all her loveliness gone,
+and I speak to all the gods,
+Jewish gods, Christ-gods,
+chips of blinking things,
+idols, pills, bread,
+fathoms, risks,
+knowledgeable surrender,
+rats in the gravy of 2 gone quite mad
+without a chance,
+hummingbird knowledge, hummingbird chance,
+I lean upon this,
+I lean on all of this
+and I know:
+her dress upon my arm:
+but
+they will not
+give her back to me.
+")
+
+poem_166 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Freedom", content: "
+28th, and he kept thinking of her:
+the way she walked and talked and loved
+the way she told him things that seemed true
+but were not, and he knew the color of each
+of her dresses
+and her shoes-he knew the stock and curve of
+each heel
+as well as the leg shaped by it.
+
+and she was out again and when he came home,and
+she'd come back with that special stink again,
+and she did
+she came in at 3 a.m in the morning
+filthy like a dung eating swine
+and
+he took out a butchers knife
+and she screamed
+backing into the rooming house wall
+still pretty somehow
+in spite of love's reek
+and he finished the glass of wine.
+
+that yellow dress
+his favorite
+and she screamed again.
+
+and he took up the knife
+and unhooked his belt
+and tore away the cloth before her
+cut off his balls.
+
+and carried them in his hands
+like apricots
+and flushed them down the
+toilet bowl
+and she kept screaming
+as the room became red
+
+GOD O GOD!
+WHAT HAVE YOU DONE?
+
+and he sat there holding 3 towels
+between his legs
+no caring now whether she left or
+stayed
+wore yellow or green or
+anything at all.
+
+and one hand holding and one hand
+lifting he poured
+another wine
+")
+
+poem_167 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Friends Within The Darkness", content: "
+small room in a strange city
+shades pulled down, listening to
+classical music
+I was young I was so young it hurt like a knife
+inside
+because there was no alternative except to hide as long
+as possible--
+not in self-pity but with dismay at my limited chance:
+trying to connect.
+
+the old composers -- Mozart, Bach, Beethoven,
+Brahms were the only ones who spoke to me and
+they were dead.
+
+finally, starved and beaten, I had to go into
+the streets to be interviewed for low-paying and
+monotonous
+jobs
+by strange men behind desks
+men without eyes men without faces
+who would take away my hours
+break them
+piss on them.
+
+now I work for the editors the readers the
+critics
+
+but still hang around and drink with
+Mozart, Bach, Brahms and the
+Bee
+some buddies
+some men
+sometimes all we need to be able to continue alone
+are the dead
+rattling the walls
+that close us in.
+")
+
+poem_168 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "gamblers all", content: "
+sometimes you climb out of bed in the morning and you think,
+<i>I'm not going to make it</i>, but you laugh inside
+remembering all the times you've felt that way, and
+you walk to the bathroom, do your toilet, see that face
+in the mirror, oh my oh my oh my, but you comb your hair anyway,
+get into your street clothes, feed the cats, fetch the
+newspaper of horror, place it on the coffee table, kiss your
+wife goodbye, and then you are backing the car out into life itself,
+like millions of others you enter the arena once more.
+
+you are on the freeway threading through traffic now,
+moving both towards something and towards nothing at all as you punch
+the radio on and get Mozart, which is something, and you will somehow
+get through the slow days and the busy days and the dull
+days and the hateful days and the rare days, all both so delightful
+and so disappointing because
+we are all so alike and so different.
+
+you find the turn-off, drive through the most dangerous
+part of town, feel momentarily wonderful as Mozart works
+his way into your brain and slides down along your bones and
+out through your shoes.
+
+it's been a tough fight worth fighting
+as we all drive along
+betting on another day.
+")
+
+poem_169 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Girl In A Miniskirt Reading The Bible Outside My Window", content: "
+grapefruit, church is over at the Russian
+Orthadox to the
+west.
+
+she is dark
+of Eastern descent,
+large brown eyes look up from the Bible
+then down. a small red and black
+Bible, and as she reads
+her legs keep moving, moving,
+she is doing a slow rythmic dance
+reading the Bible. . .
+
+long gold earrings;
+2 gold bracelets on each arm,
+and it's a mini-suit, I suppose,
+the cloth hugs her body,
+the lightest of tans is that cloth,
+she twists this way and that,
+long yellow legs warm in the sun. . .
+
+there is no escaping her being
+there is no desire to. . .
+
+my radio is playing symphonic music
+that she cannot hear
+but her movements coincide exactly
+to the rythms of the
+symphony. . .
+
+she is dark, she is dark
+she is reading about God.
+I am God.
+")
+
+poem_170 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "having the flu and with nothing else to do", content: "
+I read a book about John Dos Passos and according to
+the book once radical-communist
+John ended up in the Hollywood Hills living off investments
+and reading the
+<i>Wall Street Journal </i>
+
+this seems to happen all too often.
+
+what hardly ever happens is
+a man going from being a young conservative to becoming an
+old wild-ass radical
+
+however:
+young conservatives always seem to become old
+conservatives.
+it's a kind of lifelong mental vapor-lock.
+
+but when a young radical ends up an
+old radical
+the critics
+and the conservatives
+treat him as if he escaped from a mental
+institution.
+
+such is our politics and you can have it
+all.
+
+keep it.
+
+sail it up your
+ass.
+")
+
+poem_171 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "hello, how are you?", content: "
+his fear of being what they are:
+dead.
+
+at least they are not out on the street, they
+are careful to stay indoors, those
+pasty mad who sit alone before their tv sets,
+their lives full of canned, mutilated laughter.
+
+their ideal neighborhood
+of parked cars
+of little green lawns
+of little homes
+the little doors that open and close
+as their relatives visit
+throughout the holidays
+the doors closing
+behind the dying who die so slowly
+behind the dead who are still alive
+in your quiet average neighborhood
+of winding streets
+of agony
+of confusion
+of horror
+of fear
+of ignorance.
+
+a dog standing behind a fence.
+
+a man silent at the window.
+")
+
+poem_172 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Here I Am ...", content: "
+of wine, I have typed from a dozen to 15 pages of
+poesy
+an old man
+maddened for the flesh of young girls in this
+dwindling twilight
+liver gone
+kidneys going
+pancrea pooped
+top-floor blood pressure
+")
+
+poem_173 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "His Wife, The Painter", content: "
+There are sketches on the walls of men and women and ducks,
+and outside a large green bus swerves through traffic like
+insanity sprung from a waving line; Turgenev, Turgenev,
+says the radio, and Jane Austin, Jane Austin, too.
+'I am going to do her portrait on the 28th, while you are
+at work.'
+")
+
+poem_174 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Hooray Say The Roses", content: "
+hooray say the roses, today is blamesday
+and we are red as blood.
+
+hooray say the roses, today is Wednesday
+and we bloom wher soldiers fell
+and lovers too,
+and the snake at the word.
+
+hooray say the roses, darkness comes
+all at once, like lights gone out,
+the sun leaves dark continents
+and rows of stone.
+
+hooray say the roses, cannons and spires,
+birds, bees, bombers, today is Friday
+the hand holding a medal out the window,
+a moth going by, half a mile an hour,
+hooray hooray
+hooray say the roses
+we have empires on our stems,
+the sun moves the mouth:
+hooray hooray hooray
+and that is why you like us.
+")
+
+poem_175 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "How Is Your Heart?", content: "
+during my worst times
+on the park benches
+in the jails
+or living with
+whores
+I always had this certain
+contentment-
+I wouldn't call it
+happiness-
+it was more of an inner
+balance
+that settled for
+whatever was occuring
+and it helped in the
+factories
+and when relationships
+went wrong
+with the
+girls.
+")
+
+poem_176 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "I like your books", content: "
+In the betting line the other
+day
+man behind me asked,
+'are you Henry
+Chinaski?'
+
+'uh huh,' I answered.
+
+'I like your books,' he went
+on.
+
+'thanks,' I answered.
+
+'who do you like in this
+race?' he asked.
+
+'uh uh,'' I answered.
+
+'I like the 4 horse,' he
+told me.
+
+I made my bet and went back
+to my seat....
+
+the next race I am standing in
+line and here is this same man
+standing behind me
+again.
+there are at least 50 lines at
+the windows but
+he has to find mine
+again.
+
+'I think this race favors the
+closers,' he said to the back of
+my neck. 'the track looks
+heavy.'
+
+'listen,' I said, not looking
+around, 'it's the kiss of death to
+talk about horses at the
+track...'
+
+'what kind of rule is that?'
+he asked. 'God doesn't make
+rules...'
+
+I turned around and looked at him:
+'maybe not, but I
+do.'
+
+after the next race
+I got in line, glanced behind
+me:
+he was not there:
+
+lost another reader.
+
+I lose 2 or 3 each
+week.
+
+fine.
+
+let 'em go back to
+Kafka.
+")
+
+poem_177 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "I Made A Mistake", content: "
+I reached up into the top of the closet
+and took out a pair of blue panties
+and showed them to her and
+asked 'are these yours?'
+")
+
+poem_178 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "I Met A Genius", content: "
+I met a genius on the train
+today
+about 6 years old,
+he sat beside me
+and as the train
+ran down along the coast
+we came to the ocean
+and then he looked at me
+and said,
+it's not pretty.
+")
+
+poem_179 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "I'm In Love", content: "
+he's young, she said,
+but look at me,
+I have pretty ankles,
+and look at my wrists, I have pretty
+wrists
+o my god,
+I thought it was all working,
+and now it's her again,
+every time she phones you go crazy,
+you told me it was over
+you told me it was finished,
+listen, I've lived long enough to become a
+good woman,
+why do you need a bad woman?
+you need to be tortured, don't you?
+you think life is rotten if somebody treats you
+rotten it all fits,
+doesn't it?
+tell me, is that it? do you want to be treated like a
+piece of shit?
+and my son, my son was going to meet you.
+I told my son
+and I dropped all my lovers.
+I stood up in a cafe and screamed
+I'M IN LOVE,
+and now you've made a fool of me. . .
+I'm sorry, I said, I'm really sorry.
+hold me, she said, will you please hold me?
+I've never been in one of these things before, I said,
+these triangles. . .
+she got up and lit a cigarette, she was trembling all
+over.she paced up and down,wild and crazy.she had
+a small body.her arms were thin,very thin and when
+she screamed and started beating me I held her
+wrists and then I got it through the eyes:hatred,
+centuries deep and true.I was wrong and graceless and
+sick.all the things I had learned had been wasted.
+there was no creature living as foul as I
+and all my poems were
+false.
+")
+
+poem_180 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "it was just a little while ago", content: "
+almost dawn
+blackbirds on the telephone wire
+waiting
+as I eat yesterday's
+forgotten sandwich
+at 6 a.m.
+an a quiet Sunday morning.
+
+one shoe in the corner
+standing upright
+the other laying on it's
+side.
+
+yes, some lives were made to be
+wasted.
+")
+
+poem_181 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "It's Ours", content: "
+there is always that space there
+just before they get to us
+that space
+that fine relaxer
+the breather
+while say
+flopping on a bed
+thinking of nothing
+or say
+pouring a glass of water from the
+spigot
+while entranced by
+nothing
+
+that
+gentle pure
+space
+
+it's worth
+
+centuries of
+existence
+
+say
+
+just to scratch your neck
+while looking out the window at
+a bare branch
+
+that space
+there
+before they get to us
+ensures
+that
+when they do
+they won't
+get it all
+
+ever.
 ")
 
