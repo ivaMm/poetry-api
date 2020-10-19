@@ -5260,3 +5260,1032 @@ get it all
 ever.
 ")
 
+poem_182 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Layover", content: "
+Making love in the sun, in the morning sun
+in a hotel room
+above the alley
+where poor men poke for bottles;
+making love in the sun
+making love by a carpet redder than our blood,
+making love while the boys sell headlines
+and Cadillacs,
+making love by a photograph of Paris
+and an open pack of Chesterfields,
+making love while other men- poor folks-
+work.
+That moment- to this. . .
+may be years in the way they measure,
+but it's only one sentence back in my mind-
+there are so many days
+when living stops and pulls up and sits
+and waits like a train on the rails.
+I pass the hotel at 8
+and at 5; there are cats in the alleys
+and bottles and bums,
+and I look up at the window and think,
+I no longer know where you are,
+and I walk on and wonder where
+the living goes
+when it stops.
+")
+
+poem_183 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Let It Enfold You", content: "
+either peace or happiness,
+let it enfold you
+
+when I was a young man
+I felt these things were
+dumb, unsophisticated.
+I had bad blood, a twisted
+mind, a precarious
+upbringing.
+
+I was hard as granite, I
+leered at the
+sun.
+I trusted no man and
+especially no
+woman.
+
+I was living a hell in
+small rooms, I broke
+things, smashed things,
+walked through glass,
+cursed.
+I challenged everything,
+was continually being
+evicted, jailed,in and
+out of fights, in and out
+of my mind.
+women were something
+to screw and rail
+at, I had no male
+freinds,
+
+I changed jobs and
+cities, I hated holidays,
+babies, history,
+newspapers, museums,
+grandmothers,
+marriage, movies,
+spiders, garbagemen,
+english accents,spain,
+france,italy,walnuts and
+the color
+orange.
+algebra angred me,
+opera sickened me,
+charlie chaplin was a
+fake
+and flowers were for
+pansies.
+
+peace an happiness to me
+were signs of
+inferiority,
+tenants of the weak
+an
+addled
+mind.
+
+but as I went on with
+my alley fights,
+my suicidal years,
+my passage through
+any number of
+women-it gradually
+began to occur to
+me
+that I wasn't different
+
+from the
+others, I was the same,
+
+they were all fulsome
+with hatred,
+glossed over with petty
+greivances,
+the men I fought in
+alleys had hearts of stone.
+everybody was nudging,
+inching, cheating for
+some insignificant
+advantage,
+the lie was the
+weapon and the
+plot was
+empty,
+darkness was the
+dictator.
+
+cautiously, I allowed
+myself to feel good
+at times.
+I found moments of
+peace in cheap
+rooms
+just staring at the
+knobs of some
+dresser
+or listening to the
+rain in the
+dark.
+the less I needed
+the better I
+felt.
+
+maybe the other life had worn me
+down.
+I no longer found
+glamour
+in topping somebody
+in conversation.
+or in mounting the
+body of some poor
+drunken female
+whose life had
+slipped away into
+sorrow.
+
+I could never accept
+life as it was,
+i could never gobble
+down all its
+poisons
+but there were parts,
+tenous magic parts
+open for the
+asking.
+
+I re formulated
+I don't know when,
+date, time, all
+that
+but the change
+occured.
+something in me
+relaxed, smoothed
+out.
+i no longer had to
+prove that I was a
+man,
+
+I did'nt have to prove
+anything.
+
+I began to see things:
+coffee cups lined up
+behind a counter in a
+cafe.
+or a dog walking along
+a sidewalk.
+or the way the mouse
+on my dresser top
+stopped there
+with its body,
+its ears,
+its nose,
+it was fixed,
+
+a bit of life
+caught within itself
+and its eyes looked
+at me
+and they were
+beautiful.
+then- it was
+gone.
+
+I began to feel good,
+I began to feel good
+in the worst situations
+and there were plenty
+of those.
+like say, the boss
+behind his desk,
+he is going to have
+to fire me.
+
+I've missed too many
+days.
+he is dressed in a
+suit, necktie, glasses,
+he says, 'I am going
+to have to let you go'
+
+'it's all right' I tell
+him.
+
+He must do what he
+must do, he has a
+wife, a house, children.
+expenses, most probably
+a girlfreind.
+
+I am sorry for him
+he is caught.
+
+I walk onto the blazing
+sunshine.
+the whole day is
+mine
+temporailiy,
+anyhow.
+
+(the whole world is at the
+throat of the world,
+everybody feels angry,
+short-changed, cheated,
+everybody is despondent,
+dissillusioned)
+
+I welcomed shots of
+peace, tattered shards of
+happiness.
+
+I embraced that stuff
+like the hottest number,
+like high heels, breasts,
+singing,the
+works.
+
+(dont get me wrong,
+there is such a thing as cockeyed optimism
+that overlooks all
+basic problems just for
+the sake of
+itself-
+this is a shield and a
+sickness.)
+
+The knife got near my
+throat again,
+I almost turned on the
+gas
+again
+but when the good
+moments arrived
+again
+I did'nt fight them off
+like an alley
+adversary.
+I let them take me,
+i luxuriated in them,
+I bade them welcome
+home.
+I even looked into
+the mirror
+once having thought
+myself to be
+ugly,
+I now liked what
+I saw,almost
+handsome, yes,
+a bit ripped and
+ragged,
+scares, lumps,
+odd turns,
+but all in all,
+not too bad,
+almost handsome,
+better at least than
+some of those movie
+star faces
+
+like the cheeks of
+a baby's
+butt.
+
+and finally I discovered
+real feelings of
+others,
+unheralded,
+like lately,
+like this morning,
+as I was leaving,
+for the track,
+i saw my wife in bed,
+just the
+shape of
+her head there
+(not forgetting
+centuries of the living
+and the dead and
+the dying,
+the pyramids,
+Mozart dead
+but his music still
+there in the
+room, weeds growing,
+the earth turning,
+the toteboard waiting for
+me)
+I saw the shape of my
+wife's head,
+she so still,
+I ached for her life,
+just being there
+under the
+covers.
+
+I kissed her in the,
+forehead,
+got down the stairway,
+got outside,
+got into my marvelous
+car,
+fixed the seatbelt,
+backed out the
+drive.
+feeling warm to
+the fingertips,
+down to my
+foot on the gas
+pedal,
+I entered the world
+once
+www.PoemHunter.com - The World's Poetry Archive
+69more,
+drove down the
+hill
+past the houses
+full and empty
+of
+people,
+I saw the mailman,
+honked,
+he waved
+back
+at me.
+")
+
+poem_184 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Like A Flower In The Rain", content: "
+I cut the middle fingernail of the middle
+finger
+right hand
+real short
+and I began rubbing along her cunt
+as she sat upright in bed
+spreading lotion over her arms
+face
+and breasts
+after bathing.
+then she lit a cigarette:
+&quot;don't let this put you off,&quot;
+an smoked and continued to rub
+the lotion on.
+I continued to rub the cunt.
+&quot;You want an apple?&quot; I asked.
+&quot;sure, she said, &quot;you got one?&quot;
+but I got to her-
+she began to twist
+then she rolled on her side,
+she was getting wet and open
+like a flower in the rain.
+then she rolled on her stomach
+and her most beautiful ass
+looked up at me
+and I reached under and got the
+cunt again.
+she reached around and got my
+cock, she rolled and twisted,
+I mounted
+my face falling into the mass
+of red hair that overflowed
+from her head
+and my flattened cock entered
+into the miracle.
+later we joked about the lotion
+and the cigarette and the apple.
+then I went out and got some chicken
+and shrimp and french fries and buns
+and mashed potatoes and gravy and
+cole slaw,and we ate.she told me
+how good she felt and I told her
+how good I felt and we
+ate the chicken and the shrimp and the
+french fries and the buns and the
+mashed potatoes and the gravy and
+the cole slaw too.
+")
+
+poem_185 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Love & Fame & Death", content: "
+like and old woman going to market;
+it sits and watches me,
+it sweats nervously
+through wire and fog and dog-bark
+until suddenly
+I slam the screen with a newspaper
+like slapping at a fly
+and you could hear the scream
+over this plain city,
+and then it left.
+
+the way to end a poem
+like this
+is to become suddenly
+quiet.
+")
+
+poem_186 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Luck", content: "
+once
+we were young
+at this
+machine. . .
+")
+
+poem_187 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "magical mystery tour", content: "
+I am in this low-slung sports car
+painted a deep, rich yellow
+driving under an Italian sun.
+I have a British accent.
+I'm wearing dark shades
+an expensive silk shirt.
+there's no dirt under my
+fingernails.
+the radio plays Vivaldi
+and there are two women with
+me
+one with raven hair
+the other a blonde.
+they have small breasts and
+beautiful legs
+and they laugh at everything I
+say.
+
+as we drive up a steep road
+the blonde squeezes my leg
+and nestles closer
+while raven hair
+leans across and nibbles my
+ear.
+
+we stop for lunch at a quaint
+rustic inn.
+there is more laughter
+before lunch
+during lunch and after
+lunch.
+
+after lunch we will have a
+flat tire on the other side of
+the mountain
+and the blonde will change the
+tire
+while
+raven hair
+photographs me
+lighting my pipe
+leaning against a tree
+the perfect background
+perfectly at peace
+with
+sunlight
+flowers
+clouds
+birds
+everywhere.
+")
+
+poem_188 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Melancholia", content: "
+the history of melancholia
+includes all of us.
+")
+
+poem_189 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Metamorphosis", content: "
+a girlfriend came in
+built me a bed
+scrubbed and waxed the kitchen floor
+scrubbed the walls
+vacuumed
+cleaned the toilet
+the bathtub
+scrubbed the bathroom floor
+and cut my toenails and
+my hair.
+then
+all on the same day
+the plumber came and fixed the kitchen faucet
+and the toilet
+and the gas man fixed the heater
+and the phone man fixed the phone.
+noe I sit in all this perfection.
+it is quiet.
+I have broken off with all 3 of my girlfriends.
+I felt better when everything was in
+disorder.
+it will take me some months to get back to normal:
+I can't even find a roach to commune with.
+I have lost my rythm.
+I can't sleep.
+I can't eat.
+I have been robbed of
+my filth.
+")
+
+poem_190 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "My First Affair With That Older Woman", content: "
+when I look back now
+at the abuse I took from
+her
+I feel shame that I was so
+innocent,
+but I must say
+she did match me drink for
+drink,
+and I realized that her life
+her feelings for things
+had been ruined
+along the way
+and that I was no mare than a
+temporary
+companion;
+she was ten years older
+and mortally hurt by the past
+and the present;
+she treated me badly:
+desertion, other
+men;
+she brought me immense
+pain,
+continually;
+she lied, stole;
+there was desertion,
+www.PoemHunter.com - The World's Poetry Archive
+83other men,
+yet we had our moments; and
+our little soap opera ended
+with her in a coma
+in the hospital,
+and I sat at her bed
+for hours
+talking to her,
+and then she opened her eyes
+and saw me:
+&quot;I knew it would be you,&quot;
+she said.
+then hse closed her
+eyes.
+
+the next day she was
+dead.
+
+I drank alone
+for two years
+after that.
+")
+
+poem_191 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "My Groupie", content: "
+I read last Saturday in the
+redwoods outside of Santa Cruz
+and I was about 3/4's finished
+when I heard a long high scream
+and a quite attractive
+young girl came running toward me
+long gown & divine eyes of fire
+and she leaped up on the stage
+and screamed: 'I WANT YOU!
+I WANT YOU! TAKE ME! TAKE
+ME!'
+I told her, 'look, get the hell
+away from me.'
+but she kept tearing at my
+clothing and throwing herself
+at me.
+'where were you,' I
+asked her, 'when I was living
+on one candy bar a day and
+sending short stories to the
+Atlantic Monthly?'
+she grabbed my balls and almost
+twisted them off. her kisses
+tasted like shitsoup.
+2 women jumped up on the stage
+and
+carried her off into the
+woods.
+I could still hear her screams
+as I began the next poem.
+mabye, I thought, I should have
+taken her on stage in front
+of all those eyes.
+but one can never be sure
+whether it's good poetry or
+bad acid.
+")
+
+poem_192 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "the crunch", content: "
+too much too little
+
+too fat
+too thin
+or nobody.
+
+laughter or
+tears
+
+haters
+lovers
+
+strangers with faces like
+the backs of
+thumb tacks
+
+armies running through
+streets of blood
+waving winebottles
+bayoneting and fucking
+virgins.
+
+an old guy in a cheap room
+with a photograph of M. Monroe.
+
+there is a loneliness in this world so great
+that you can see it in the slow movement of
+the hands of a clock
+
+people so tired
+mutilated
+either by love or no love.
+
+people just are not good to each other
+one on one.
+
+the rich are not good to the rich
+the poor are not good to the poor.
+
+we are afraid.
+
+our educational system tells us
+that we can all be
+big-ass winners
+
+it hasn't told us
+about the gutters
+or the suicides.
+
+or the terror of one person
+aching in one place
+alone
+
+untouched
+unspoken to
+
+
+watering a plant.
+people are not good to each other.
+people are not good to each other.
+people are not good to each other.
+
+I suppose they never will be.
+I don't ask them to be.
+
+but sometimes I think about
+it.
+
+the beads will swing
+the clouds will cloud
+and the killer will behead the child
+like taking a bite out of an ice cream cone.
+
+too much
+too little
+
+too fat
+too thin
+or nobody
+
+more haters than lovers.
+
+people are not good to each other.
+perhaps if they were
+our deaths would not be so sad.
+
+meanwhile I look at young girls
+stems
+flowers of chance.
+
+there must be a way.
+
+surely there must be a way that we have not yet
+though of.
+
+who put this brain inside of me?
+
+it cries
+it demands
+it says that there is a chance.
+
+it will not say
+'no.'
+")
+
+poem_193 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "The Genius Of The Crowd", content: "
+there is enough treachery, hatred violence absurdity in the average
+human being to supply any given army on any given day
+
+and the best at murder are those who preach against it
+and the best at hate are those who preach love
+and the best at war finally are those who preach peace
+
+those who preach god, need god
+those who preach peace do not have peace
+those who preach peace do not have love
+
+beware the preachers
+beware the knowers
+beware those who are always reading books
+beware those who either detest poverty
+or are proud of it
+beware those quick to praise
+for they need praise in return
+beware those who are quick to censor
+they are afraid of what they do not know
+beware those who seek constant crowds for
+they are nothing alone
+beware the average man the average woman
+beware their love, their love is average
+seeks average
+
+but there is genius in their hatred
+there is enough genius in their hatred to kill you
+to kill anybody
+not wanting solitude
+not understanding solitude
+they will attempt to destroy anything
+that differs from their own
+not being able to create art
+they will not understand art
+they will consider their failure as creators
+only as a failure of the world
+not being able to love fully
+they will believe your love incomplete
+and then they will hate you
+and their hatred will be perfect
+
+like a shining diamond
+like a knife
+like a mountain
+like a tiger
+like hemlock
+
+their finest art
+")
+
+poem_194 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "So Now?", content: "
+he words have come and gone,
+I sit ill.
+the phone rings, the cats sleep.
+Linda vacuums.
+I am waiting to live,
+waiting to die.
+")
+
+poem_195 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "To The Whore Who Took My Poems", content: "
+some say we should keep personal remorse from the
+poem,
+stay abstract, and there is some reason in this,
+but jezus;
+twelve poems gone and I don't keep carbons and you have
+my
+paintings too, my best ones; its stifling:
+are you trying to crush me out like the rest of them?
+why didn't you take my money? they usually do
+from the sleeping drunken pants sick in the corner.
+next time take my left arm or a fifty
+but not my poems:
+I'm not Shakespeare
+but sometime simply
+there won't be any more, abstract or otherwise;
+there'll always be mony and whores and drunkards
+down to the last bomb,
+but as God said,
+crossing his legs,
+I see where I have made plenty of poets
+but not so very much
+poetry.
+")
+
+poem_196 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Working Out", content: "
+Van Gogh cut off his ear
+gave it to a
+prostitute
+who flung it away in
+extreme
+disgust.
+Van, whores don't want
+ears
+they want
+money.
+I guess that's why you were
+such a great
+painter: you
+didn't understand
+much
+else.
+")
+
+poem_197 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Writing", content: "
+often it is the only
+thing
+between you and
+impossibility.
+no drink,
+no woman's love,
+no wealth
+can
+match it.
+")
+
+poem_198 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "The Look", content: "
+I once bought a toy rabbit
+at a department store
+and now he sits and ponders
+me with pink sheer eyes:
+He wants golfballs and glass walls.
+I want quiet thunder.
+
+Our disappointment sits between us.
+")
+
+poem_199 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "notice", content: "
+the swans drown in bilge water,
+
+take down the signs,
+
+test the poisons,
+
+barricade the cow
+
+from the bull,
+
+the peony from the sun,
+
+take the lavender kisses from my night,
+
+put the symphonies out on the streets
+
+like beggars,
+
+get the nails ready,
+
+flog the backs of the saints,
+
+stun frogs and mice for the cat,
+
+burn the enthralling paintings,
+
+piss on the dawn,
+
+my love
+
+is dead.
+")
+
+poem_200 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "the girls and the birds", content: "
+the girls were young
+
+and worked the
+
+streets
+
+but often couldn’t
+
+score, they
+
+ended up
+
+in my hotel
+
+room
+
+3 or 4 of
+
+them
+
+sucking at the
+
+wine,
+
+hair in face,
+
+runs in
+
+stockings,
+
+cursing, telling
+
+stories . . .
+
+somehow
+
+those were
+
+peaceful
+
+nights
+
+but really
+
+they reminded me
+
+of long
+
+ago when I was a
+
+boy
+
+watching my grand-
+
+mother’s
+
+canaries make
+
+droppings
+
+into their
+
+seed
+
+and into their
+
+water
+
+and the
+
+canaries were
+
+beautiful
+
+and
+
+chattered
+
+but
+
+never
+
+sang.
+
+")
+
+poem_201 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "Another Bed", content: "
+another bed
+another women
+
+more curtains
+another bathroom
+another kitchen
+
+other eyes
+other hair
+other
+feet and toes.
+
+everybodys looking.
+the eternal search.
+
+you stay in bed
+she gets dressed for work
+and you wonder what happened
+to the last one
+and the one after that...
+it's all so comfortable-
+this love making
+this sleeping together
+the gentle kindness...
+
+after she leaves you get up and use her
+bathroom,
+
+it's all so intimate and strange.
+you go back to bed and
+sleep another hour.
+
+when you leave its with sadness
+but you'll se her again
+whether it works or not.
+you drive down to the shore and sit
+in your car. it's almost noon.
+
+–another bed, other ears, other
+ear rings, other mouths, other slippers, other
+dresses
+
+colors, doors, phone numbers.
+
+you were once strong enough to live alone.
+for a man nearing sixty you should be more
+sensible.
+
+you start the car and shift,
+thinking, I'll phone Jeanie when I get in,
+I haven't seen her since Friday.
+")
+
+# PLEA TO A PASSING MAID
+# worms
+# the fighter (hemingway)
+# my friend..
+# dead bull
+# summer women
+# strip
