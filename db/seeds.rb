@@ -6282,6 +6282,46 @@ thinking, I'll phone Jeanie when I get in,
 I haven't seen her since Friday.
 ")
 
+poem_202 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "what they want", content: "
+Vallejo writing about
+loneliness while starving to
+death;
+Van Gogh’s ear rejected by a
+whore;
+Rimbaud running off to Africa
+to look for gold and finding
+an incurable case of syphilis;
+Beethoven gone deaf;
+Pound dragged through the streets
+in a cage;
+Chatterton taking rat poison;
+Hemingway’s brains dropping into
+the orange juice;
+Pascal cutting his wrists
+in the bathtub;
+Artaud locked up with the mad;
+Dostoevsky stood up against a wall;
+Crane jumping into a boat propeller;
+Lorca shot in the road by Spanish
+troops;
+Berryman jumping off a bridge;
+Burroughs shooting his wife;
+Mailer knifing his.
+– that’s what they want:
+a God damned show
+a lit billboard
+in the middle of hell.
+that’s what they want,
+that bunch of
+dull
+inarticulate
+safe
+dreary
+admirers of
+carnivals.
+")
+
+
 # PLEA TO A PASSING MAID
 # worms
 # the fighter (hemingway)
