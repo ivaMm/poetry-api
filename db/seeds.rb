@@ -6,7 +6,39 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+require 'open-uri'
+require 'nokogiri'
+
 Author.destroy_all
+
+p 'start'
+
+1.times do
+  sh = Author.create!(name: "William Shakespeare")
+  ss = Book.create!(author_id: sh.id, title: "Sonnets", year: "1564 - 1616")
+
+  nums = (1..154).to_a
+  nums.each do |num|
+    url = "http://www.shakespeares-sonnets.com/sonnet/#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h1.title').each do |element|
+      n = element.text.strip
+      Poem.create!(author_id: sh.id, book_id: ss.id, title: n)
+    end
+
+    s = Poem.last
+    p "#{s.title}"
+
+    html_doc.search('p#sonnettext').each do |element|
+      n = element.text.strip
+      s.content = n
+      s.save!
+    end
+  end
+  p 'Shakespeare done'
+end
 
 blake = Author.create(name: "William Blake")
 
