@@ -6353,11 +6353,108 @@ admirers of
 carnivals.
 ")
 
+poem_203 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "The Tragedy of Leaves", content: "
+I awakened to dryness and the ferns were dead,
+the potted plants yellow as corn;
+my woman was gone
+and the empty bottles like bled corpses
+surrounded me with their uselessness;
+the sun was still good, though,
+and my landlady’s note cracked in fine and
+undemanding yellowness; what was needed now
+was a good comedian, ancient style, a jester
+with jokes upon absurd pain; pain is absurd
+because it exists, nothing more;
+I shaved carefully with an old razor
+the man who had once been young and
+said to have genius; but
+that’s the tragedy of the leaves,
+the dead ferns, the dead plants;
+and I walked into a dark hall
+where the landlady stood
+execrating and final,
+sending me to hell,
+waving her fat, sweaty arms
+and screaming
+screaming for rent
+because the world had failed us
+both.
+")
+
+poem_205 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "the ladies of summer", content: "
+the ladies of summer will die like the rose
+and the lie
+
+the ladies of summer will love
+so long as the price is not
+forever
+
+the ladies of summer
+might love anybody;
+they might even love you
+as long as summer
+lasts
+
+yet winter will come to them
+too
+
+white snow and
+a cold freezing
+and faces so ugly
+that even death
+will turn away--
+wince--
+before taking
+them.
+")
+
+poem_203 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "shot in the eye", content: "
+shot in the eye
+shot in the brain
+shot in the ass
+shot like a flower in the dance
+
+amazing how death wins hands down
+amazing how much credence is given to idiot forms of
+life
+
+amazing how laughter has been drowned out
+amazing how viciousness is such a constant
+
+I must soon declare my own war on their war
+I must hold to my last piece of ground
+I must protect the small space I have made that has
+allowed me life
+
+my life not their death
+my death not their death
+
+this place, this time, now
+I vow to the sun
+that I will laugh the good laugh once again
+in the perfect place of me
+forever.
+
+their death not my life.
+")
+
+poem_206 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "***", content: "
+For those who believe in God, most of the big questions are answered.
+But for those of us who can't readily accept the God formula, the big answers don't remain stone-written.
+We adjust to new conditions and discoveries. We are pliable.
+Love need not be a command nor faith a dictum.
+I am my own god.
+We are here to unlearn the teachings of the church, state, and our educational system.
+We are here to drink beer. We are here to kill war.
+We are here to laugh at the odds and live our lives so well that Death will tremble to take us.
+")
+
+#poem_207 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "***", content: "
+# ")
 
 # PLEA TO A PASSING MAID
 # worms
 # the fighter (hemingway)
 # my friend..
 # dead bull
-# summer women
 # strip
