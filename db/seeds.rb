@@ -14,8 +14,8 @@ Author.destroy_all
 p 'start'
 
 1.times do
-  sh = Author.create!(name: "William Shakespeare")
-  ss = Book.create!(author_id: sh.id, title: "Sonnets", year: "1564 - 1616")
+  author = Author.create!(name: "William Shakespeare")
+  book = Book.create!(author_id: author.id, title: "Sonnets", year: "1564 - 1616")
 
   nums = (1..154).to_a
   nums.each do |num|
@@ -24,24 +24,24 @@ p 'start'
     html_doc = Nokogiri::HTML(html_file)
 
     html_doc.search('h1.title').each do |element|
-      n = element.text.strip
-      Poem.create!(author_id: sh.id, book_id: ss.id, title: n)
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
     end
 
-    s = Poem.last
-    p "#{s.title}"
+    poem = Poem.last
+    p "#{poem.title}"
 
     html_doc.search('p#sonnettext').each do |element|
-      n = element.text.strip
-      s.update!(content: n)
+      content = element.text.strip
+      poem.update!(content: content)
     end
   end
   p 'Shakespeare done'
 end
 
 1.times do
-  auden = Author.create(name: "Wystan Hugh Auden")
-  ss = Book.create(author_id: auden.id, title: "The Poems", year: "1907-1973")
+  author = Author.create(name: "Wystan Hugh Auden")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1907-1973")
 
   nums = (1647..1720).to_a
   nums.each do |num|
@@ -50,24 +50,24 @@ end
     html_doc = Nokogiri::HTML(html_file)
 
     html_doc.search('h2.title-poem').each do |element|
-      n = element.text.strip
-      Poem.create!(author_id: auden.id, book_id: ss.id, title: n)
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
     end
 
-    s = Poem.last
-    p "#{s.title}"
+    poem = Poem.last
+    p "#{poem.title}"
 
     html_doc.search('.poem-entry#contentfont').each do |element|
-      n = element.text.strip
-      s.update!(content: n)
+      content = element.text.strip
+      poem.update!(content: content)
     end
   end
   p 'Auden done'
 end
 
 1.times do
-  wordsworth = Author.create(name: "William Wordsworth")
-  ss = Book.create(author_id:  wordsworth.id, title: "The Poems", year: "1770-1850")
+  author = Author.create(name: "William Wordsworth")
+  book = Book.create(author_id:  author.id, title: "The Poems", year: "1770-1850")
 
   nums = (34638..34753).to_a
   nums.each do |num|
@@ -76,24 +76,24 @@ end
     html_doc = Nokogiri::HTML(html_file)
 
     html_doc.search('h2.title-poem').each do |element|
-      n = element.text.strip
-      Poem.create!(author_id: wordsworth.id, book_id: ss.id, title: n)
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
     end
 
-    s = Poem.last
-    p "#{s.title}"
+    poem = Poem.last
+    p "#{poem.title}"
 
     html_doc.search('.poem-entry#contentfont').each do |element|
-      n = element.text.strip
-      s.update!(content: n)
+      content = element.text.strip
+      poem.update!(content: content)
     end
   end
   p 'Wordsworth done'
 end
 
 1.times do
-  sh = Author.create(name: "Delmore Schwartz")
-  ss = Book.create(author_id:  sh.id, title: "The Poems", year: "1913-1966")
+  author = Author.create(name: "Delmore Schwartz")
+  book = Book.create(author_id:  author.id, title: "The Poems", year: "1913-1966")
 
   nums = (25523..25586).to_a
   nums.each do |num|
@@ -102,16 +102,16 @@ end
     html_doc = Nokogiri::HTML(html_file)
 
     html_doc.search('h2.title-poem').each do |element|
-      n = element.text.strip
-      Poem.create!(author_id: sh.id, book_id: ss.id, title: n)
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
     end
 
-    s = Poem.last
-    p "#{s.title}"
+    poem = Poem.last
+    p "#{poem.title}"
 
     html_doc.search('.poem-entry#contentfont').each do |element|
-      n = element.text.strip
-      s.update!(content: n)
+      content = element.text.strip
+      poem.update!(content: content)
     end
   end
   p 'Delmore Schwartz done'
@@ -119,8 +119,8 @@ end
 
 
 1.times do
-  sh = Author.create(name: "Maya Angelou")
-  ss = Book.create(author_id: sh.id, title: "The Poems", year: "1928-2014")
+  author = Author.create(name: "Maya Angelou")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1928-2014")
 
   nums = (1181..1202).to_a
   nums.each do |num|
@@ -129,23 +129,202 @@ end
     html_doc = Nokogiri::HTML(html_file)
 
     html_doc.search('h2.title-poem').each do |element|
-      n = element.text.strip
-      Poem.create!(author_id: sh.id, book_id: ss.id, title: n)
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
     end
 
-    s = Poem.last
-    p "#{s.title}"
+    poem = Poem.last
+    p "#{poem.title}"
 
     html_doc.search('.poem-entry#contentfont').each do |element|
-      n = element.text.strip
-      s.update!(content: n)
+      content = element.text.strip
+      poem.update!(content: content)
     end
   end
   p 'Maya Angelou done'
 end
 
+1.times do
+  author = Author.create(name: "Osip Mandelstam")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1891-1938")
 
+  nums = (18053..18056).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
 
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Osip Mandelstam done'
+end
+
+1.times do
+  author = Author.create(name: "Joseph Brodsky")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1940-1996")
+
+  nums = (3759..3776).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Brodsky done'
+end
+
+1.times do
+  author = Author.create(name: "Robert Frost")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1874-1963")
+
+  nums = (10654..10777).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Frost done'
+end
+
+1.times do
+  author = Author.create(name: "Ernest Hemingway")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1899-1961")
+
+  nums = (12564..12575).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Hemingway done'
+end
+
+1.times do
+  author = Author.create(name: "T.S. Eliot")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1888-1965")
+
+  nums = (9683..9728).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'T.S. Eliot done'
+end
+
+1.times do
+  author = Author.create(name: "John Berryman")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1914-1972")
+
+  nums = (2620..2689).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Berryman done'
+end
+
+1.times do
+  author = Author.create(name: "Pablo Neruda")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1904-1973")
+
+  nums = (20620..20689).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Neruda done'
+end
 # some old things
 
 blake = Author.create(name: "William Blake")
@@ -6568,7 +6747,131 @@ We are here to laugh at the odds and live our lives so well that Death will trem
 # dead bull
 # strip
 
-# auden
+# brodsky - more
+brodsky = Author.find_by_name("Joseph Brodsky")
+book_b = Book.find_by_author_id(brodsky.id)
+
+poem_b1 = Poem.create(author_id: brodsky.id, book_id: book_b.id, title: "From nowhere with love, on the -eenth of Marchember", content: "
+From nowhere with love, on the -eenth of Marchember,
+dear respectful my darling, doesn't matter
+even who, for the face, speaking frankly,
+is impossible to remember, not yours, and
+no-one's best friend, sends his regards being on one
+of the five continents, related to cow-boys;
+I loved you more than angels and even Himself
+and am further from you now than from them both;
+late at night, in the sleeping valley, in its very pit,
+twisting at night on the blank bed-sheet --
+as not mentioned below at least, -- with a throb
+I whip up the pillow by moaning 'you'
+from beyond the seas, its shores connecting
+in the dark, with my body your body through
+all it's features, as a crazy mirror, reflecting.
+")
+
+poem_b2 = Poem.create(author_id: brodsky.id, book_id: book_b.id, title: "Torso", content: "
+If suddenly wandered into a stone grass,
+looking better in marble, than reality,
+il notice a faun, predavšegosâ driving
+with nymph, both in bronze happier, than a dream,
+you can let the staff of overworked hands:
+you're in Empire, friend.
+
+Air, flame, water, fauns, mollusk, lions,
+taken from nature or from the head, –
+everything, God invented and tired to continue
+brain, converted into a stone or metal.
+This is - the end of things, it is - in the end of the road
+mirror, to enter.
+
+Stand up in a free niche and, zakativ eyes,
+look, how to pass the century, disappearing behind
+angle, and in the groin of moss
+and shoulders rests the dust - the tan ages.
+Someone will break away arm, and head and shoulders
+roll down, stuc.
+
+And it will remain a torso, unnamed amount of muscle.
+A thousand years of living in a niche with the mouse
+broken claw, not beating granite,
+I went out one night, pisknuv, prosemenit
+across the road, so as not to come into the hole
+at midnight. no morning.
+")
+
+poem_b3 = Poem.create(author_id: brodsky.id, book_id: book_b.id, title: "Bosnia Tune", content: "
+As you pour yourself a scotch
+Crush a roach or check your watch
+As your hands adjust your tie people die
+
+In the towns with funny names
+Hit by bullets, caught in flames
+By and large not knowing why people die
+
+And in small places you don't know of
+Yet big for having no chance to scream
+Or say good-bye people die
+
+Chorus: La, la... Let me know
+
+People die as you elect
+New apostles of neglect, self restraint
+Whereby people die Too far off to practice love
+For thy neighbour, brother Slav
+Where your cherubs dread to fly people die
+
+Chorus...
+
+While the statues disagree
+Cain's version, history for its fuel tends to buy
+Those who die
+
+As you watch the athletes score
+Or check your latest statement
+Or sing your child a lullaby people die
+
+Time, whose sharp, bloodthirsty quill
+Parts the killed from those who kill
+Will pronounce the latter tribe
+As your type.
+
+2nd Version:
+
+As you pour yourself a scotch,
+crush a roach, or scratch your crotch,
+as your hand adjusts your tie,
+people die.
+In the towns with funny names,
+hit by bullets, caught in flames,
+by and large not knowing why,
+people die.
+In small places you don't know
+of, yet big for having no
+chance to scream or say good-bye,
+people die.
+People die as you elect
+brand-new dudes who preach neglect,
+self-restraint, etc. –whereby
+people die.
+Too far off to practice love
+for thy neighbor/brother Slav,
+where your cherubs dread to fly,
+people die.
+While the statues disagree,
+Cain's version, history
+for its fuel tends to buy
+those who die.
+As you watch the athletes score,
+check your latest statement, or
+sing your child a lullaby,
+people die.
+Time, whose sharp bloodthirsty quill
+parts the killed from those who kill,
+will pronounce the latter band
+as your brand.
+")
+
+# auden - more
 auden = Author.find_by_name("Wystan Hugh Auden")
 poem_a = Book.find_by_author_id(auden.id)
 
