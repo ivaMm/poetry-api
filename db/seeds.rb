@@ -40,6 +40,119 @@ p 'start'
   p 'Shakespeare done'
 end
 
+1.times do
+  auden = Author.create(name: "Wystan Hugh Auden")
+  ss = Book.create(author_id: auden.id, title: "The Poems", year: "1907-1973")
+
+  nums = (1647..1720).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      n = element.text.strip
+      Poem.create!(author_id: auden.id, book_id: ss.id, title: n)
+    end
+
+    s = Poem.last
+    p "#{s.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      n = element.text.strip
+      s.content = n
+      s.save!
+    end
+  end
+  p 'Auden done'
+end
+
+1.times do
+  wordsworth = Author.create(name: "William Wordsworth")
+  ss = Book.create(author_id:  wordsworth.id, title: "The Poems", year: "1770-1850")
+
+  nums = (34638..34753).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      n = element.text.strip
+      Poem.create!(author_id: wordsworth.id, book_id: ss.id, title: n)
+    end
+
+    s = Poem.last
+    p "#{s.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      n = element.text.strip
+      s.content = n
+      s.save!
+    end
+  end
+  p 'Wordsworth done'
+end
+
+1.times do
+  sh = Author.create(name: "Delmore Schwartz")
+  ss = Book.create(author_id:  sh.id, title: "The Poems", year: "1913-1966")
+
+  nums = (25523..25586).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      n = element.text.strip
+      Poem.create!(author_id: sh.id, book_id: ss.id, title: n)
+    end
+
+    s = Poem.last
+    p "#{s.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      n = element.text.strip
+      s.content = n
+      s.save!
+    end
+  end
+  p 'Delmore Schwartz done'
+end
+
+
+1.times do
+  sh = Author.create(name: "Maya Angelou")
+  ss = Book.create(author_id: sh.id, title: "The Poems", year: "1928-2014")
+
+  nums = (1181..1202).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      n = element.text.strip
+      Poem.create!(author_id: sh.id, book_id: ss.id, title: n)
+    end
+
+    s = Poem.last
+    p "#{s.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      n = element.text.strip
+      s.content = n
+      s.save!
+    end
+  end
+  p 'Maya Angelou done'
+end
+
+
+
+# some old things
+
 blake = Author.create(name: "William Blake")
 
 innocence = Book.create(author_id: blake.id, title: "Songs of Innocence and Experience / Songs of Innocence", year: "1789-94")
@@ -53,6 +166,7 @@ poems = Book.create(author_id: yeats.id, title: "The Poems", year: "1865-1939")
 
 bukowski = Author.create(name: "Charles Bukowski")
 poems_b = Book.create(author_id: bukowski.id, title: "The Poems", year: "1920-1994")
+
 
 poem_i_1 = Poem.create(author_id: blake.id, book_id: innocence.id, title: "INTRODUCTION", content: "
 Piping down the valleys wild,
@@ -6458,3 +6572,149 @@ We are here to laugh at the odds and live our lives so well that Death will trem
 # my friend..
 # dead bull
 # strip
+
+# auden
+auden = Author.find_by_name("Wystan Hugh Auden")
+poem_a = Book.find_by_author_id(auden.id)
+
+poem_209 = Poem.create(author_id: auden.id, book_id: poem_a.id, title: "Refugee Blues", content: "
+Say this city has ten million souls,
+Some are living in mansions, some are living in holes:
+Yet there's no place for us, my dear, yet there's no place for us.
+
+Once we had a country and we thought it fair,
+Look in the atlas and you'll find it there:
+We cannot go there now, my dear, we cannot go there now.
+
+In the village churchyard there grows an old yew,
+Every spring it blossoms anew:
+Old passports can't do that, my dear, old passports can't do that.
+
+The consul banged the table and said,
+'If you've got no passport you're officially dead':
+But we are still alive, my dear, but we are still alive.
+
+Went to a committee; they offered me a chair;
+Asked me politely to return next year:
+But where shall we go to-day, my dear, but where shall we go to-day?
+
+Came to a public meeting; the speaker got up and said;
+'If we let them in, they will steal our daily bread':
+He was talking of you and me, my dear, he was talking of you and me.
+
+Thought I heard the thunder rumbling in the sky;
+It was Hitler over Europe, saying, 'They must die':
+O we were in his mind, my dear, O we were in his mind.
+
+Saw a poodle in a jacket fastened with a pin,
+Saw a door opened and a cat let in:
+But they weren't German Jews, my dear, but they weren't German Jews.
+
+Went down the harbour and stood upon the quay,
+Saw the fish swimming as if they were free:
+Only ten feet away, my dear, only ten feet away.
+
+Walked through a wood, saw the birds in the trees;
+They had no politicians and sang at their ease:
+They weren't the human race, my dear, they weren't the human race.
+
+Dreamed I saw a building with a thousand floors,
+A thousand windows and a thousand doors:
+Not one of them was ours, my dear, not one of them was ours.
+
+Stood on a great plain in the falling snow;
+Ten thousand soldiers marched to and fro:
+Looking for you and me, my dear, looking for you and me.
+")
+
+poem_212 = Poem.create(author_id: auden.id, book_id: poem_a.id, title: "I Have No Gun,But I Can Spit", content: "
+Some thirty inches from my nose
+The frontier of my Person goes,
+And all the untilled air between
+Is private pagus or demesne.
+Stranger, unless with bedroom eyes
+I beckon you to fraternize,
+Beware of rudely crossing it:
+I have no gun, but I can spit.
+")
+
+poem_213 = Poem.create(author_id: auden.id, book_id: poem_a.id, title: "For What As Easy", content: "
+For what as easy
+For what thought small,
+For what is well
+Because between,
+To you simply
+From me I mean.
+
+Who goes with who
+The bedclothes say,
+As I and you
+Go kissed away,
+The data given,
+The senses even.
+
+Fate is not late,
+Nor the speech rewritten,
+Nor one word forgotten,
+Said at the start
+About heart,
+By heart, for heart.
+")
+
+poem_217 = Poem.create(author_id: auden.id, book_id: poem_a.id, title: "Autumn Song", content: "
+    Now the leaves are falling fast,
+    Nurse's flowers will not last;
+    Nurses to the graves are gone,
+    And the prams go rolling on.
+
+    Whispering neighbours, left and right,
+    Pluck us from the real delight;
+    And the active hands must freeze
+    Lonely on the separate knees.
+
+    Dead in hundreds at the back
+    Follow wooden in our track,
+    Arms raised stiffly to reprove
+    In false attitudes of love.
+
+    Starving through the leafless wood
+    Trolls run scolding for their food;
+    And the nightingale is dumb,
+    And the angel will not come.
+
+    Cold, impossible, ahead
+    Lifts the mountain's lovely head
+    Whose white waterfall could bless
+    Travellers in their last distress.
+")
+
+poem_225 = Poem.create(author_id: auden.id, book_id: poem_a.id, title: "This Lunar Beauty", content: "
+This lunar beauty
+Has no history
+Is complete and early,
+If beauty later
+Bear any feature
+It had a lover
+And is another.
+
+This like a dream
+Keeps other time
+And daytime is
+The loss of this,
+For time is inches
+And the heart's changes
+Where ghost has haunted
+Lost and wanted.
+
+But this was never
+A ghost's endeavor
+Nor finished this,
+Was ghost at ease,
+And till it pass
+Love shall not near
+The sweetness here
+Nor sorrow take
+His endless look.
+")
+
+p "Done! #{Poem.count}"
