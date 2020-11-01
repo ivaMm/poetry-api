@@ -33,8 +33,7 @@ p 'start'
 
     html_doc.search('p#sonnettext').each do |element|
       n = element.text.strip
-      s.content = n
-      s.save!
+      s.update!(content: n)
     end
   end
   p 'Shakespeare done'
@@ -60,8 +59,7 @@ end
 
     html_doc.search('.poem-entry#contentfont').each do |element|
       n = element.text.strip
-      s.content = n
-      s.save!
+      s.update!(content: n)
     end
   end
   p 'Auden done'
@@ -87,8 +85,7 @@ end
 
     html_doc.search('.poem-entry#contentfont').each do |element|
       n = element.text.strip
-      s.content = n
-      s.save!
+      s.update!(content: n)
     end
   end
   p 'Wordsworth done'
@@ -114,8 +111,7 @@ end
 
     html_doc.search('.poem-entry#contentfont').each do |element|
       n = element.text.strip
-      s.content = n
-      s.save!
+      s.update!(content: n)
     end
   end
   p 'Delmore Schwartz done'
@@ -142,8 +138,7 @@ end
 
     html_doc.search('.poem-entry#contentfont').each do |element|
       n = element.text.strip
-      s.content = n
-      s.save!
+      s.update!(content: n)
     end
   end
   p 'Maya Angelou done'
@@ -6717,4 +6712,10 @@ Nor sorrow take
 His endless look.
 ")
 
-p "Done! #{Poem.count}"
+p "seed done! #{Poem.count}"
+
+p "start cleaning"
+
+Poem.destroy_by(content: "")
+
+p "done #{Poem.count}"
