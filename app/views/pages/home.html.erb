@@ -1,2 +1,14 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container" style="padding-top: 48px;">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h1>Welcome to Poetry API</h1>
+      <p>We have <%= @authors_num %> authors and <%= @poems_num %> poems!</p>
+      <ul>
+        <li>Check authors: http://localhost:3000/api/v1/authors/ </li>
+        <li>Check author: http://localhost:3000/api/v1/authors/id </li>
+        <li>Check poems: http://localhost:3000/api/v1/poems/ </li>
+        <li>Check poem: http://localhost:3000/api/v1/poems/id </li>
+      </ul>
+    </div>
+  </div>
+</div>
