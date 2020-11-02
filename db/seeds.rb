@@ -326,6 +326,105 @@ end
   p 'Neruda done'
 end
 
+# simic
+simic = Author.create(name: "Antun Branko Simic")
+
+book_abs = Book.create(author_id: simic.id, title: "The Poems", year: "1898-1925")
+
+poem_abs1 = Poem.create(author_id: simic.id, book_id: book_abs.id, title: "Warning", content: "
+Man, be careful
+not to walk small
+under the stars.
+
+May your whole body
+be filled with
+the dim light of the stars!
+
+To have no regrets
+when with the last glances
+you part with the stars!
+
+In your final hour
+instead of dust
+pass whole to the stars.
+")
+
+poem_abs2 = Poem.create(author_id: simic.id, book_id: book_abs.id, title: "Poets", content: "
+Poets are eternal wonder in the world.
+They walk the Earth and their eyes
+large and mute grow near the things.
+Leaning an ear
+on silence that surrounds them and torments them,
+poets are eternal blinking in the world.
+")
+
+poem_abs3 = Poem.create(author_id: simic.id, book_id: book_abs.id, title: "The Vampire", content: "
+He leads me into the night
+his hand is small warm and soft
+He leads me into the night
+his empty blue watery eyes attract me
+He gives me from the night
+the poison of wine the words of ridicule
+
+I hide my soul from him
+
+He embraces my body
+and drinks drinks my lips
+and dances falling drunken of my blood
+
+And waits for the moment
+when my dead body falls and stretches out
+so he can take my white soul
+and with it flash through the night into the abyssal darkness
+")
+
+poem_abs4 = Poem.create(author_id: simic.id, book_id: book_abs.id, title: "Death and I", content: "
+Death isn't outside of me. It's inside me
+since the very first beginning: it grows with me
+in every moment.
+One day
+I stop growing
+but it continues growing
+inside of me until I get overgrown
+and it gets to the edge of me. My end
+is truly its beginning:
+when it reigns on alone.
+")
+
+poem_abs5 = Poem.create(author_id: simic.id, book_id: book_abs.id, title: "Separation with oneself", content: "
+We are standing on the edge of the world
+and watching the setting of final stars into the depths of the night
+
+With the stars we set as well
+
+We are already standing on the utmost edge of ourselves
+
+Who removed the earth below us invisibly
+so that we already see it as distantly as a star?
+
+The stars have gone out of sight
+which one of us can still sense themselves?
+
+We fall eternally
+
+Our path is bottomless and our fall is silent
+")
+
+poem_abs6 = Poem.create(author_id: simic.id, book_id: book_abs.id, title: "My transfigurations", content: "
+I sing of myself when I take my pale soft face
+from the dark, dayless and uneasy night into the crystal morning
+and I swim across the fields, meadows and waters with my gaze
+
+I sing of myself which dies an infinite amount of times daily
+and resurrects an infinite amount of times as well
+
+Oh god, transform me, because I'm tired of changes,
+into your bright, unchanging and eternal star
+which will shine at night from a distant sky
+into the black grief of the nocturnal desperates
+")
+
+
 # miljkovic
 branko = Author.create(name: "Branko Miljkovic")
 
