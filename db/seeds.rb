@@ -43,7 +43,7 @@ end
   author = Author.create(name: "Wystan Hugh Auden")
   book = Book.create(author_id: author.id, title: "The Poems", year: "1907-1973")
 
-  nums = (1647..1720).to_a
+  nums = [*1647..1696, *1698..1716, *1718..1720]
   nums.each do |num|
     url = "https://mypoeticside.com/show-classic-poem-#{num}"
     html_file = open(url).read
@@ -325,22 +325,1260 @@ end
   end
   p 'Neruda done'
 end
-# some old things
 
+# miljkovic
+branko = Author.create(name: "Branko Miljkovic")
+
+book_bm = Book.create(author_id: branko.id, title: "The Poems", year: "1934-61")
+
+poem_bm1 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Everyone Will Write Poetry", content: "
+dream is an ancient and forgotten truth
+that no one can verify anymore
+foreign lands are singing now as sea and worries
+east is west from the west, false movement is the fastest
+now wisdom and birds of my forsaken disease are singing
+flower between ash and a smell
+those who refuse to survive love
+and lovers turning back time
+garden whose smells earth doesn't recognize
+and soil that stays faithful to the fire
+because this world isn't Sun's only concern
+
+but one day
+where heart was Sun will stand
+and human speech will no longer have words
+which poem would deny
+Everyone will write poetry
+truth will exist in all the words
+in the places where poem is the most beautiful
+the one who started it first will retreat
+leaving poem to the others
+I accept the great thought of future poets:
+one unhappy man can not be a poet
+I accept the judgment of the singing crowd:
+THOSE WHO CAN NOT STAND THE SONG SHALL LISTEN TO THE STORM
+
+but:
+
+WILL FREEDOM ITSELF SING
+AS SLAVES HAVE SUNG OF IT
+")
+
+poem_bm2 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Tired Poem", content: "
+Those that have the world at hand
+Should think of what to do with it
+We have only words
+And we're managing just fine in such poverty.
+
+It's comforting to be the soil
+It's proud to be the stone
+It's wise to be the fire
+It's pious to be nothing
+
+Dirty from the forest that he too often sings of
+Poet sings despite the poetry
+Heartless, with no violence and with no flame
+Like word that got over the music
+
+Freedom is old
+My true name is waiting for me to die
+Bird, behind the Sun in the middle of the thought
+Which we kiss the future with,
+Everything burned down; that is a festival
+
+Obedient ash
+Flour of nothingness
+Is transforming
+Into a scabby dog behind me
+Into a flame bird before me
+It tells me the truth behind my back
+
+Dove
+You are the true accent of the tenderness that passed
+Make a dawn from our tiredness
+Scent is the time that the flower had
+
+But unword says
+it is
+late
+Unflower
+says
+it is
+night
+Unbird says
+it is
+flame
+And Is says it Isn't
+To which bird curses
+Flower says that is hell
+The true word has not been born yet
+")
+
+poem_bm3 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "In Vain I Wake Her", content: "
+For the Sun that explains itself in plants
+I wake her
+for the sky streched between the fingers
+I wake her for the words that burn the throat
+I love her with my ears
+One should go to the end of the world
+and find dew on the grass
+I wake her for some distant things
+that look alike the ones
+here
+For the people with no face nor name passing down the street
+For the anonymous words of squares I wake her for the manufactured landscapes of public parks
+I wake her for this planet of ours that might become
+a mine in the bleeding sky
+I wake her for the smiles in the stone of comarades that fell asleep
+between two battles
+when sky was not a great birdcage
+but an airport
+My love full of others is part of a dawn
+I wake her for the dawn for love for me for
+others
+I wake her though in vain
+in vain as alluring a bird that has landed forever
+Surely she said:
+let him look for me and see that I'm gone
+that woman with hands of a child that I love
+that child that fell asleep not wiping its tears that I wake
+In vain in vain in vain
+in vain I wake her
+for she'll wake up different and new
+In vain I wake her
+for her lips won't be able to tell her
+In vain I wake her
+you know water flows but doesn't say anything
+In vain I wake her
+One should promise to the long lost name
+somebody's face in the sand
+If not so
+cut off my arms and turn me into a stone
+")
+
+poem_bm4 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "First canto", content: "
+I found myself within a forest dark
+Dante
+
+It was a forest that ate the sky
+the forest from which I came out to realize
+that I did not come out that beasts have eaten me
+and I knew that it will be bitter to tell
+what I saw and didn't
+see when I entered it's darkness and came out not
+from that forest which ate its paths with green jaws
+and got lost in itself
+there is one warm shore hill of green and one
+Beatrice
+but there are three jaws three scissors and three knives
+yes I would like to return
+I went ahead of myself on the cried out road and sand was biting my feet
+like glass and I saw dogs eating dirt
+saw sinners being swung by the evil wind
+sky that barks and rain of damnation heavy
+and eternal
+I saw blind waters of Stix and mud of hatred
+I saw city in flames and women whose arms are snakes
+I saw the wailing wall with no stars
+and I heard words of pain in maelstrom
+of those who became tree or a stone
+and I can not hope for death
+of those wretched that never've been born
+I saw I saw I saw and heard and wept
+flute of earth of forest
+of blood
+alluring the other shore
+on the dire shore there stood people and wept
+ay ay your damned souls
+with balsamed arms and lips of blood
+I saw I saw I saw and heard and fell dead
+Oh Acheron Acheron
+all sides of the world meet on your shores.
+")
+
+poem_bm5 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Love of poetry", content: "
+I love happiness that is not happy
+Poem that reconciles two words at war
+Freedom that has its slaves
+And lips that sell for a kiss
+
+I love the word for which two pictures are fighting
+And a picture drawn on the inside of the eyelid
+Flowers arguing with time
+In the name of future fruit and the honour of the spring
+I love everything that moves for everything that moves
+Moves by the laws of the quiescence and death
+I love all the truths that aren't compulsory
+For actual truth is shy as a flower
+
+I love yesterday's tenderness
+To tell my own body "enough" and dream of plants
+Fingers eyes and hearing differently organized
+In the forest than in body
+")
+
+poem_bm6 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Destiny Of A Poet", content: "
+At this time it is still danger that is singing
+Flame that claims transparency
+for friendship
+Melodic birds escape the destiny
+But they escape the words as well
+
+As words sin the poem is born
+There is no other way to become a poet
+The world is divided into those who sing
+And those who remain slaves
+
+But the day of great liberation will come
+The poems will open as dungeons
+The poets will be destroyed
+The poems will be adapted
+
+When people discover a secret of how you become
+great
+The squares will be left without monuments
+The secrets once known only to poets
+Shall belong to the people
+")
+
+poem_bm7 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Criticism of metaphor", content: "
+Two words touch as soon as you say them
+And disappear into the meaning unknown
+That has nothing to do with them
+Because in head there is only one word
+And poem is written just so
+you don't have to say that word
+That's how words teach each other
+That's how words invent each other
+That's how words influence each other badly
+Poem is a string of blinded words
+But their love is quite obvious
+They live on the account of your comfort
+The more powerless you are the more beautiful they are
+And when you drain all your strength, when you die
+People say: goodness, what a beautiful poetry he wrote!
+And nobody suspects of the word that you never spoke
+")
+
+poem_bm8 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "A Drop of Ink", content: "
+What things can fit into a drop of ink
+one unwritten sun
+one unsigned bird
+one undrawn flower
+and still enough
+to write an epitaph:
+
+two stars spent the night
+in whose heart in whose night
+then two flowers sprung up
+from whose blood from whose blood
+and two birds took off
+from whose head for whose night
+two stars two flowers two birds
+no one knows whose they are
+no one knows where they're from.
+")
+
+poem_bm9 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Sea for the workmen", content: "
+While in your verses the words are bored
+hopeless and condemned to death
+this is the sea of poems that doesn't hesitate.
+It's metaphors are navigable, dangerous
+hilarious, sweet and entirely photogenic.
+Maybe you'd like to steal their salt and make them
+tasteless
+but before the sea you are unworthy.
+
+Sea sings of itself, naughty and free
+it rhymes with whatever
+though, due to it's talents, unskillful with what it's akin to.
+It's depths are wiser
+than all of your aphorisms.
+Sea likes the fishermen that steal from it full
+of love
+and sailors that use the dangers that it provides
+until they stray and after.
+
+Sea doesn't like those that woo it
+like their own wisdom slow and careful.
+Sea, if it loves, loves workmen on vacation
+that don't sleep for three nights until they reach the sea;
+and when they do, they say: 'it is beautiful, our sea',
+then rush to tan and go back home.
+")
+
+poem_bm10 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Poverty Of Poetry", content: "
+Tell me something that is forest
+Tell me something that is sea
+Who knows what should be said
+Barefooted and bitter you stumble from one word to another
+
+Fire more bitter than the smoke
+Under your forehead burns
+It will provide you many honours
+Unless you burn out too early
+
+But if you wish
+To make others' words real
+To praise others' heart
+You will regret being a poet
+
+Because you don't write the poem, you live it
+Poem isn't a poem if it's not joyful
+Those who never praised others' heart
+Have surrendered to the cruelty or mercy of the words
+")
+
+poem_bm11 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Consciousness Of Oblivion", content: "
+Hope is a luxury. Eternal night in blood
+threatens to an imaginary eye with a wall blind.
+Oh fire, behind yourself dark, I can not recall
+for as if the first one to love,
+I love.
+
+Do I know what I knew do I know what I shall:
+name lost and the lonely shell,
+beautifully synchronized with the emptiness that recalls
+barren flowers and barren winters.
+
+I am worried lover of that flower
+that teases Sun and emptiness in me
+who turns into nightingale, when different than the rest
+landscape touches me and turn into dust.
+
+But with oblivion I protected the world and protect it
+for all times, from time and dust
+Oh where are those places when wind blows
+moving emptiness! Where is my timid star?
+
+Turpitude desire a poem in vain! On my knees
+I read the landscape that reveals
+in being, in an empty stone where hides
+the last star whose glow never lies.
+")
+
+poem_bm12 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Night Stronger Than World", content: "
+Oh what time is it in the Universe
+made out of stars red abyss blooms
+you overcome yourself with fog across the world
+There is no lullaby for her angry dew
+
+Stronger than the world night of dark plots
+delights the emptiness of the sleeping body that burst
+in stars when a dream plants the wine in the back of your head
+And birds into stone from the pike land .
+
+Let an empty shadow celebrate
+the time in head's different than in heart
+hear the lush invisible coming from all sides.
+
+We know that from past is greater
+all that never will and all that never happened
+And that this world echoes empty
+")
+
+poem_bm13 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Future of the fire", content: "
+I'll hide you in my winter
+Eternal spring, frozen dawn
+Sun is your enemy
+in the name of justice, and in the name of the desert
+
+Sun is turning, truth changes it's place
+The faithful ones will be left with a lie
+But in the truthful place it is cold
+In the truthful place no one builds home
+
+Cool bird of fire is the only knowledge
+Oh stone that chews it's ash
+Oh ash that settles new hope
+From hope which from it flies away.
+
+Strange dialogue between fire and a bird
+promising bird more enchanting, fire smarter
+If they find a common tongue
+The Bird and the fire might save the world.﻿
+")
+
+poem_bm14 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Sea before I sleep", content: "
+The world is ending slowly. Everyone is starring
+at the lying time on the wall: oh let's leave!
+Boundaries that we live in
+aren't boundaries that we'll die in.
+Dead body's bitter night,
+heart is dead but the depths remain.
+Tonight,
+water would drink itself to the bottom
+and rest.
+
+Travel, while there is still world and knowledge:
+dust will make you beautiful, you'll meet ash and glow.
+walk your path until you go blind
+but do know:
+Sun is a lie, yet it's path is true.
+Let the traders of time sail with wax in their ears,
+listen bravely deserts as they sing
+while stars white are kneeling before the closed down sea
+and the strength that crucifies in you still exists.
+
+
+Emptiness, oh how tiny are the stars!
+
+Your dream without body, night without night,
+is an adjective of the clear, full of praise, Sun.
+Do I see you due to my power or yours?
+Transparent fence overpowered by the glow,
+wishful transparency that I fear,
+your bloom is the only star above town
+your futility is undeniable - number one.
+World is ending slowly, sad world.
+
+Who shall bury our heart and the bones
+where memory doesn't reach, where movement
+doesn't multiply us and days do not repeat!
+Rip my tongue out and put a flower in it's place:
+wandering through the light begins. Stop the words!
+Surely tomorrow even cowards will be able to
+what today can only brave and true
+who in the place between us and the night
+have found wonderful reasons for a different love.
+
+The world is ending. And we passionately believe
+in a thought that still no one thinks,
+in an empty place, in foam
+then sea meddles with emptiness
+and sounds itself in roar.
+")
+
+poem_bm15 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "A ballad for the troubadours of Ohrid", content: "
+Wisdom, the dawns break with unskilled rays
+No longer do I have the right to plain words
+My heart dims, my eyes are ablaze.
+Sing, great elders, while above with the birds
+Stars, as metaphors do, now spray!
+The lowly rots, the lofty fades away.
+Bird, I’ll lead you to words, but honor the ash, do aim
+To give back the borrowed flame.
+In another’s heart, we’ve heard our own exclaim,
+That to sing and to die is one and the same.
+
+The sun is a glowless word.
+Conscience can’t sing, for it’s afraid
+Of the sensitive void. Vicious birds,
+Thieves of visions, peck at my insides. I am chained
+To a nonexistent rock, nailed, I stay.
+It’s that much blacker, for we’ve signed this deceit
+With the stars of an invisible night. Do retain
+That descent into life as witness to your heat.
+When the ink ripens into blood, the knowledge remains
+That to sing and to die is one and the same.
+
+Wisdom, the stronger will be the first to fail!
+Only lowlifes know the meaning of poetry,
+Thieves of fire, not at all frail,
+Tied to the mast of a ship being tailed
+By a submarine song, more dangerous by reality.
+Once it's left the ripe fruit, the sun aswoon is entailed
+To take the place the ash-resting kiss forsakes.
+But the power courting the nightingales
+None other will have in our wake.
+When to sing and to die is one and the same.
+
+Life is lethal, yet keeps death at bay.
+A horrid disease will bear my name.
+We’ve suffered greatly. Heed now the lay
+Of an Inferno tamed. May the heart not delay.
+To sing and to die is one and the same.
+")
+
+poem_bm16 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Dark Land", content: "
+Delighted they are with others' word. Infidelities
+Grave hiding in the heart that fears:
+Praised are sideways. Sun is a mistake
+Followed by the seen blind atrocities.
+Cunning fire offers night instead of eyes
+Yet sick still stand in the used out air
+And people differently follow what they see is there
+Pit doubts in them, for within them lies ;
+From danger are safe only the weak.
+And for the crime is guilty even those that sleep.
+There is no one to forgive the strong
+For descending into the dark land, and for the gold
+that they've found that no one can have.
+Whatever you do evil turns out, for that underground dirt
+Is worth more each day.
+")
+
+poem_bm17 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "If We Speak", content: "
+If we speak
+we said what we didn't mean to say
+If we keep silent we said nothing
+but we held back much.
+
+Every word means what
+its silence means.
+")
+
+poem_bm18 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Poem about a flower", content: "
+One teeny flower
+Still his first words has not said
+And already knew all enigmas of the Sun
+And the secrets which soil may shed.
+
+One teeny flower
+On his feet hasn’t yet stood
+And already could nurture himself
+With light, air and water as food.
+
+One teeny flower,
+To read and write he can’t do
+But well knows life, knows the world
+And he wafts, wafts a scent so true.
+")
+
+poem_bm19 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "The Sky", content: "
+There isn't such a thing as the blue sky
+it is only explosion of our surprise
+over the emptiness.
+")
+
+poem_bm20 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Poem for my 27th birthday", content: "
+I don't need words anymore, I need time;
+It is time when Sun tells us the hour;
+It is time for flower to speak, and for mouth to be mute;
+How can man who lives poorly sing out the truth?
+
+I believed in dream and the storm,
+enamoured I was by two nights at night
+While in the same fruit both north and south
+freeze and bloom.
+
+Dreaming, I overslept all the holidays!
+While tame thunder in the glass sang.
+Put Fire back where it belongs, said
+and kiss belongs in hell.
+
+Even bread gets education underground;
+I wish to fight on the side of evil;
+With history's mercy, still I will
+puking enter the Eden
+
+For friends I named crooks
+enamoured with all that sings and harms.
+before the pious water I shall be praying
+'til my knees get numbed by stars
+")
+
+poem_bm21 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "The Last Poem", content: "
+Evening star shall stare at my burned out eyes
+and won't find it's lost reflection.
+Somewhere someone will
+over the peaceful river of thoughts lean
+remembering
+Sadness once in me shall fly out into the world
+And distant sunflowers will bow their heads.
+")
+
+poem_bm22 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Odysseus", content: "
+To go without getting closer
+To search and to always be far from something
+
+Stealing from night pieces of the road
+And seeing yourself disfigured in a shattered mirror
+
+While on lighting rods periwinkle flowers blossom.
+")
+
+poem_bm23 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Chronicle", content: "
+On the first day birds died and snakes moved into the nests and winds
+On the second day fish left waters and water flowed away empty
+On the third day forest went to town but town was nowhere to be found
+On the fourth day the Tower was built of skulls and teeth
+On the fifth day forest was collecting headless bodies by the river
+On the sixth day a little fire in love alike sun
+On the seventh day angels did not sing
+On the eighth day on Monday the first bird sung from ash
+and the wall spoke.
+")
+
+poem_bm24 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Defending The Land", content: "
+          We watched as those we love died standing
+
+In the heart love stronger than death
+In the head a thought larger than the head
+That too is defending the land
+
+Terrible are the warriors beneath the ground, soldiers of defence,
+A source of strength should the living falter
+That too is defending the land.
+
+A great word grows not from the heart nor from the head
+But from the ground like the plant or flower
+That too is defending the land
+
+The struggling seed thinks flower
+The day thinks sun
+That too is defending the land
+
+The extent of the land behind us
+Is the extent of our strength
+That too is defending the land
+")
+
+poem_bm25 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "To The Homeland", content: "
+                   We watched as those we love died standing
+
+There is no song outside of truth
+I love you
+And if they sent animals with empty eyes after me
+
+I love you
+And if they dug out a dog from the ground to bark at us
+
+I love you
+And if they shifted my future behind me
+
+And if they killed me
+I love you
+")
+
+poem_bm26 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Requiem", content: "
+V
+
+You were plastered into stone, invisible ones,
+You all were ready to die
+one within another and so it was,
+hail you weird river of salvation
+you were searched for in the dark lump
+of fainted senses, in the limiting frontiers
+you and surprises were not discovered.
+Fare thee well my town, where my memory ceases
+You are now all dead and your body
+is an untouchable record and warm
+handful of Serbia's earth and our
+
+rephren:
+
+Their mouths were filled with sand and they were
+mute
+Fare thee well my town, where my memory ceases
+Hail you weird river of salvation
+")
+
+poem_bm27 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Triptych for Eurydice", content: "
+I
+At the damned shore longer than a day,
+where nightingales are all dead,
+and red steel precedes me,
+Bitter taste of your absence I felt
+in my mouth.
+death is still buzzing in my ear
+
+Night on this side of the moon often slips
+into unnecessary truths and thrilled massacres.
+Oh, under my skin river of blood longs
+For the night from the other side of the moon, night of the sour cherry tree.
+
+But all the doors are locked. All
+the echoes are dead. They have never loved so much.
+Will I the victim, surprise the secretive death.
+
+Bitter tear in heart. In the pestiferous wind I stand.
+That rock-hard dream will never end
+I must awake you dead Eurydice.
+
+II
+At the bottom of the blind places where I'm not,
+where sights are eerie,
+on the other side of blood where fruit poisonous grows,
+I descended,
+there where my eye will ripe with constellation of tears
+that night will soon steal
+
+Oh, it will move into its temple
+Here I am, defenseless in front of dreadful loneliness
+Not to look back no matter how much you long
+To be an eyeless face on the empty wall.
+
+Red birds sing in my flesh.
+Black birds fly above my head.
+Let my forehead be bitten by soil
+
+by leper and stone under summer grass,
+If I lose your beautiful face
+on this bitter shore of fever and darkness.
+
+III
+Stars make the night. Bird flies out of my sleepy head.
+Between two bitter depths, one bird: and a cliff
+of good hope. Oh If I could be dead.
+But curse won't help. Death
+of my own in the head I carry,
+I traveler without luggage or face.
+
+I've lost you by the underground night, distant
+I, wild hunter for stars
+wrongly confronted with untruth,
+unforgiving sleeper spotted by fate,
+I, whose tears now flow down somebody else’s face.
+
+Where, but in my poem, are you beautiful Eurydice?
+You despised every shape and form of existence , oh you,
+picture of my black city and lost goal.
+
+Everywhere in the world terrible love rules.
+On the horizon , as the last hope
+Clouds full of birds and future plants
+appear.
+")
+
+poem_bm28 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Orpheus at the Underground", content: "
+Don't look back. A big secret is unveiling
+behind your back. Birds are moldering
+high above your head while neverending
+suffering is blooming before you
+and poisonous rains pour.
+
+Wounded by the stars you wonder in your dream. Shiny,
+she follows your trail, but you alone mustn't see her.
+Oh while her glow falls on you
+they could even hide her away
+
+you'll find the entrance where two murky dogs stand.
+Sleep, time is in the evil. You are damned forever.
+Evil is in the heart. Dead, if they exist,
+will pronounce you alive. Here's the one
+behind whose back the world was made
+like an eternal conspiracy and a sad twist
+")
+
+poem_bm29 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Rondel", content: "
+Blind walk to hide you away from space, tired
+from the night lit up by the borrowed stars, and there
+may you forget, forget a little bit each day,
+if name is the answer to that dream.
+
+Don't meet the people with dangerous hands at the bottom
+where ash is a witness to blood and everything's asleep.
+Forget, forget each day a bit.
+One name is the reason to that dream.
+
+Hands that use stone and the still time
+on the movable line in the meantime,
+where the road is wide
+and the two loud stones die
+may they take desert for a witness or the fallen Sun
+so one name is reason to that dream.
+")
+
+poem_bm30 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Sonnet about the bird", content: "
+It hatched out of a stone thrown
+and became iris of the blinded sky
+a little life that've taken off
+of our endless shoulders bowed.
+Oh strange bird whose purpose
+is to be the flight of the earth and the song of deserted
+sky, that is heard but not grasped. Oh, white
+courting of the wind to that fiery bird.
+Bird that is walled into the brain and wall
+that never met the sight
+that hearing has found in the places of murmur,
+your death was conceived in our ear.
+Oh stone-bird may the night mourn you
+with the sultry stars with the stars unreasonable.
+")
+
+poem_bm31 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "I Dreamt Her In Stone", content: "
+Let your white swans dream of crystal lakes,
+but don't trust the sea that is tracking us and inviting.
+Invisible force to which sunflowers bow, is dreaming of space
+can you see in darkness - staring at forgotten days?
+
+Three worlds love you, three fires burn you. And we
+walk in front of hope, haunted by wandering deserts.
+We are the ones who invented it all and stayed alone,
+you holy woman marbled white, condolences to which they hail.
+
+On the audio shores where ancient sea ends
+your icy heart fears: air is a great miracle.
+Let beauty of the Sun last until the last dream,
+up towards the peaks which lost our trail. But silly
+don't trust that sea that is tracking us and inviting.
+Dream of crystal lakes in the darkness.﻿
+")
+
+poem_bm32 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Beginning of a dream", content: "
+May I unworthy be wrapped in a wind
+O Tower that I breathe on, that ends beyond time
+Sky feels tight in a bird, bird even more so
+My separate eye watches outside of head.
+
+I take away the name from the world
+to hide it in pre-existence
+Where nothing starts, for there's no space no more
+when animals that forest's curse bore, and myself
+are killed with a dream by
+Night of deadly rain and a slumbering force.
+
+Haunted by pure fire, oh what to do
+with what I heard and saw when unfound I dive into
+space before words where my head rot
+When I fly and as a man that sleeps I move not
+Runaway crane, rose with no fear,
+grievance of black birds, sad ode, and a tear!
+")
+
+poem_bm33 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Tower Of Skulls", content: "
+Grievance of black birds, sad ode, and a tear!
+After death - robbed sight and an empty name
+It isn't love,
+but suffering and shame
+When echoes move places and shores.
+
+Underground wind lulls the sleeping ones to sleep
+Entrance's guarded by two silences an' a rock
+It isn't love, but suffering and wall
+Of skulls where stars, that once shone - rot.
+
+Becoming voice and time I disappear, I wake,
+Flower greater than the night, wave with no keepsake
+Above my head the stars that light
+Who's route I changed,and the sight
+O Boat full of oblivion and wind with no flaw
+heavy shadows of some other world, that falls.﻿
+")
+
+poem_bm34 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Rejection of a doubt", content: "
+Heavy shadows of some other world, that fell
+O ye Slave of tiring hill an' bad news!
+It's too late now to question what our conscious holds
+Our entire life being robbed by the words.
+
+Unfulfilled eyes' love and illusions trembling
+Place me in a place much closer
+Where word equals destiny and subconscious
+Where shadows are grandiose and things are small.
+
+When I go blind, all the silhouettes of water who will water?
+Children due to grow should be born
+For the meaning of a secret in illusion
+that dreams
+
+At the bottom of a poem, what lays?
+Unsettling flute in the air of it's own
+when the Sun of make-believe to a demon I bestow.
+")
+
+poem_bm35 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Beginning of a journey", content: "
+At the bottom of a poem, what lays
+When same gift is a dawn, and someplace a night of rest?
+Oh distance of a dream where south Pleiades plays,
+Hide me from the blind rock watching from the sky .
+
+It's the timid valleys that became pits
+in this poem that gives me no peace.
+Heart full of darkness its own angel picks,
+to hide my intentions an' watch over bitter seas.
+
+Black sail of my wind, oh blinded sailing!
+Sea comes only to the knees of my pride
+Up above my head, symmetry is threatening
+Worlds lined into illusion by the mind.
+What to pair you with, when I lost your sight
+My beautiful day with elegy's heart.
+")
+
+poem_bm36 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Beginning Of A Quest For Self", content: "
+My beautiful day with elegy's heart
+When one's shadow through landscapes is
+Influence of stars above me - who can fight (!)
+Overwhelmed with fear I wonder in tears﻿
+
+World! Non detached by events no one has found oneself in your scenes
+Return my day if somewhere it still is
+Earth again unknown
+When in skull the snakes are born.
+
+Heads lined up in forgotten time
+With the last words and futile thought
+Fear their own face in the murky rock.
+
+I search for you in the wind
+Spoken word for fallen world, if you still exist
+I search for beginning, a glow and hours
+that ceased.
+")
+
+poem_bm37 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Identification of Being and a Word", content: "
+I search for beginning, glow and hours that ceased
+To live my life and resurrect it
+From the crumbs of reality disguised inside the dream
+When entering the desert sleeping ones conceal.
+
+I repeat those words that have given me
+That flower that rock bird that appeared
+from nothingness, sun that exploded
+above the world which they chose themselves.
+
+Hopeful I listen sides of the world.
+Casts moon, time. Still
+Word's above the world for the other words.
+
+Day of blind love ends half-real
+Didn't pass in remembrance of anoint enchanted world
+When eternity gave you the two sad birds.
+")
+
+poem_bm38 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Atonement", content: "
+When two sad birds gave you eternity
+Patience of space and as punishment it's face
+Oh Head, down the black ladder
+into everlasting misery's day
+what kind of fire did evoke they?
+
+At the bottom there's the Sun
+And fire is the time. Crane,
+Where is it's echo, in dream or in death? Defeated
+Witnesses of a sea and pointless change
+Dreamed of peace and froze the wave.
+
+World turned into time, stolen from an evil dragon
+By steady fire and a painful haze. Build
+There is no convicts tonight - everyone’s dreaming
+In the gardens where nevermore grow and the moss,
+there is no hope, nor fear of the snake
+At the door behind which
+the space rots.
+")
+
+poem_bm39 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Memory of the Deceased", content: "
+At the door behind which the space rots
+He is confused golden coin and ambiguous growth of
+Dim words deeper and deeper that wait for us
+to sprout the marrow through this core of ours.
+
+Who could find him in the singing flame
+salvation and grass grow from his name,
+The only awake though just a voice
+Heard but yet unseen.
+
+Between everything that happens, space and time
+the sinless speech in light to overcome
+When cities burn in self-defense.
+
+He is the star above nothingness, speech that reveals crushed
+Sun of the underground like mercury in a bone.
+The memory lost feeds the desert there.
+")
+
+poem_bm40 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Beginning Of The Oblivion", content: "
+The memory lost feeds the desert there
+Before the small bush of in a flight killed bird
+It's where exists all that you can't find anywhere in the world
+Why do beginning still lasts in the end
+Though all of those days are long gone by.
+
+All is a name or a word there.Early in time
+Sunflowers and Sun and the other stars.
+Night will come out of the sea and wake up in heart.
+Shooting star
+foretold to the dark, dew for a dream
+an early medicine.
+
+Mesmerized by the turn of the sky that bones our grind
+While the wise men 'bout future tell lies.
+Can you see well to protect what is not there?
+
+And it's love that is gone, shore and water are here to tell.
+Rust the remains of the cursed ship.
+by the fire of which the days feed.
+")
+
+poem_bm41 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Making Up A World", content: "
+By the fire where no day feeds
+shapes deformed with violent dilution
+of emptiness and dreams. Truthfulness of speech
+All replaced with a word to an unclear song leads.
+
+World with wind under every leaf in dark
+that ends with stars above marked
+woods
+And abomination in a kiss that must be born
+Arriving, we invented on our own.
+
+Heights are inviting, where everything loses sense,
+Where essence is round and similar to it's shape
+And from all reality only words remained. And colours?
+And sounds and smells? They can even kiss
+but there is no love. Event retold,
+What is left is non-found treasure an' the buried mourn.
+")
+
+poem_bm42 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Enchanting", content: "
+Non-found treasure an' the buried mourn are left
+in enchantments that we never knew,
+where we fell late, O sound-full dew,
+When waters don't flow, because nothing exists
+If it hasn't ceased. Landscape is divided
+by echo of that word. Hours have stopped
+and waves are caught above the pit. Is
+reality delusional or runaway conscious breastfeeds
+haunted sound with murky exit to nothing?
+Oh desert most similar to the Sun, is there anything
+finer than sand lulled by eternity and heart!
+And what part of the world gift becomes
+When you watch above the made up land, lonely star,
+My love, dead, but yet alive?
+")
+
+poem_bm43 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Preaching of the fire", content: "
+My love, dead, but yet alive
+Let in it's day outspoken burn
+Let play poet until poem is earned
+Bird-lit poet that in me resides.
+
+Oh golden residue of time spaces
+Full of Sun! Shadow, where does that land hide
+Where all made of oblivion matter reveals,
+Fire in self and a morning-less day in trees.
+
+What is the name of time before we're born
+Ready in others' hope and painless flame all that?
+Hello, oh possible star that we can't even think of,
+Or forget me poem, for my desire is to blame.
+Under ground the lasting that started shall continue.
+Oh everything that passed eternity became.
+")
+
+poem_bm44 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "End Of Journey", content: "
+Oh everything that passes, eternity becomes.
+Shadow that was tree, lasts. Wake
+under your name that wakes
+hand with flowers, blood enslaving itself.
+
+The journey will end, silent hills remain,
+Grey emptiness, wind that roams,
+Place that has no place in desire but offers
+evil to deliver us
+and reveal the truth.
+
+That which you pray to is a Sorrowful Nightingale.
+Love is never over.
+What makes suffering humane? O hear
+Echoing Day. Stars stand motionless.
+Empty hands, empty heart, wishful shadow
+I am gone, but my love remains.
+")
+
+poem_bm45 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Preaching Of Love", content: "
+I am gone but my love still exists;
+I see it in the Sun and soil where rot our bones.
+Day ends in it's grace
+like music like emptiness, in peace.
+
+It will save intentions mine and yours
+And resurrect dead birthdays at it's will.
+Immeasurable shade of villainy at the bottom of the wind
+Shall vanish into ash, of those that ceased to be.
+
+In an empty heart in the dead of night, call for me
+dead desire, to repeat the world.
+If I haven't found love and have lulled my mind to sleep,
+So the day that's yet to come already seems empty,
+May I unworthy be wrapped in the wind
+As a branch that stretches into noise in vain.
+")
+
+poem_bm46 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Main Roads", content: "
+May I unworthy be wrapped in a wind
+Grievance of black birds, sad ode and a tear
+Heavy shadows of some other world, that fell
+What's that hiding at the bottom of the poem.
+
+My beautiful day with elegy's heart
+I search for beginning, glow and hours that ceased
+When two sad birds gave you eternity
+At the door behind which the space rots
+
+The memory lost feeds the desert there.
+And by the fire where no day feeds
+Non-found treasure and the buried mourn are left.
+
+My love, dead, but yet alive
+Oh everything that passes, eternity becomes.
+Though I am gone my love still exists.
+")
+
+poem_bm47 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Dedication of elegies", content: "
+Messenger of headland what a bird
+under heart you carry? By an eye replaced the world
+above the river tightly sleeping you dream
+Bitter fruit of climate for riddles above your bloodstream
+when dead time and a pit the dome become
+of our bitter days in a lavish flow
+of stars under which I fell in fervour.
+Where I have kneeled the Sun shall fall.
+
+Speak up shadows do I sense the deceit
+of a bleary nape.Oh sad north of the body, sky of four winds, turn into vapour
+over wide open water that delivers
+over body whole the darkness of eyes. Flames
+become joyless when poems in me find
+the dark abundance that torture me starved.
+
+All that I have is our words
+over waters that suspect the dark splice of the flow
+when heights discover pain in me kneeling before
+my core that dreams the painless flower.
+By that which banishes river from the earth, let us be cured
+When world tuned our bread into stone
+when mirror into her dead face turns
+above evil cliff for the winged birds.
+
+Messenger of headland what a bird
+under heart you carry? By an eye replaced the world
+above the river tightly sleeping you dream
+Bitter fruit of climate for riddles above your bloodstream
+when dead time and a pit the dome become
+of our bitter days in a lavish flow
+of stars under which I fell in fervour.
+Where I have kneeled the Sun shall fall.
+")
+
+poem_bm48 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Ode to plants", content: "
+I
+They came from one concise day known and unknown
+Bashful in our use, many plants
+Making visible the line that divides dream from a day
+Any place where there is minerals and water imagination and air
+Plants that pierce the body with aery spears of scent
+that stop us with their poison and with protein extend
+They collect us 'round the world and our exhaustion feed
+Of the soil which stays before our powers locked
+they dig the needed treasures from the closed crease
+From the black lock which takes only plants, no keys
+Oh very brave and inventive plants
+Everything they find they unselfishly show
+Standing between us and the emptiness like the most beautiful fence
+Plants that devour emptiness and in turn give breath
+
+II
+
+They find roads between two extremes: between minerals in which there is no night,
+where sun never sets, where symmetry is constant even in our heart
+They grow away from real and then they appear
+They parallel future and the past making sure there isn't more of the dead real than the living unreal
+They make time necessary, go to death and back
+Blending day with night, conceiving sweet fruits
+Preparing love
+
+III
+
+That's where it all starts if there really is an adapted light in them
+(Where they don't mediate between us and our Sun is the desert)
+They create the world before it's obviousness before the first day
+Birds bloom in branches people of clay create trees and then take from it heart alike rose
+They are the least made up
+They don't exchange Sunday for Monday
+
+IV
+
+Two worlds are imagining it: underground and the one whose day is an imitation of the invisible Sun
+
+Plant with a root outside of this world
+Opens the wind up and enters the emptiness without knocking
+Penetrates the matter and touches eternity, it's persuaded flower
+It's floral experience: out-pour of one world into another
+Green witchcraft floral devil flower and not mind
+It's indolence touched by wonder
+
+Give the seed back to the oblivion
+It's transparency releases me of God
+Like the birds who cross the sea
+(confusing birds not understanding space)
+It's indolence it's flower without memory took away eternity though it is an act of the two worlds
+Though it exploits one substance not least specific in the depths of day
+
+Plants!
+I name them to live with me, I give them garden
+I introduce them to my needs and habits
+I use their oblivion
+
+V
+
+I know your root
+But from which seed does your shadow grow
+Floral beauty longtime invisible distant in the seed
+Underground you found my bodiless head that dreams the true dream
+
+Stars lined into cocoon
+Everything that's created with a song and Sun
+Between my absence and the night of your floral ambitions
+That make me needed even when I'm gone
+Green microphone
+of my underground voice Black Elder that grows from Hell
+For there is no other Sun under ground
+
+Oh plant where are your angels to insects alike
+And my blood that ties oxygen and time
+")
+
+poem_bm49 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Praise to the World", content: "
+Oh world do not leave me
+Do not go you naïve swallow
+
+Do not hurt the earth
+Do not bother the air
+Do no harm to water
+Do not make me quarrel with fire
+Let me walk
+Towards myself as towards my own aim
+
+Let me talk to water
+Talk to the earth
+And the bird that lives of air
+My voice stretched out as a nerve
+Let me talk
+While there is fire in me
+We may once be able
+To what we say, we touch with our hands
+
+Oh world do not leave me
+Do not go you naïve swallow
+")
+
+poem_bm50 = Poem.create(author_id: branko.id, book_id: book_bm.id, title: "Ode to the Fire", content: "
+I
+She has no one but the Sun and me
+
+II
+She appears to a vagabond
+to the witty one
+to the one in love
+
+Nothing is lost in fire
+it has only been interpreted
+
+III
+At the edges of fire
+objects that don't glow
+nor by any other means are,
+last in somebody else's time
+
+One-bird flock
+flies out of it.
+
+Take a handful of ashes
+or anything that has passed
+and you'll see that it still is fire
+or that it could be﻿
+")
+
+p "Miljkovic - 50x"
+
+# blake
 blake = Author.create(name: "William Blake")
 
 innocence = Book.create(author_id: blake.id, title: "Songs of Innocence and Experience / Songs of Innocence", year: "1789-94")
-experience = Book.create(author_id: blake.id, title: "Songs of Innocence and Experience / Songs of Experience", year: "1789-94")
-rosseti = Book.create(author_id: blake.id, title: "Poems from the Rossetti Manuscript / Part I.", year: "Written circa 1793")
-rossetti_2 = Book.create(author_id: blake.id, title: "Poems from the Rossetti Manuscript / Part II.", year: "Written circa 1800-1810")
-pickering = Book.create(author_id: blake.id, title: "The Pickering Manuscript", year: "c.1801-3")
-
-yeats = Author.create(name: "William Butler Yeats")
-poems = Book.create(author_id: yeats.id, title: "The Poems", year: "1865-1939")
-
-bukowski = Author.create(name: "Charles Bukowski")
-poems_b = Book.create(author_id: bukowski.id, title: "The Poems", year: "1920-1994")
-
 
 poem_i_1 = Poem.create(author_id: blake.id, book_id: innocence.id, title: "INTRODUCTION", content: "
 Piping down the valleys wild,
@@ -850,6 +2088,9 @@ He doth sit by us and moan.
 ")
 
 p "songs of innocence done :)"
+
+
+experience = Book.create(author_id: blake.id, title: "Songs of Innocence and Experience / Songs of Experience", year: "1789-94")
 
 poem_e_20 = Poem.create(author_id: blake.id, book_id: experience.id, title: "INTRODUCTION", content: "
 Hear the voice of the Bard,
@@ -1536,6 +2777,8 @@ The Human Heart, its hungry Gorge.
 
 p "songs of experience done :)"
 
+rosseti = Book.create(author_id: blake.id, title: "Poems from the Rossetti Manuscript / Part I.", year: "Written circa 1793")
+
 poem_r_47 = Poem.create(author_id: blake.id, book_id: rosseti.id, title: "NEVER SEEK TO TELL THY LOVE", content: "
 Never seek to tell thy love,
 Love that never told can be;
@@ -1978,6 +3221,8 @@ We turn to what will joy and please.'
 ")
 
 p "Poems from the Rossetti part 1 done :)"
+
+rossetti_2 = Book.create(author_id: blake.id, title: "Poems from the Rossetti Manuscript / Part II.", year: "Written circa 1800-1810")
 
 poem_r_67 = Poem.create(author_id: blake.id, book_id: rossetti_2.id, title: "MY SPECTRE AROUND ME NIGHT AND DAY", content: "
 i
@@ -2461,6 +3706,8 @@ The blossoms of Eternal Life!’
 ")
 
 p "Rossetti part 2 done :)"
+
+pickering = Book.create(author_id: blake.id, title: "The Pickering Manuscript", year: "c.1801-3")
 
 poem_p_83 = Poem.create(author_id: blake.id, book_id: pickering.id, title: "THE SMILE", content: "
 There is a Smile of Love
@@ -3046,6 +4293,10 @@ In the naked & outcast Seek Love there
 ")
 
 p "Pickering Manuscript done; Blake done, starting Yeats"
+
+
+yeats = Author.create(name: "William Butler Yeats")
+poems = Book.create(author_id: yeats.id, title: "The Poems", year: "1865-1939")
 
 poem_p_93 = Poem.create(author_id: yeats.id, book_id: poems.id, title: "The Young Man's Song", content: "
 I whispered, 'I am too young,'
@@ -4105,6 +5356,10 @@ These stones remain their monument and mine.
 ")
 
 p "yeats done"
+
+
+bukowski = Author.create(name: "Charles Bukowski")
+poems_b = Book.create(author_id: bukowski.id, title: "The Poems", year: "1920-1994")
 
 poem_135 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "8 Count", content: "
 from my bed
