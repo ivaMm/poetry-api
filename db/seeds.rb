@@ -326,6 +326,127 @@ end
   p 'Neruda done'
 end
 
+1.times do
+  author = Author.create(name: "Federico Garcia Lorca")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1898-1936")
+
+  nums = [17323, 17329, 17331, 17332, 17335, 17337, 17338, 17341, 17344]
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Lorca done'
+end
+
+1.times do
+  author = Author.create(name: "Leonard Cohen")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1934-2016")
+
+  nums = [42868, 42869, 42870, 530822107858537629, 70180, 3530822107858514769, 71608, 40537, 3530822107858572303, 37899, 61039, 71607, 62577, 3530822107859596625, 40542, 37901, 70428, 3530822107859536896, 3530822107859536897, 61017, 74433, 74432, 74429, 74415, 3530822107858602407, 3530822107858541162, 3530822107858575011, 62576, 74118, 74406, 74401, 74110, 138028]
+  nums.each do |num|
+    url = "https://songmeanings.com/songs/view/#{num}/"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h1 a').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('div.holder.lyric-box').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Cohen done'
+end
+
+# cohen - more
+cohen = Author.find_by_name("Leonard Cohen")
+book_lc = Book.find_by_author_id(cohen.id)
+
+poem_lc1 = Poem.create!(author_id: cohen.id, book_id: book_lc.id, title: "Gift", content: "
+You tell me that silence
+is nearer to peace than poems
+but if for my gift
+I brought you silence
+(for I know silence)
+you would say
+     'This is not silence
+this is another poem'
+and you would hand it back to me.
+")
+
+poem_lc2 = Poem.create!(author_id: cohen.id, book_id: book_lc.id, title: "You Do Not Have To Love Me", content: "
+You do not have to love me
+just because
+you are all the women
+I have ever wanted
+I was born to follow you
+every night
+while I am still
+the many men who love you
+
+I meet you at a table
+I take your fist between my hands
+in a solemn taxi
+I wake up alone
+my hand on your absense
+in Hotel Discipline
+
+I wrote all these songs for you
+I burned red and black candles
+shaped like a man and a woman
+I married the smoke
+of two pyramids of sandalwood
+I prayed for you
+I prayed that you would love me
+and that you would not love me
+")
+
+poem_lc3 = Poem.create!(author_id: cohen.id, book_id: book_lc.id, title: "I left a woman waiting", content: "
+I left a woman waiting
+I met her sometime later
+She said, I see your eyes are dead
+What happened to you, lover?
+What happened to you, my lover?
+What happened to you, lover?
+What happened to you?
+And since she spoke the truth to me
+I tried to answer truthfully
+Whatever happened to my eyes
+Happened to your beauty
+Happened to your beauty
+What happened to your beauty
+Happened to me
+We took ourselves to someone's bed
+And there we fell together
+Quick as dogs and truly dead were we
+And free as running water
+Free as running water
+Free as running water
+Free as you and me
+The way it's got to be
+The way it's got to be, lover
+")
+
 # vesna parun
 vesna = Author.create(name: "Vesna Parun")
 
