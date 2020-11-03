@@ -356,7 +356,7 @@ end
   author = Author.create(name: "Leonard Cohen")
   book = Book.create(author_id: author.id, title: "The Poems", year: "1934-2016")
 
-  nums = [42868, 42869, 42870, 530822107858537629, 70180, 3530822107858514769, 71608, 40537, 3530822107858572303, 37899, 61039, 71607, 62577, 3530822107859596625, 40542, 37901, 70428, 3530822107859536896, 3530822107859536897, 61017, 74433, 74432, 74429, 74415, 3530822107858602407, 3530822107858541162, 3530822107858575011, 62576, 74118, 74406, 74401, 74110, 138028]
+  nums = [42869, 42870, 530822107858537629, 70180, 3530822107858514769, 71608, 40537, 3530822107858572303, 37899, 61039, 71607, 62577, 3530822107859596625, 40542, 37901, 70428, 3530822107859536896, 3530822107859536897, 61017, 74433, 74432, 74429, 74415, 3530822107858602407, 3530822107858541162, 3530822107858575011, 62576, 74118, 74406, 74401, 74110, 138028]
   nums.each do |num|
     url = "https://songmeanings.com/songs/view/#{num}/"
     html_file = open(url).read
@@ -605,7 +605,7 @@ Not caring, the naughty one, that I’m crazy for her!
 ")
 
 # ujevic
-tin = Author.create(name: "Augustin Tin Ujevic")
+ujevic = Author.create(name: "Augustin Tin Ujevic")
 
 book_atu = Book.create(author_id: ujevic.id, title: "The Poems", year: "1891-1955")
 
@@ -639,7 +639,7 @@ around your neck, my beloved girl.
 ")
 
 # desanka maksimovic
-desanka = Author.create(name: "Antun Branko Simic")
+desanka = Author.create(name: "Desanka Maksimovic")
 
 book_dm = Book.create(author_id: desanka.id, title: "The Poems", year: "1898-1993")
 
@@ -1088,7 +1088,7 @@ I love all the truths that aren't compulsory
 For actual truth is shy as a flower
 
 I love yesterday's tenderness
-To tell my own body "enough" and dream of plants
+To tell my own body 'enough' and dream of plants
 Fingers eyes and hearing differently organized
 In the forest than in body
 ")
