@@ -326,6 +326,362 @@ end
   p 'Neruda done'
 end
 
+# vesna parun
+vesna = Author.create(name: "Vesna Parun")
+
+book_vp = Book.create(author_id: vesna.id, title: "The Poems", year: "1922-2010")
+
+poem_vp1 = Poem.create(author_id: vesna.id, book_id: book_vp.id, title: "You Having Hands More Innocent Than Mine", content: "
+You having hands more innocent than mine
+and being as wise as carelessness.
+You, who can read better than I
+his loneliness from his brow,
+and remove the slow shadows of
+hesitance from his face
+the way the spring wind removes
+the cloud shadows floating above the hill.
+
+If your embrace cheers the heart
+and your thighs arrest the pain,
+if your name is a repose
+to his thoughts, and your throat
+a shade to his bed,
+and the night of your voice an orchard
+still untouched by storms.
+
+Then stay by him
+and be more devoted than all
+others that loved him before you.
+Fear the echo that
+approaches innocent love nests.
+And be gentle to his dream,
+under an invisible mountain
+at the edge of the roaring sea.
+
+Walk along his shore. May the sad
+porpoises meet you.
+Wander through his woods.
+Friendly lizards won’t do you
+any harm.
+And thirsty snakes I tamed
+will be humbled before you.
+
+May the birds I warmed
+in the nights of hard frost
+sing for you.
+May the boy I shielded from the spies
+on an empty road caress you.
+And the flowers I watered with my tears
+cover you with their fragrance.
+
+I didn’t witness the best age of his
+manhood. I didn’t receive his fruits
+in my bosom
+that was ravaged by the stares
+of cattlemen on the fairs
+and greedy robbers.
+
+I will never hold hands of
+his children. And the tales
+I made for them a long time ago
+will tell to poor little bears
+left in black forest.
+You having hands more innocent than mine,
+be gentle to his dream
+that remained innocent.
+But let me see his face while
+unknown years descend upon it.
+
+And tell me sometimes the things
+about him,
+so I don’t need to ask
+astonished strangers,
+and the neighbours that pity
+my patience.
+
+You having hands more innocent than mine,
+stay by his headrest
+and be gentle to his dream!
+")
+
+# antun gustav matos
+matos = Author.create(name: "Antun Gustav Matos")
+
+book_agm = Book.create(author_id: matos.id, title: "The Poems", year: "1873-1914")
+
+poem_agm1 = Poem.create(author_id: matos.id, book_id: book_agm.id, title: "Hair Comfort", content: "
+ watched you last night. In a dream. Sad. Dead.
+In a fatal hall, in idyll of flowers,
+On a high stand, in agony of candles,
+Ready to give you my life as an offer.
+
+I didn’t cry. I didn’t. I stood stunned
+In the fatal hall, full of splendid death.
+Doubting that the dark eyes are clear
+From where once a better life to me shined.
+
+All, all is dead; the eyes, breath and arms,
+All that desperately I tried to revive
+In a blind horror and the passion pains.
+
+In the fatal hall, thoughts in greys.
+Only your hair was still alive,
+And told me: Death is a dream. Be calm!
+")
+
+# santic
+santic = Author.create(name: "Aleksa Santic")
+
+book_as = Book.create(author_id: santic.id, title: "The Poems", year: "1868-1924")
+
+poem_as1 = Poem.create(author_id: santic.id, book_id: book_as.id, title: "Where are you?", content: "
+When pearls of dew at night are strewn
+On meadow flowers in early bloom,
+My bosom starts a longing tune:
+“Where are you, where are you?”
+
+When, relaxed, I fall asleep,
+When my soul calm is deep,
+In my heart whispers creep:
+“Where are you, where are you?”
+
+When the dawn glows red
+In the shimmer of jewels clad,
+My soul stirs a song in bed:
+“Where are you, where are you?”
+
+When great rejoicing is on high
+And gloom prepares a heavy sigh,
+My love begins to sing the rhyme:
+''Where are you, where are you?''
+")
+
+poem_as2 = Poem.create(author_id: santic.id, book_id: book_as.id, title: "Emina", content: "
+Last night, returning from the warm hamam,
+I passed by the garden of the old imam,
+And lo, in the garden, in the shade of a jasmine,
+There with a pitcher in her hand stood Emina.
+
+What beauty! By my Muslim faith I could swear,
+She wouldn’t be ashamed if she were at the sultan’s!
+And the way she walks and her shoulders move...
+-Not even a hodja’s amulet could help me!
+
+I offered her salaam, but by my faith,
+Beautiful Emina wouldn’t even hear it.
+Instead, scooping water in her silver pitcher,
+Around the garden she went to water the roses.
+
+A wind blew from the branches down her lovely shoulders
+Unravelling those thick braids of hers.
+Her hair gave off a scent of blue hyacinths,
+Making me giddy and confused!
+
+I nearly stumbled, I swear by my faith,
+But beautiful Emina didn’t come to me.
+She only gave me a frowning look,
+Not caring, the naughty one, that I’m crazy for her!
+")
+
+# ujevic
+tin = Author.create(name: "Augustin Tin Ujevic")
+
+book_atu = Book.create(author_id: ujevic.id, title: "The Poems", year: "1891-1955")
+
+poem_atu1 = Poem.create(author_id: ujevic.id, book_id: book_atu.id, title: "Nocturne", content: "
+Tonight my forehead is white-hot,
+Tonight my eyebrows all perspire
+And a dream lights up my thought,
+Of beauty tonight I shall expire!
+
+The soul is passionate in its core,
+It’s a torch in the deep of night,
+Let us weep, weep without roar,
+Let us die, die alone, out of sight!
+")
+
+poem_atu2 = Poem.create(author_id: ujevic.id, book_id: book_atu.id, title: "Necklace V", content: "
+These words are black from profoundness,
+these poems are ripe and without a fuss,
+they so gushed forth from the darkness
+and now aim like outstretched arms.
+
+If not the poet, I am at least a wretch
+and sometimes I cherish my wounds.
+For each sob will a gold coin fetch,
+and my tears will make necklace beads.
+
+Though they will have price only
+if seen once, all in gold and pearl
+hanging as a necklace gloriously
+around your neck, my beloved girl.
+")
+
+# desanka maksimovic
+desanka = Author.create(name: "Antun Branko Simic")
+
+book_dm = Book.create(author_id: desanka.id, title: "The Poems", year: "1898-1993")
+
+poem_dm1 = Poem.create(author_id: desanka.id, book_id: book_dm.id, title: "Bloody Fairy Tale", content: "
+It was in a land of peasants
+in the mountainous Balkans,
+a company of schoolchildren
+died a martyr's death
+in one day.
+
+They were all born
+in the same year
+their school days passed the same
+taken together
+to the same festivities,
+vaccinated against the same diseases,
+and all died on the same day.
+
+It was in a land of peasants
+in the mountainous Balkans,
+a company schoolchildren
+died a martyr's death
+in one day.
+
+And fifty-five minutes
+before the moment of death
+the company of small ones
+sat at its desk
+and the same difficult assignments
+they solved: how far can a
+traveler go if he is on foot...
+and so on.
+
+Their thoughts were full
+of the same numbers
+and throughout their notebooks in school bags
+lay an infinite number
+of senseless A's and F's.
+A pile of the same dreams
+and the same secrets
+patriotic and romantic
+they clenched in the depths of their pockets.
+and it seemed to everyone
+that they will run
+for a long time beneath the blue arch
+until all the assignments in the world
+are completed.
+
+It was in a land of peasants
+in the mountainous Balkans,
+a company of small ones
+died a martyr's death
+in one day.
+
+Whole rows of boys
+took each other by the hand
+and from their last class
+went peacefully to slaughter
+as if death was nothing.
+
+Whole lines of friends
+ascended at the same moment
+to their eternal residence.
+")
+
+poem_dm2 = Poem.create(author_id: desanka.id, book_id: book_dm.id, title: "Warning", content: "
+Listen, I'll tell you my secret:
+Never leave me alone
+when music plays.
+It could seem to me
+that some eyes gray
+are so deep and soft,
+the eyes that are actually plain.
+It could seem to me
+that I dive into the sound
+and I could give my hands
+to anyone around.
+It could seem to me
+so easy, so gay
+to love someone
+for only one day.
+Or, I could tell someone
+my dearest,
+magically growing secret
+how much I love you.
+Oh, never leave me alone
+when music plays.
+It could seem to me that again,
+somewhere in a forest,
+my tears flow through a new well.
+It could seem to me that a black butterfly
+makes patterns on heavy water--
+those that no one feels free to tell.
+It could seem to me that somewhere in the dark zone
+someone sings and with a bitter flower
+touches my heart where the incurable wound stays.
+Oh, never leave me alone,
+never alone,
+when music plays.
+")
+
+poem_dm3 = Poem.create(author_id: desanka.id, book_id: book_dm.id, title: "Apprehension", content: "
+No… don’t come to me! I want to adore
+and love your two eyes from far, far away.
+For, happiness’s beau just while waiting for—
+when only allusion comes out of its way.
+
+No… don’t come to me! There is more allure
+in waiting with sweet apprehension, fear.
+Just while seeking out everything is pure;
+It’s nicer when just forboding is near.
+
+No… don’t come to me! Why that, and what for?
+Only from afar all stars spark and glee;
+Only from afar we admire all.
+No… let not your eyes come closer to me.
+")
+
+poem_dm4 = Poem.create(author_id: desanka.id, book_id: book_dm.id, title: "Spring Poem", content: "
+While watching all these early buds and swallows,
+I can feel tonight
+that my heart’s slowly growing over sorrows
+as someone’s horizon on smiley days might;
+That it’s getting bigger like all plants around
+and as light as feather,
+and that all happiness that’s above the ground
+and a Hell of pain wouldn’t really matter:
+
+It’s longing for all things that a life as such
+could give nice to thy,
+and completely nothing wouldn’t be too much--
+it’s eager desire and hopes are so high.
+Everything that’s happened has been just a play
+of my heart on fire;
+my true love has never been given away
+as much as I could and as I desire;
+
+There are, in my deeps, gentle tides of words
+never let outside;
+I could give my heart to everyone on worlds,
+yet, it would remain a lot of it inside.
+")
+
+poem_dm5 = Poem.create(author_id: desanka.id, book_id: book_dm.id, title: "I Seek Absolution", content: "
+I seek absolution
+For those who have no strength
+To tell an evil man that he is evil
+Or a bad man that he is bad;
+For the one who regrets to make
+Another man unhappy with the truth,
+For the people who lie out of mercy.
+For the man who would rather be
+Humiliated than to humiliate,
+For the one who, even if he discerns
+A mask on a face,
+Has no heart to tear it off,
+For the people who cannot offend
+A man of a different faith or belief,
+To whom all judges seem stern
+For each merciful falsehood and
+Many other similar weaknesses.
+")
+
 # simic
 simic = Author.create(name: "Antun Branko Simic")
 
