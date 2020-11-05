@@ -8846,6 +8846,243 @@ Nor sorrow take
 His endless look.
 ")
 
+
+# add more => rails c
+1.times do
+  author = Author.create(name: "Friedrich Nietzsche")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1844-1900")
+
+  nums = [20799, 20800]
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Nietzsche done'
+end
+
+1.times do
+  author = Author.create(name: "Edgar Allan Poe")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1809-1849")
+
+  nums = (22531..22596).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Edgar Allan Poe done'
+end
+
+1.times do
+  author = Author.create(name: "Vasko Popa")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1922-1991")
+
+  nums = (22599..22630).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Vasko Popa done'
+end
+
+1.times do
+  author = Author.create(name: "Charles Baudelaire")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1821-1867")
+
+  nums = (2153..2194).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Charles Baudelaire done'
+end
+
+1.times do
+  author = Author.create(name: "Sylvia Plath")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1932-1963")
+
+  nums = (22229..22458).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Sylvia Plath done'
+end
+
+1.times do
+  author = Author.create(name: "Walt Whitman")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1819-1892")
+
+  nums = (33509..33838).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Walt Whitman done'
+end
+
+1.times do
+  author = Author.create(name: "James Joyce")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1882-1941")
+
+  nums = (14311..14361).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'James Joyce done'
+end
+
+1.times do
+  author = Author.create(name: "Jalaluddin Rumi")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1207-1273")
+
+  nums = (24351..24432).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Jalaluddin Rumi done'
+end
+
+1.times do
+  author = Author.create(name: "Khalil Gibran")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1883-1931")
+
+  nums = (11000..11046).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Khalil Gibran done'
+end
+
+
 p "seed done! #{Poem.count}"
 
 p "start cleaning"
@@ -8853,3 +9090,4 @@ p "start cleaning"
 Poem.destroy_by(content: "")
 
 p "done #{Poem.count}"
+
