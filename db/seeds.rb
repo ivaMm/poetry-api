@@ -9082,6 +9082,1116 @@ end
   p 'Khalil Gibran done'
 end
 
+prevert = Author.create(name: "Jacques Prévert")
+book_jp = Book.create(author_id: prevert.id, title: "The Poems", year: "1900-1977")
+
+poem_jp1 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Alicante", content: "
+  An orange on the table
+  Your dress on the rug
+  And you in my bed
+  Sweet gift of the present
+  Freshness of the night
+  Warmth of my life
+  ")
+
+poem_jp2 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "This Love", content: "
+This love
+So violent
+So fragile
+So tender
+So hopeless
+This love
+Beautiful as the day
+And bad as the weather
+When the weather is bad
+This love so true
+This love so beautiful
+So happy
+So joyous
+And so pathetic
+Trembling with fear like a child in the dark
+And so sure of itself
+Like a tranquil man in the middle of the night
+This love that made others afraid
+That made them speak
+That made them go pale
+This love intently watched
+Because we intently watch it
+Run down hurt trampled finished denied forgotten
+Because we ran it down hurt it trampled
+it finished it denied it forgot it
+This whole entire love
+Still so lively
+And so sunny
+It's yours
+It's mine
+That which has been
+This always new thing
+And which hasn't changed
+As true as a plant
+As trembling as a bird
+As warm as live as summer
+We can both of us
+Come and go
+We can forget
+And then go back to sleep
+Wake up suffer grow old
+Go back to sleep again
+Awake smile and laugh
+And feel younger
+Our love stays there
+Stubborn as an ***
+Lively as desire
+Cruel as memory
+Foolish as regrets
+Tender as remembrance
+Cold as marble
+Beautiful as day
+Fragile as a child
+It watches us, smiling
+And it speaks to us without saying a word
+And me I listen to it, trembling
+And I cry out
+I cry out for you
+I cry out for me
+I beg you
+For you for me for all who love each other
+And who loved each other
+Yes I cry out to it
+For you for me and for all the others
+That I don't know
+Stay there
+There where you are
+There where you were in the past
+Stay there
+Don't move
+Don't go away
+We who loved each other
+We've forgotten you
+Don't forget us
+We had only you on the earth
+Don't let us become cold
+Always so much farther away
+And anywhere
+Give us a sign of life
+Much later on a dark night
+In the forest of memory
+Appear suddenly
+Hold your hand out to us
+And save us
+")
+
+poem_jp3 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "The Dunce", content: "
+He says no with his head
+but he says yes with his heart
+he says yes to what he loves
+he says no to the teacher
+he stands
+he is questioned
+and all the problems are posed
+sudden laughter seizes him
+and he erases all
+the words and figures
+names and dates
+sentences and snares
+and despite the teacher's threats
+to the jeers of infant prodigies
+with chalk of every colour
+on the blackboard of misfortune
+he draws the face of happiness.
+")
+
+poem_jp4 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Autumn", content: "
+A horse collapses in the middle of an alley
+Leaves fall on him
+Our love trembles
+And the sun too.
+")
+
+poem_jp5 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Picasso's Promenade", content: "
+On a very round plate of real porcelain
+an apple poses
+face to face with it
+a painter of reality
+vainly tries to paint
+the apple as it is
+but
+the apple won't allow it
+the apple
+it has its word to say about it
+and several tricks in its bag of apples
+and there it is turning
+on its real plate
+artfully on itself
+blandly without budging
+and like a Duc de Guise who disguises himself as a gas duct
+because they want to draw his portrait against his will
+the apple disguises itself as a beautiful fruit in disguise
+and it's then
+that the painter of reality
+begins to realize
+that all the appearances of the apple are against him
+and
+like the unfortunate pauper
+like the poor pauper who finds himself suddenly at the mercy
+  of no matter what benevolent and charitable and redoubtable
+  association of benevolence charity and redoubtability
+the unfortunate painter of reality
+then suddenly finds himself the sad prey
+of a numberless crowd of associations of ideas
+And the apple turning evokes the apple tree
+the earthly Paradise and Eve and then Adam
+a watering-can a trellis Parmentier a stairway
+Canadian Hesperidian Norman apples Reinette apples and Appian apples
+the serpent of the Tennis Court and the Oath of Apple Juice
+and original sin
+and the origins of art
+and Switzerland with William Tell
+and even Isaac Newton
+several times prizewinner at the Exhibition of Universal Gravitation
+and the dazed painter loses sight of his model
+and falls asleep
+It's just then that Picasso
+who's going by there as he goes by everywhere
+every day as if at home
+sees the apple and the plate and the painter fallen asleep
+What an idea to paint an apple
+says Picasso
+and Picasso eats the apple
+and the apple tells him Thanks
+and Picasso breaks the plate
+and goes off smiling
+and the painter drawn from his dreams
+like a tooth
+finds himself all alone again before his unfinished canvas
+with right in the midst of his shattered china
+the terrifying pips of reality.
+")
+
+poem_jp6 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Song", content: "
+What day is it
+It's everyday
+My friend
+It's all of life
+My love
+We love each other and we live
+We live and love each other
+And do not know what this life is
+And do not know what this day is
+And do not know what this love is
+")
+
+poem_jp7 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Paris At Night", content: "
+Three matches one by one lit in the night
+The first to see your whole face
+The second to see your eyes
+The last to see your mouth
+And the whole darkness to remind me of it all
+Hugging you
+
+(translation version 2:
+Three matches one by one struck in the night
+The first to see your face in its entirety
+The second to see your eyes
+The last to see your mouth
+And the darkness all around to remind me of all these
+As I hold you in my arms.)
+")
+
+poem_jp8 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Breakfast", content: "
+He put the coffee
+In the Cup
+He put the milk
+In the coffee cup
+He added the sugar
+In the coffee with milk
+With spoon
+He turned
+He drank the coffee with milk
+And he based the cup
+Without speaking to me
+He lit up
+A cigarette
+He made circles
+With the smoke
+He put the ashes
+In the ashtray
+Without speaking to me
+Without looking at me
+He got up
+He put
+His hat on his head
+He put
+His raincoat
+Because it was raining
+And he left
+Under the rain
+Without a word
+Without looking at me
+And I took
+My head in my hands
+And I cried.
+")
+
+poem_jp9 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Barbara", content: "
+Remember barbara
+It was raining constantly on Brest that day
+And you walked smiling
+Radiant delighted free-flowing
+Under the rain
+Remember barbara
+It was raining constantly on Brest
+And I met you rue de Siam
+You were smiling
+And I was smiling the same
+Remember barbara
+You that I didn't know
+You who didn't know me
+Reminds you
+Still remember that day
+Do not forget
+A man under a porch was sheltering
+And he shouted your name
+Barbara
+And you ran to him in the rain
+Dazzling delighted blossoming
+And you threw yourself into his arms
+Remember that Barbara
+And don't hold it against me if I tu you
+I tell you to everyone I love
+Even if I only saw them once
+I tell you to all those who love each other
+Even if I don't know them
+Remember barbara
+Do not forget
+This wise and happy rain
+On your happy face
+On this happy city
+This rain on the sea
+On the arsenal
+On Ouessant's boat
+Oh barbara
+What bullshit war
+What have you become now
+Under this iron rain
+Of blood steel fire
+And whoever hugged you
+Lovingly
+Is he dead missing or still alive
+Oh barbara
+It's raining endlessly on Brest
+As it was raining before
+But it's not the same anymore and everything is damaged
+It's a terrible and sorry rain of mourning
+It's not even the storm anymore
+Blood iron steel
+Simply clouds
+Who die like dogs
+Dogs that disappear
+Along the water on Brest
+And will rot away
+Far far away from Brest
+Of which nothing remains.
+")
+
+poem_jp10 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "The Lord's Supper", content: "
+They are at the table
+They don't eat
+They are not on their plate
+And their plate stands straight
+Vertically behind their heads.
+")
+
+poem_jp11 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Sunday", content: "
+Between the rows of trees on avenue des Gobelins
+A marble statue leads me by the hand
+Today is Sunday the cinemas are full
+Birds in the branches watch humans
+And the statue kisses me but no one sees us
+Except a blind child who points to us.
+")
+
+poem_jp12 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Pater Noster", content: "
+Our Father in heaven
+Stay there
+And we will stay on earth
+Who is sometimes so pretty
+With its mysteries of New York
+And then its mysteries of Paris
+Who are worth that of the Trinity
+With its small Ourcq canal
+Its great wall of China
+Its Morlaix river
+His nonsense from Cambrai
+With its Pacific Ocean
+And its two pools at the Tuilleries
+With his good children and his bad subjects
+With all the wonders of the world
+Who are there
+Simply on earth
+Available to everyone
+Scattered
+Amazed themselves to be such wonders
+And who dare not admit it
+Like a pretty naked girl who dares not show herself
+With the appalling misfortunes of the world
+Who are legion
+With their legionaries
+With their torturers
+With the masters of this world
+The masters with their priests their traitors and their reisters
+With the seasons
+With the years
+With the pretty girls and with the old idiots
+With the straw of misery rotting in the steel of the cannons.
+")
+
+poem_jp13 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "To do a bird's portrait", content: "
+Paint a cage first
+with an open door
+then paint
+something nice
+something simple
+something beautiful
+something useful
+for the bird
+then place the canvas against a tree
+in a garden
+in a forest
+or in a forest
+hide behind the tree
+without saying anything
+without moving ...
+Sometimes the bird arrives quickly
+but it may as well take long years
+before deciding
+Do not be discouraged
+wait
+wait if necessary for years
+the speed or the slowness of the arrival of the bird
+having no relation
+with the success of the painting
+When the bird arrives
+if he arrives
+observe the deepest silence
+wait for the bird to enter the cage
+and when he entered
+gently close the door with the brush
+then
+delete all the bars one by one
+being careful not to touch any of the bird's feathers
+Then make a portrait of the tree
+by choosing the most beautiful of its branches
+for the bird
+also paint the green foliage and the freshness of the wind
+the dust of the sun
+and the sound of grass beasts in the heat of summer
+and then wait until the bird decides to sing
+If the bird does not sing
+it's a bad sign
+sign that the painting is bad
+but if he sings it's a good sign
+sign you can sign
+So you gently tear off
+one of the bird's feathers
+and write your name in the corner of the board.
+")
+
+poem_jp14 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "The garden", content: "
+Thousands and thousands of years
+Not sufficient
+To say
+The little second of eternity
+Where you kissed me
+Where i kissed you
+One morning in the winter light
+At Parc Montsouris in Paris
+In Paris
+On the ground
+The earth which is a star.
+")
+
+poem_jp15 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "First day", content: "
+White sheets in a wardrobe
+Red sheets in a bed
+A child in his mother
+His mother in pain
+Father in the hallway
+The hallway in the house
+The house in the city
+The city at night
+Death in a cry
+And the child in life.
+")
+
+poem_jp16 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Almost", content: "
+In Fontainebleau
+In front of the Aigle Noir hotel
+There is a bull sculpted by Rosa Bonheur
+A little further all around
+There is the forest
+And a little further
+Pretty body
+There is still the forest
+And misfortune
+And next to it happiness
+Happiness with dark circles
+Happiness with pine needles in the back
+Happiness that thinks of nothing
+Happiness like the bull
+Sculpted by Rosa Bonheur
+And then the misfortune
+Misfortune with a gold watch
+With a train to catch
+The misfortune that thinks of everything ...
+Asset
+Everything ... everything ... everything ...
+And at all
+And who wins 'almost' every time
+Almost.
+")
+
+poem_jp17 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "The Beautiful Season", content: "
+Fasting frozen
+All alone penniless
+A sixteen year old girl
+Standing still
+Place de la Concorde
+At noon on August 15th.
+")
+
+poem_jp18 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Huge And Red", content: "
+Huge and red
+Above the Grand Palace
+The winter sun appears
+And disappears
+Like him my heart will disappear
+And all my blood will go away
+Go away looking for you
+My love
+My beauty
+And find you
+There where you are.
+")
+
+poem_jp19 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "The Red Horse", content: "
+In the rides of the lie
+The red horse of your smile
+Turned
+And I'm standing there planted
+With the sad whip of reality
+And I have nothing to say
+Your smile is also true
+Let my four truths.
+")
+
+poem_jp20 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "The Broken Mirror", content: "
+The little man who kept singing
+the little man who danced in my head
+the little youth man
+broke his shoe lace
+and all the huts of the party
+suddenly fell apart
+and in the silence of this celebration
+in the desert of this head
+I heard your happy voice
+your torn and fragile voice
+childish and sorry
+coming from afar and who called me
+and i put my hand on my heart
+where stirred
+bloody
+the seven pieces of ice from your starry laughter.
+")
+
+poem_jp21 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Quicksands", content: "
+Demons and wonders
+Winds and tides
+Already far away the sea has retreated
+Demons and wonders
+Winds and tides
+And you
+Like an alga gently caressed by the wind
+In the sands of the bed you stir while dreaming
+Demons and wonders
+Winds and tides
+Already far away the sea has retreated
+But in your half-open eyes
+Two small waves remained
+Demons and wonders
+Winds and tides
+Two little waves to drown me.
+")
+
+poem_jp22 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Despair Sits On A Bench", content: "
+In a square on a bench
+There is a man who calls you when we pass
+He has binoculars an old gray suit
+He smokes a little ninas he sits
+And he calls you when we pass
+Or just beckons you
+Don't look at it
+Don't listen to it
+You have to pass
+Pretend we don't see him
+As if we didn't hear it
+We must pass hurry
+If you watch it
+If you listen to it
+He beckons you and nothing and nobody
+Can't stop you from sitting next to him
+So he looks at you and smiles
+And you suffer excruciatingly
+And the man keeps smiling
+And you smile with the same smile
+Exactly
+The more you smile the more you suffer
+Excruciatingly
+The more you suffer the more you smile
+Irremediably
+And you stay there
+Frozen sitting
+Smiling on the bench
+Children playing near you
+Passers-by pass
+Quietly
+Birds fly away
+Leaving a tree
+For another
+And you stay there
+On the bench
+And you know you know
+That you will never play again
+Like these kids
+You know that you will never pass again
+Quietly
+Like these passers-by
+Never again will you fly away
+Leaving one tree for another
+Like these birds.
+")
+
+poem_jp23 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "The School of Fine Arts", content: "
+In a box of braided straw
+Father chooses a small ball of paper
+And he throws it away
+In the bowl
+In front of her intrigued children
+Then arises
+multicolour
+The big Japanese flower
+The instant water lily
+And the children are silent
+amazed
+Never later in their memory
+This flower cannot fade
+This sudden flower
+Made for them
+Minute
+In front of them.
+")
+
+poem_jp24 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "You will see what you will see", content: "
+A naked girl swims in the sea
+Bearded man walking on water
+Where is the wonder of wonders
+The miracle announced above?
+")
+
+poem_jp25 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Song In The Blood", content: "
+There are large pools of blood on the world
+where does all this spilled blood go
+Is it the earth that drinks it and gets drunk
+funny drunk then
+so wise ... so monotonous ...
+No the earth doesn't get drunk
+the earth doesn't go wrong
+she regularly pushes her toy car her four seasons
+rain ... snow ...
+hail ... good weather ...
+she is never drunk
+it barely allows itself from time to time
+an unfortunate little volcano
+She turns the earth
+it turns with its trees ... its gardens ... its houses ...
+she turns with her big pools of blood
+and all living things turn with it and bleed ...
+She doesn't care
+Earth
+it turns and all living things start to scream
+she does not care
+She turns
+it doesn't stop spinning
+and the blood keeps flowing ...
+Where does all this spilled blood go
+the blood of murders ... the blood of wars ...
+the blood of misery ...
+and the blood of men tortured in prisons ...
+the blood of children quietly tortured by their mom and dad ...
+and the blood of men who bleed from the head
+in the sheds ...
+and the roofer's blood
+when the roofer slips and falls from the roof
+
+The declared war
+I took my courage
+with two hands
+and I strangled him.
+
+The Minister of War:
+I continue.
+A destroyed hospital: ten, a hundred -
+and I am modest -
+can be rebuilt
+And, the project adopted unanimously,
+night has fallen,
+the hospital jumped with some scraps from the neighborhood nearby.
+Day breaks over the city
+where laughter diminishes, dissipates and disappears.
+Everything becomes serious again.
+Life, like the stock market, resumes its course
+and general mobilization continues in a normal fashion.
+
+And the blood that comes and flows in great waves
+with the newborn ... with the new child ...
+the screaming mother ... the crying child ...
+blood flows ... the earth turns
+the earth keeps spinning
+the blood keeps flowing
+Where does all this spilled blood go
+the blood of the batons ... of the humiliated ...
+suicides ... shootings ... convicts ...
+and the blood of those who die like that ... by accident.
+In the street passes a living
+with all his blood in it
+suddenly he's dead
+and all his blood is out
+and the rest of the living make the blood disappear
+they take away the body
+but he is stubborn blood
+and where the dead man was
+much later all black
+a little blood still spills ...
+clotted blood
+rust of life rust of bodies
+blood curdled like milk
+like milk when it turns
+when it turns like the earth
+like the spinning earth
+with his milk ... with his cows ...
+with his living ... with his dead ...
+the earth that turns with its trees ... its living ... its houses ...
+the earth that turns with weddings ...
+burials ...
+shells ...
+regiments ...
+the earth which turns and which turns and which turns
+with its great streams of blood.
+")
+
+poem_jp26 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Osiris or the Flight into Egypt", content: "
+It's war it's summer
+The war is already summer
+And the desolate isolated city
+Smile smile again
+Smile smile anyway
+With her sweet summer look
+Smile sweetly to those who love each other
+It's war it's summer
+A man with a woman
+Walk in a deserted museum
+This museum is the Louvre
+This city is Paris
+And the freshness of the world
+Is there all asleep
+A guard wakes up hearing the steps
+Press a button and fall back into your dream
+However that appears in its stone niche
+The wonder of Egypt standing in its light
+The statue of Osiris alive in the dead wood
+Alive to kill again
+All the dead idols of the churches of Paris
+And the lovers kiss
+Osiris marries them
+And then go into the shadows
+Of his living night.
+")
+
+poem_jp27 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Song of the Birder", content: "
+The bird that flies so gently
+The red bird, warm as blood
+The tender bird the mocking bird
+The bird that suddenly gets scared
+The bird that suddenly knocks
+The bird that wants to run away
+The bird alone and panicked
+The bird that would like to live
+The bird that would like to sing
+The bird that would cry
+The red bird, warm as blood
+The bird that flies so gently
+It's your pretty child heart
+Your heart beating so sadly
+Against your breast so hard so white
+")
+
+poem_jp28 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Complaint Of The Shot", content: "
+They pulled me out
+pity
+I was a bad target
+the sky was so blue
+They looked up
+invoking their god
+And whoever approached
+only
+without hurrying
+just like them
+a little bit pulled aside
+next to the last spring
+to the grace of the dead
+At the grace of God.
+
+They pulled me out
+by the feet
+and threw me in the cart of the dead
+dead from the ranks
+ranks in their lifetime
+numbered
+their living hostile to death
+And I'm there near them
+still living a little
+killing the time of my pain
+killing time as best I can.
+")
+
+poem_jp29 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Jailer's Song", content: "
+Where are you going handsome jailer
+With that blood stained key
+I will deliver the one I love
+If there is still time
+And that I locked up
+Tenderly cruelly
+At the most secret of my desire
+In the depths of my torment
+In the lies of the future
+In the nonsense of oaths
+I want to deliver her
+I want her to be free
+And even to forget me
+And even go away
+And even come back
+And still to love me
+Or to love another
+If another likes him
+And if I stay alone
+And she went
+I will only keep
+I will always keep
+In my two hollow hands
+Until the end of the days
+The softness of her breasts shaped by love.
+")
+
+poem_jp30 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "The Wonders of Freedom", content: "
+Between the teeth of a trap
+The paw of a white fox
+And blood on the snow
+The blood of the white fox
+And tracks in the snow
+The tracks of the white fox
+Who escapes on three legs
+In the setting sun
+With between his own teeth
+A hare that is still alive
+")
+
+poem_jp31 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Vincent's Lament", content: "
+At Arles where rolls the Rhone
+In the atrocious midday light
+A man of phosphor and blood
+Gives a haunting groan
+Like a woman giving birth
+And the man flees howling
+Pursued by the sun
+A sun of strident yellow
+To a ****house near the Rhone
+The man comes like a christmas king
+With his absurd present
+He has the blue and gentle look
+The true mad lucid look
+Of those who give life everything
+Of those who are not jealous
+And shows the poor child
+His ear couched in the cloth
+And she cries without understanding anything
+Imagining sad omens
+And looks without daring to take
+The frightful tender shell
+In which the moans of dead love
+And the inhuman voices of art
+Mix with the murmurs of the sea
+And die on the tiling
+In the room where the red eiderdown
+Of a sudden bursting red
+Blends this red so red
+With the much more redder blood
+Of half-dead Vincent
+And wise as the very image
+Of misery and love
+The nude child all alone and ageless
+Looks upon poor Vincent
+Stricken by his own storm
+Which spreads on the tile
+Onto his most beautiful painting
+And the storm runs out indifferent
+Rolling before it its great barrels of blood
+The dazzling storm of Vincent's genius
+And Vincent stays there sleeping waking croaking
+And the sun over the ****house
+Like a mad orange in a nameless desert
+The sun on Arles
+Howling turns around.
+")
+
+poem_jp32 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Quartier Libre", content: "
+I put my cap in the cage
+and went out with the bird on my head
+So
+one no longer salutes
+asked the commanding officer
+No
+one no longer salutes
+replied the bird
+Ah good
+excuse me I thought one saluted
+said the commaning officer
+You are fully excused everybody makes mistakes
+said the bird.
+")
+
+poem_jp33 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "In Vain", content: "
+An old man howling at death
+rolls his hoop across the square
+He cries that it's winter and all is done
+that the match is rigged the dice are thrown
+the bets are made the mass is sung
+the piece is played and the curtain down
+In vain
+in vain
+They call me, those friends who can't stand me
+they're running to fast and they stand watch in hand
+asking me questions they don't understand
+In vain
+in vain
+Others more dead than alive walking blind
+trailing their childhood dreams behind
+And those well-tailored clubmen
+bore you to tears with political fears
+that the country's in danger the course is run
+the statue's of clay the time has come...
+Already I hear at the foot of the square
+the roll of the muffled drum
+the bugle is blowing the garden is closing
+In vain
+in vain
+For those who loved it the garden stays open
+")
+
+poem_jp34 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Children who love each other", content: "
+The children who love each other kiss
+leaning on the gates of the night
+And the passers-by walk by and point fingers at them,
+but the children who love each other
+are not to be disturbed,
+and it's only their shadow
+that shivers in the night,
+stirring the rage of the passers-by,
+their rage, their scorn, their laughs and their envy.
+The children who love each other are not to be disturbed,
+they are elsewhere, far beyond the night,
+far above the day,
+basking in the light of their first love.
+")
+
+poem_jp35 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "I Am What I Am", content: "
+I am what I am
+I’m made that way
+When I want to laugh
+Yes I erupt with laughter
+I love the one that loves me
+Is it my fault
+If it’s not the same one
+That I love each time
+I am what I am
+I’m made that way
+What more do you want
+What do you want from me
+
+I’m made for pleasure
+And nothing can change that
+My heels are too high
+My figure too curved
+My breasts way too firm
+And my eyes too darkly ringed
+And then afterwards
+What can you do about it
+I am what I am
+I please who I please
+
+What can you do about it
+What happened to me
+Yes I loved someone
+Yes someone loved me
+Like children love each other
+Simply knowing how to love
+Love love…
+Why ask me
+I’m here for your pleasure
+And nothing can change that.
+")
+
+poem_jp36 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "For You, My Love", content: "
+I went to the market of birds
+And I bought birds
+For you
+My love
+
+I went to the market of flowers
+And I bought flowers
+For you
+My love
+
+I went to the market of ironwork
+And I bought chains
+Heavy chains
+For you
+My love
+
+And then I went to the market of slaves
+And I looked for you
+But I did not find you there
+My love
+")
+
+poem_jp37 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Adrian", content: "
+Adrian don’t be difficult!
+Come back!
+
+The snowball
+you threw at me
+last winter
+at Chamonix
+I have kept
+It is on the mantelpiece
+by the bridal wreath
+of fire my poor mother
+who died murdered
+by my late father
+who died guillotined
+one sad winter’s morning
+or was it spring …
+
+Adrian don’t be difficult!
+Come back!
+
+I have made mistakes I admit
+I remained ages
+without returning
+to the house
+But I always hid from you
+that I was in prison!
+I have made mistakes I admit
+I often beat the dog
+but I loved you!
+
+Adrian don’t be difficult!
+Come back!
+
+And Brin d’osier
+your little fox-terrier
+who died
+last week
+I kept him!
+He is in the fridge
+and when from time to time I open the door
+to get a beer
+I see the poor dead creature
+it disheartens me
+And yet it was I who did it
+one evening to pass the time
+while waiting for you …
+
+Adrian don’t be difficult!
+Come back!
+
+I threw myself off
+the Saint Jacques Tower
+the day before yesterday
+I killed myself
+because of you
+Yesterday they buried me
+in a pretty little cemetary
+and I thought of you
+And this evening I came back
+to the apartment
+where you wandered round naked
+when I was alive
+and I am waiting for you …
+
+Adrian don’t be difficult!
+Come back!
+
+I have made mistakes I admit
+I remained ages
+without returning to the house
+But I always hid from you
+that I was in prison!
+I have made mistakes I admit
+I often beat the dog
+but I loved you!
+
+Adrian don’t be difficult!
+Come back!
+")
+
+poem_jp38 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "Birdwatcher’s Song", content: "
+The bird that flies so gently
+The bird red and warm as blood
+The bird so soft the bird that mimics
+The bird who is suddenly afraid
+The bird who suddenly hits himself
+The bird who would like to fly away
+The bird panicked and alone
+The bird who would like to live
+The bird who would like to sing
+The bird who would like to cry out
+The bird red and warm as blood
+The bird who flies so gently
+It’s your heart pretty child
+Your heart that beats its wings so sadly
+Against your breast so strong so white.
+")
+
+poem_jp39 = Poem.create!(author_id: prevert.id, book_id: book_jp.id, title: "And The Party Continues", content: "
+Standing in front of the bar
+At the stroke of 10 o’ clock
+A great barfly plumber
+Dressed for Sunday even though it’s Monday
+Sings for himself all alone
+Sings that it’s Friday
+That he won’t go to class
+That the war is over
+And work as well
+That life is so beautiful
+And the girls so pretty
+And stumbling in front of the bar
+But guided by his plumb-bob
+He stops right in front of the bartender
+Three peasants will come by and they will pay you
+Then disappears into the sun
+Without settling up for the check
+Disappearing into the sun all the while continuing his song.
+")
 
 p "seed done! #{Poem.count}"
 
