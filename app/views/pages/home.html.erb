@@ -2,7 +2,7 @@
   <div class="row justify-content-center">
     <div class="col-md-6">
       <h1>Welcome to Poetry API</h1>
-      <p>We have <%= @authors_num %> authors and <%= @poems_num %> poems!</p>
+      <p>We have <span id="last-a"><%= @authors_num %></span> authors and <span id="last-p"><%= @poems_num %></span> poems!</p>
       <ul>
         <li>Check authors: https://poetry-api.herokuapp.com/api/v1/authors/ </li>
         <li>Check author: https://poetry-api.herokuapp.com/api/v1/authors/id </li>
