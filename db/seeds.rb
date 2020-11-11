@@ -10239,7 +10239,7 @@ end
 
     html_doc.search('div.poem_body').each do |element|
       content = element.text.strip
-      poem.update!(content: content)
+      poem.update!(content: content.gsub(/©.+$/, ""))
     end
   end
   p 'Milosz done'
