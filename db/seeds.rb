@@ -7022,7 +7022,7 @@ that close us in.
 
 poem_168 = Poem.create(author_id: bukowski.id, book_id: poems_b.id, title: "gamblers all", content: "
 sometimes you climb out of bed in the morning and you think,
-<i>I'm not going to make it</i>, but you laugh inside
+`I'm not going to make it`, but you laugh inside
 remembering all the times you've felt that way, and
 you walk to the bathroom, do your toilet, see that face
 in the mirror, oh my oh my oh my, but you comb your hair anyway,
@@ -8982,7 +8982,7 @@ end
   author = Author.create(name: "Walt Whitman")
   book = Book.create(author_id: author.id, title: "The Poems", year: "1819-1892")
 
-  nums = (33509..33838).to_a
+  nums = [33512, 33741, 33707, 33515, 33789, 33599, 33594, 33731, 33800, 33796, 33775, 33657, 33524, 33730]
   nums.each do |num|
     url = "https://mypoeticside.com/show-classic-poem-#{num}"
     html_file = open(url).read
