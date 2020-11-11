@@ -10193,6 +10193,58 @@ Without settling up for the check
 Disappearing into the sun all the while continuing his song.
 ")
 
+1.times do
+  author = Author.create(name: "Johann Wolfgang von Goethe")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1749-1832")
+
+  nums = (11498..11614).to_a
+  nums.each do |num|
+    url = "https://mypoeticside.com/show-classic-poem-#{num}/"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('h2.title-poem').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('.poem-entry#contentfont').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Goethe done'
+end
+
+1.times do
+  author = Author.create(name: "Czeslaw Milosz")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1911-2004")
+
+  nums = %w[poem/14328759-Road-Side-Dog-by-Czeslaw-Milosz poem/14328764-Raja-Rao-by-Czeslaw-Milosz poem/14328756-Preface-by-Czeslaw-Milosz poem/14328755-One-More-Contradiction-by-Czeslaw-Milosz Normalization Not-Mine On-Angels poem/14328772-On-Prayer-by-Czeslaw-Milosz poem/14328765-My-Faithful-Mother-Tongue-by-Czeslaw-Milosz poem/14328771-Meaning-by-Czeslaw-Milosz poem/8495989-Love-by-Czeslaw-Milosz Magpiety It-Was-Winter poem/8495975-Lake-by-Czeslaw-Milosz Late-Ripeness I-Sleep-a-Lot In-Black-Despair poem/14328761-In-Warsaw-by-Czeslaw-Milosz Incantation How-It-Was Father-Explains poem/8495981-Forget-by-Czeslaw-Milosz poem/14328768-Hope-by-Czeslaw-Milosz poem/14328758-Earth-Again-by-Czeslaw-Milosz Encounter poem/14328762-Faith-by-Czeslaw-Milosz City-Without-A-Name Conversation-with-Jeanne poem/8495991-Dedication-by-Czeslaw-Milosz Campo-di-Fiori poem/14328775-Child-Of-Europe-by-Czeslaw-Milosz poem/14328754-Christopher-Robin-by-Czeslaw-Milosz Artificer At-a-Certain-Age poem/14328763-By-The-Peonies-by-Czeslaw-Milosz poem/14328757-Annalena-by-Czeslaw-Milosz poem/14328774-And-Yet-The-Books-by-Czeslaw-Milosz poem/14328766-And-The-City-Stood-In-Its-Brightness-by-Czeslaw-Milosz poem/14328773-A-Hall-by-Czeslaw-Milosz A-Felicitous-Life A-Magic-Mountain A-Poem-For-the-End-of-the-Century A-Poor-Christian-Looks-At-The-Ghetto A-Song-On-The-End-Of-The-World A-Task A-Treatise-On-Poetry:-IV-Natura Account poem/14328752-An-Hour-by-Czeslaw-Milosz]
+  nums.each do |num|
+    url = "https://allpoetry.com/#{num}/"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('a.nocolor.fn').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('div.poem_body').each do |element|
+      content = element.text.strip
+      poem.update!(content: content)
+    end
+  end
+  p 'Milosz done'
+end
+
 p "seed done! #{Poem.count}"
 
 p "start cleaning"
