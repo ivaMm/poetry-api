@@ -10245,6 +10245,119 @@ end
   p 'Milosz done'
 end
 
+1.times do
+  author = Author.create(name: "Heinrich Heine")
+  book = Book.create(author_id: author.id, title: "The Poems", year: "1797-1856")
+
+  nums = %w[poem/8522711-Losses-by-Heinrich-Heine Der-Tod,-Das-Ist I-Love-This-White-And-Slender-Body Es-Liegt-Der-Heisse-Sommer Einst-Sah-Ich-Viele Mein-Tag-War-Heiter poem/8522707-Angelique-by-Heinrich-Heine Ich-Kann-Es-Nicht-Vergessen Mein-Kind,-Wir-Waren-Kinder poem/8522719-Prologue-by-Heinrich-Heine Sie-Liebten-Sich-Beide Still-Ist-Die-Nacht Of-Pearls-And-Stars A-Warning The-Lore-Lei This-Mad-Carnival-Of-Loving]
+  nums.each do |num|
+    url = "https://allpoetry.com/#{num}/"
+    html_file = open(url).read
+    html_doc = Nokogiri::HTML(html_file)
+
+    html_doc.search('a.nocolor.fn').each do |element|
+      title = element.text.strip
+      Poem.create!(author_id: author.id, book_id: book.id, title: title)
+    end
+
+    poem = Poem.last
+    p "#{poem.title}"
+
+    html_doc.search('div.poem_body').each do |element|
+      content = element.text.strip
+      poem.update!(content: content.gsub(/©.+$/, ""))
+    end
+  end
+  p 'Heine done'
+end
+
+heine = Author.find_by_name("Heinrich Heine")
+book_h = Book.find_by_author_id(heine.id)
+
+asra = Poem.create!(author_id: heine.id, book_id: book_h.id, title: "Der Asra (The Asra)", content: "
+Every day so lovely, shining,
+up and down, the Sultan’s daughter
+walked at evening by the water,
+where the white fountain splashes.
+
+Every day the young slave stood
+by the water, in the evening,
+where the white fountain splashes,
+each day growing pale and paler.
+
+Then the princess came one evening,
+quickly speaking to him, softly,
+‘Your true name – I wish to know it,
+your true homeland and your nation.’
+
+And the slave said, ‘I am called
+Mahomet, I am from Yemen,
+and my tribe, it is the Asra,
+who die, when they love.’ ")
+
+morphine = Poem.create!(author_id: heine.id, book_id: book_h.id, title: "Morphine", content: "
+There’s a mirror likeness between the two
+Bright, youthfully-shaped figures, though
+One’s paler than the other and more austere,
+I might even say more perfect, more distinguished,
+Than the one who’d take me confidingly in his arms –
+How soft then, loving, his smile, how blessed his glance!
+Then it might well have been, that his wreath
+Of white poppies touched my forehead, at times,
+Drove the pain from my mind with its strange scent.
+But all that’s transient. I can only, now, be well,
+When the other one, so serious and pale,
+The older brother, lowers his dark torch. –
+Sleep is good: and Death is better, yet
+Surely never to have been born is best.
+")
+
+we_sat = Poem.create!(author_id: heine.id, book_id: book_h.id, title: "My Darling, We Sat Together", content: "
+My darling, we sat together,
+We two, in our frail boat;
+The night was calm o'er the wide sea
+Whereon we were afloat.
+
+The Specter-Island, the lovely,
+Lay dim in the moon's mild glance;
+There sounded sweetest music,
+There waved the shadowy dance.
+
+It sounded sweeter and sweeter,
+It waved there to and fro;
+But we slid past forlornly
+Upon the great sea-flow.
+")
+
+edom = Poem.create!(author_id: heine.id, book_id: book_h.id, title: "To Edom!", content: "
+WITH each other, brother fashion,
+Have we borne this many an age.
+Thou hast borne with my existence,
+And I borne have with thy rage.
+
+Many a time, in days of darkness,
+Wonder-strange hath been thy mood,
+And thy dear and pious talons
+Hast thou reddened in my blood.
+
+Now our friendship groweth closer;
+Nay, it waxeth daily now:
+I myself begin to bluster
+And am nigh as mad as thou.
+")
+
+flower = Poem.create!(author_id: heine.id, book_id: book_h.id, title: "E'en As A lovely Flower", content: "
+E'en as a lovely flower,
+So fair, so pure thou art;
+I gaze on thee, and sadness
+Comes stealing o'er my heart.
+
+My hands I fain had folded
+Upon thy soft brown hair,
+Praying that God may keep thee
+So lovely, pure and fair.
+")
+
 p "seed done! #{Poem.count}"
 
 p "start cleaning"
