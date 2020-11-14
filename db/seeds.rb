@@ -10245,6 +10245,155 @@ end
   p 'Milosz done'
 end
 
+milosz = Author.find_by_name("Czeslaw Milosz")
+book_cm = Book.find_by_author_id(milosz.id)
+pm1 = Poem.create!(author_id: milosz.id, book_id: book_cm.id, title: "You Who Wronged", content: "
+You who wronged a simple man
+Bursting into laughter at the crime,
+And kept a pack of fools around you
+To mix good and evil, to blur the line,
+
+Though everyone bowed down before you,
+Saying virtue and wisdom lit your way,
+Striking gold medals in your honor,
+Glad to have survived another day,
+
+Do not feel safe. The poet remembers.
+You can kill one, but another is born.
+The words are written down, the deed, the date.
+
+And you’d have done better with a winter dawn,
+A rope, and a branch bowed beneath your weight.
+")
+
+pm2 = Poem.create!(author_id: milosz.id, book_id: book_cm.id, title: "Window", content: "
+I looked out the window at dawn and saw a young apple tree
+translucent in brightness.
+
+And when I looked out at dawn once again, an apple tree laden with
+fruit stood there.
+
+Many years had probably gone by but I remember nothing of what
+happened in my sleep.
+")
+
+pm3 = Poem.create!(author_id: milosz.id, book_id: book_cm.id, title: "Sarajevo", content: "
+Now that a revolution really is needed, those who were fervent are quite cool.
+
+While a country murdered and raped calls for help from the Europe which it had trusted, they yawn.
+
+While statesmen choose villainy and no voice is raised to call it by name.
+
+The rebellion of the young who called for a new earth was a sham, and that generation has written the verdict on itself.
+
+Listening with indifference to the cries of those who perish because they are after all just barbarians killing each other.
+
+And the lives of the well-fed are worth more than the lives of the starving.
+
+It is revealed now that their Europe since the beginning has been a deception, for its faith and its foundation is nothingness.
+
+And nothingness, as the prophets keep saying, brings forth only nothingness, and they will be led once again like cattle to slaughter.
+
+Let them tremble and at the last moment comprehend that the word Sarajevo will from now on mean the destruction of their sons and the debasement of their daughters.
+
+They prepare it by repeating: 'We at least are safe,'' unaware that what will strike them ripens in themselves.
+")
+
+pm4 = Poem.create!(author_id: milosz.id, book_id: book_cm.id, title: "To Mrs. Professor In Defense Of My Cat's Honor And Not Only", content: "
+My valiant helper, a small-sized tiger
+Sleeps sweetly on my desk, by the computer,
+Unaware that you insult his tribe.
+
+Cats play with a mouse or with a half-dead mole.
+You are wrong, though: it's not out of cruelty.
+They simply like a thing that moves.
+
+For, after all, we know that only consciousness
+Can for a moment move into the Other,
+Empathize with the pain and panic of a mouse.
+
+And such as cats are, all of Nature is.
+Indifferent, alas, to the good and the evil.
+Quite a problem for us, I am afraid.
+
+Natural history has its museums,
+But why should our children learn about monsters,
+An earth of snakes and reptiles for millions of years?
+
+Nature devouring, nature devoured,
+Butchery day and night smoking with blood.
+and who created it? Was it the good Lord?
+
+Yes, undoubtedly, they are innocent,
+Spiders, mantises, sharks, pythons.
+We are the only ones who say: cruelty.
+
+Our consciousness and our conscience
+Alone in the pale anthill of galaxies
+Put their hope in a humane God.
+
+Who cannot but feel and think,
+Who is kindred to us by his warmth and movement,
+For we are, as he told us, similar to Him.
+
+Yet if it is so, the He takes pity
+On every mauled mouse, every wounded bird.
+Then the universe ofr him is like a Crucifixion.
+
+Such is the outcome of your attack on the cat:
+A theological, Augustinian grimace,
+Which makes difficult our walking on this eart.
+")
+
+pm5 = Poem.create!(author_id: milosz.id, book_id: book_cm.id, title: "Statue Of A Couple", content: "
+Your hand, my wonder, is now icy cold.
+The purest light of the celestial dome
+has burned me through. And now we are
+as two still plams lying in darlmess,
+as two black banks of a frozen stream
+in the chasm of the world.
+
+Our hair combed back is carved in wood,
+the moon walks over our ebony shoulders.
+A distant cockcrow, the night goes by, silent.
+Rich is the rime of love, withered the dowry.
+
+Where are you, living in what depths of time,
+love, stepping down into what waters,
+now, when the frost of our voiceless lips
+does not fend off the divine fires?
+
+In a forest of clouds, of fcam, and of silver
+we live, caressing lands under our
+And we are wielding the might of a dark scepter
+to earn oblivion.
+
+My love, your breast cut through by a clinel
+knows nothing anymore of what it was.
+Of clouds at dawn, of angers at daybreak,
+of shallows in springtime it has no remembrance.
+
+And you have led me, as once an angel led
+Tobias, onto the rusty mashes of Lombardy.
+But a day came when a sign frightened you,
+a stinma of golden measure.
+
+With a scream, with inunobile fear in your thin hands
+you fell into a pit that ashes lie over,
+where neither northern firs nor Italian yews
+could protect our andent bed of lovers.
+
+What was it. what is it, what will it be
+we filled the world with our cry and calling.
+The dawn is back, the red moon set,
+do we know now? In a heavy ship
+
+A helmman comes, throws a silken rope
+and binds w tightly to eaah other,
+then he pours on friends, once enemies,
+a handful of snow.
+")
+
 1.times do
   author = Author.create(name: "Heinrich Heine")
   book = Book.create(author_id: author.id, title: "The Poems", year: "1797-1856")
