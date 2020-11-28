@@ -10507,6 +10507,30 @@ Praying that God may keep thee
 So lovely, pure and fair.
 ")
 
+henry = Author.find_by_name("John Berryman")
+henry_b = Book.find_by_author_id(henry.id)
+henry_46 = Poem.create!(author_id: henry.id, book_id: henry_b.id, title: "Dream Song 46", content: "
+I am, outside. Incredible panic rules.
+People are blowing and beating each other without mercy.
+Drinks are boiling. Iced
+drinks are boiling. The worse anyone feels, the worse
+treated he is. Fools elect fools.
+A harmless man at an intersection said, under his breath: “Christ!”
+
+That word, so spoken, affected the vision
+of, when they trod to work next day, shopkeepers
+who went & were fitted with glasses.
+Enjoyed they then an appearance of love & law.
+Millenia whift & waft—one, one—er, er . . .
+Their glasses were taken from them, & they saw.
+
+Man has undertaken the top job of all,
+son fin. Good luck.
+I myself walked at the funeral of tenderness.
+Followed other deaths. Among the last,
+like the memory of a lovely fuck,
+was: Do, ut des. ")
+
 p "seed done! #{Poem.count}"
 
 p "start cleaning"
